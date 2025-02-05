@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Quiz Game</title>
+    <script defer src="game.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Kanji Quiz Game</h1>
+    </div>
+    <div class="container">
+        <button onclick="startGame('n5_all')">Start with N5 All</button>
+        <button onclick="startGame('n5_vocab')">Start with N5 Vocab</button>
+    </div>
+
+    <div id="game" style="display:none;">
+        <p id="question"></p>
+        <input type="text" id="input" placeholder="Type your answer..." >
+        <p id="timer"></p>
+        <p id="score"></p>
+        <p id="lives"></p> <!-- Add lives display -->
+    </div>
+    <div id="gameOverPrompt" style="display:none;">
+        <p>Game over! Final Score: <span id="finalScore"></span>. Continue?</p>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+</body>
+</html>
