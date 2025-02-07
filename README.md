@@ -52,3 +52,7 @@ Contributions are welcome! Please open an issue or submit a pull request for any
 ## License
 
 See LICENSE
+
+## Attribution
+
+JLPT vocabulary list by http://www.tanos.co.uk/jlpt/skills/vocab/. JLPT Vocab list is shared under a CC-BY license.
