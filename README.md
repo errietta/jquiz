@@ -29,7 +29,7 @@ This is a simple Kanji Quiz Game built with HTML, CSS, and JavaScript. The game 
 
 ### Usage
 
-1. Open `game.html` in your web browser.
+1. Run `npm start`
 2. Click on one of the start buttons to begin the quiz.
 3. Answer the questions by typing your answer and pressing Enter.
 4. The game will track your score and lives. If you run out of lives, you will be prompted to continue or end the game.

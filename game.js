@@ -16,6 +16,7 @@ async function startGame(type) {
     document.getElementById('score').innerText = `Score: ${score}`;
     document.getElementById('lives').innerText = `Lives: ${lives}`; // Display lives
     document.getElementById('game').style.display = 'block';
+    document.getElementById('jlpt_mode').style.display = 'none';
     nextQuestion();
 }
 
@@ -69,6 +70,7 @@ function checkAnswer() {
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
     }
     document.getElementById('input').value = '';
+    document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
 
     nextQuestion();
 }
