@@ -16,6 +16,15 @@
             <div class="container">
                 <h2>Select mode</h2>
                 <button onclick="setMode('jlpt_mode')">JLPT mode</button>
+                <button onclick="setMode('quiz_mode')">Quiz mode</button>
+            </div>
+        </div>
+
+
+        <div id="quiz_mode" style="display:none">
+            <div class="container">
+                <h2>Quiz mode</h2>
+                <button onclick="startGame('puzzle')">Start with kanji puzzle (very hard)</button>
             </div>
         </div>
 
@@ -52,6 +61,7 @@
     <div id="game" style="display:none;">
         <p id="question"></p>
         <input type="text" id="input" placeholder="Answer in hiragana..."  autocomplete="off">
+        <p>q to skip</p>
         <p id="feedback"></p>
         <p id="timer"></p>
         <p id="score"></p>

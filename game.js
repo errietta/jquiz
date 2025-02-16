@@ -5,6 +5,7 @@ let timeLeft = 10;
 let timer;
 let lives = 5;
 let selectedType = 'n5_all';
+let defaultTimer = 10;
 
 function setMode(mode) {
     document.getElementById(mode).style.display='';
@@ -21,7 +22,14 @@ async function startGame(type) {
     document.getElementById('lives').innerText = `Lives: ${lives}`; // Display lives
     document.getElementById('game').style.display = 'block';
     document.getElementById('mode_choice').style.display = 'none';
-    nextQuestion();
+
+    if (['puzzle'].includes(type)) {
+        defaultTimer = timeLeft = 180;
+    } else {
+        defaultTimer = timeLeft = 10;
+    }
+
+    nextQuestion(timeLeft);
 }
 
 function nextQuestion() {
@@ -30,10 +38,13 @@ function nextQuestion() {
         return;
     }
     currentWord = words.pop();
+
     document.getElementById('question').innerText = currentWord.question;
     document.getElementById('input').value = '';
-    timeLeft = 10;
+
+    timeLeft = defaultTimer;
     document.getElementById('timer').innerText = `Time left: ${timeLeft}s`;
+
     clearInterval(timer);
     timer = setInterval(updateTimer, 1000);
 }
@@ -75,17 +86,24 @@ function checkAnswer() {
         return;
     }
 
+    if (userAnswer === 'q') {
+        lives--;
+        document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
+        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
+        nextQuestion();
+        return;
+    }
+
     if (Array.isArray(currentWord.answer) ? currentWord.answer.includes(userAnswer) : userAnswer === currentWord.answer) {
         score++;
         document.getElementById('score').innerText = `Score: ${score}`;
+        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
+        nextQuestion();
     } else {
         lives--; // Decrease lives if answer is incorrect
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
     }
     document.getElementById('input').value = '';
-    document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
-
-    nextQuestion();
 }
 
 var isComposing = false; // IME Composing going on
