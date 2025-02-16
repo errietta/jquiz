@@ -113,3 +113,13 @@ h2 {
 #gameOverPrompt button:hover {
     background: #1976d2;
 }
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
