@@ -56,6 +56,7 @@ function updateTimer() {
         clearInterval(timer);
         lives--; // Decrease lives if time runs out
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
+        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
         nextQuestion();
     }
 }
