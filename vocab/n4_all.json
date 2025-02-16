@@ -33,7 +33,7 @@
     },
     {
         "question": "輸出",
-        "answer": "ゆしゅつ・する"
+        "answer": "ゆしゅつ"
     },
     {
         "question": "工業",
@@ -113,7 +113,7 @@
     },
     {
         "question": "心配",
-        "answer": "しんぱい・する"
+        "answer": "しんぱい"
     },
     {
         "question": "坂",
@@ -293,7 +293,7 @@
     },
     {
         "question": "出席",
-        "answer": "しゅっせき・する"
+        "answer": "しゅっせき"
     },
     {
         "question": "昼休み",
@@ -309,11 +309,11 @@
     },
     {
         "question": "退院",
-        "answer": "たいいん・する"
+        "answer": "たいいん"
     },
     {
         "question": "準備",
-        "answer": "じゅんび・する"
+        "answer": "じゅんび"
     },
     {
         "question": "お土産",
@@ -349,7 +349,7 @@
     },
     {
         "question": "出発",
-        "answer": "しゅっぱつ・する"
+        "answer": "しゅっぱつ"
     },
     {
         "question": "盛ん",
@@ -385,7 +385,7 @@
     },
     {
         "question": "案内",
-        "answer": "あんない・する"
+        "answer": "あんない"
     },
     {
         "question": "飾る",
@@ -461,7 +461,7 @@
     },
     {
         "question": "相談",
-        "answer": "そうだん・する"
+        "answer": "そうだん"
     },
     {
         "question": "時代",
@@ -489,7 +489,7 @@
     },
     {
         "question": "入院",
-        "answer": "にゅういん・する"
+        "answer": "にゅういん"
     },
     {
         "question": "彼ら",
@@ -505,7 +505,7 @@
     },
     {
         "question": "生産",
-        "answer": "せいさん・する"
+        "answer": "せいさん"
     },
     {
         "question": "美しい",
@@ -557,7 +557,7 @@
     },
     {
         "question": "招待",
-        "answer": "しょうたい・する"
+        "answer": "しょうたい"
     },
     {
         "question": "高等学校",
@@ -577,7 +577,7 @@
     },
     {
         "question": "食事",
-        "answer": "しょくじ・する"
+        "answer": "しょくじ"
     },
     {
         "question": "教育",
@@ -653,7 +653,7 @@
     },
     {
         "question": "故障",
-        "answer": "こしょう・する"
+        "answer": "こしょう"
     },
     {
         "question": "予習",
@@ -741,7 +741,7 @@
     },
     {
         "question": "承知",
-        "answer": "しょうち・する"
+        "answer": "しょうち"
     },
     {
         "question": "別",
@@ -765,7 +765,7 @@
     },
     {
         "question": "放送",
-        "answer": "ほうそう・する"
+        "answer": "ほうそう"
     },
     {
         "question": "片付ける",
@@ -873,7 +873,7 @@
     },
     {
         "question": "遠慮",
-        "answer": "えんりょ・する"
+        "answer": "えんりょ"
     },
     {
         "question": "赤ん坊",
@@ -1065,7 +1065,7 @@
     },
     {
         "question": "生活",
-        "answer": "せいかつ・する"
+        "answer": "せいかつ"
     },
     {
         "question": "関係",
@@ -1149,7 +1149,7 @@
     },
     {
         "question": "運動",
-        "answer": "うんどう・する"
+        "answer": "うんどう"
     },
     {
         "question": "血",
@@ -1245,7 +1245,7 @@
     },
     {
         "question": "入学",
-        "answer": "にゅうがく・する"
+        "answer": "にゅうがく"
     },
     {
         "question": "折れる",
@@ -1385,7 +1385,7 @@
     },
     {
         "question": "経験",
-        "answer": "けいけん・する"
+        "answer": "けいけん"
     },
     {
         "question": "比べる",
@@ -1429,7 +1429,7 @@
     },
     {
         "question": "支度",
-        "answer": "したく・する"
+        "answer": "したく"
     },
     {
         "question": "反対",
@@ -1437,7 +1437,7 @@
     },
     {
         "question": "輸入",
-        "answer": "ゆにゅう・する"
+        "answer": "ゆにゅう"
     },
     {
         "question": "壊す",
@@ -1549,7 +1549,7 @@
     },
     {
         "question": "運転",
-        "answer": "うんてん・する"
+        "answer": "うんてん"
     },
     {
         "question": "辞典",
@@ -1573,7 +1573,7 @@
     },
     {
         "question": "計画",
-        "answer": "けいかく・する"
+        "answer": "けいかく"
     },
     {
         "question": "以下",
@@ -1809,7 +1809,7 @@
     },
     {
         "question": "世話",
-        "answer": "せわ・する"
+        "answer": "せわ"
     },
     {
         "question": "高校生",
@@ -1933,7 +1933,7 @@
     },
     {
         "question": "拝見",
-        "answer": "はいけん・する"
+        "answer": "はいけん"
     },
     {
         "question": "お礼",

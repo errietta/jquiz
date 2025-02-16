@@ -71,6 +71,10 @@ function updateTimer() {
 
 function checkAnswer() {
     let userAnswer = document.getElementById('input').value.trim();
+    if (!userAnswer) {
+        return;
+    }
+
     if (userAnswer === currentWord.answer) {
         score++;
         document.getElementById('score').innerText = `Score: ${score}`;

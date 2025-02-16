@@ -49,7 +49,7 @@
     },
     {
         "question": "心配",
-        "answer": "しんぱい・する"
+        "answer": "しんぱい"
     },
     {
         "question": "世界",
@@ -117,7 +117,7 @@
     },
     {
         "question": "退院",
-        "answer": "たいいん・する"
+        "answer": "たいいん"
     },
     {
         "question": "店員",
@@ -125,7 +125,7 @@
     },
     {
         "question": "出発",
-        "answer": "しゅっぱつ・する"
+        "answer": "しゅっぱつ"
     },
     {
         "question": "特別",
@@ -161,7 +161,7 @@
     },
     {
         "question": "入院",
-        "answer": "にゅういん・する"
+        "answer": "にゅういん"
     },
     {
         "question": "大事",
@@ -177,7 +177,7 @@
     },
     {
         "question": "招待",
-        "answer": "しょうたい・する"
+        "answer": "しょうたい"
     },
     {
         "question": "終わり",
@@ -185,7 +185,7 @@
     },
     {
         "question": "食事",
-        "answer": "しょくじ・する"
+        "answer": "しょくじ"
     },
     {
         "question": "教育",
@@ -253,7 +253,7 @@
     },
     {
         "question": "承知",
-        "answer": "しょうち・する"
+        "answer": "しょうち"
     },
     {
         "question": "別",
@@ -269,7 +269,7 @@
     },
     {
         "question": "放送",
-        "answer": "ほうそう・する"
+        "answer": "ほうそう"
     },
     {
         "question": "心",
@@ -377,7 +377,7 @@
     },
     {
         "question": "運動",
-        "answer": "うんどう・する"
+        "answer": "うんどう"
     },
     {
         "question": "空港",
@@ -485,7 +485,7 @@
     },
     {
         "question": "経験",
-        "answer": "けいけん・する"
+        "answer": "けいけん"
     },
     {
         "question": "会議",
@@ -497,7 +497,7 @@
     },
     {
         "question": "支度",
-        "answer": "したく・する"
+        "answer": "したく"
     },
     {
         "question": "会議室",
@@ -549,7 +549,7 @@
     },
     {
         "question": "運転",
-        "answer": "うんてん・する"
+        "answer": "うんてん"
     },
     {
         "question": "産業",
@@ -565,7 +565,7 @@
     },
     {
         "question": "計画",
-        "answer": "けいかく・する"
+        "answer": "けいかく"
     },
     {
         "question": "以下",
@@ -657,7 +657,7 @@
     },
     {
         "question": "世話",
-        "answer": "せわ・する"
+        "answer": "せわ"
     },
     {
         "question": "忘れ物",
