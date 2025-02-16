@@ -75,7 +75,7 @@ function checkAnswer() {
         return;
     }
 
-    if (userAnswer === currentWord.answer) {
+    if (Array.isArray(currentWord.answer) ? currentWord.answer.includes(userAnswer) : userAnswer === currentWord.answer) {
         score++;
         document.getElementById('score').innerText = `Score: ${score}`;
     } else {
