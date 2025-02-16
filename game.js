@@ -6,6 +6,10 @@ let timer;
 let lives = 5;
 let selectedType = 'n5_all';
 
+function setMode(mode) {
+    document.getElementById(mode).style.display='';
+}
+
 async function startGame(type) {
     selectedType = type; // Store the selected type
     const response = await fetch(`./vocab/${type}.json`);
@@ -16,7 +20,7 @@ async function startGame(type) {
     document.getElementById('score').innerText = `Score: ${score}`;
     document.getElementById('lives').innerText = `Lives: ${lives}`; // Display lives
     document.getElementById('game').style.display = 'block';
-    document.getElementById('jlpt_mode').style.display = 'none';
+    document.getElementById('mode_choice').style.display = 'none';
     nextQuestion();
 }
 
@@ -50,6 +54,10 @@ function showGameOverPrompt() {
 }
 
 function updateTimer() {
+    if (lives <= 0) {
+        return;
+    }
+
     timeLeft--;
     document.getElementById('timer').innerText = `Time left: ${timeLeft}s`;
     if (timeLeft <= 0) {

@@ -12,47 +12,49 @@ body {
     line-height: 1.6;
     text-align: center;
     flex-direction: column;
+    overflow: hidden; /* Prevent content from overflowing */
 }
 
 #question {
-    font-size: 28px;
-    margin: 20px;
+    font-size: 24px; /* Reduce font size */
+    margin: 10px; /* Reduce margin */
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 #timer {
-    font-size: 22px;
+    font-size: 18px; /* Reduce font size */
     color: #ff5722;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Reduce margin */
 }
 
 #input {
-    font-size: 20px;
-    padding: 10px;
+    font-size: 18px; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 10px; /* Reduce margin */
 }
 
 #score {
-    font-size: 24px;
-    margin-top: 15px;
+    font-size: 18px; /* Reduce font size */
+    margin-top: 10px; /* Reduce margin */
     color: #4caf50;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 #lives {
-    font-size: 24px;
-    margin-top: 15px;
+    font-size: 18px; /* Reduce font size */
+    margin-top: 10px; /* Reduce margin */
     color: #f44336;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 button {
-    font-size: 18px;
-    padding: 10px 20px;
-    margin-top: 20px;
+    font-size: 16px; /* Reduce font size */
+    padding: 8px 16px; /* Reduce padding */
+    margin-top: 10px; /* Reduce margin */
     border: none;
     border-radius: 5px;
     background: #2196f3;
@@ -66,21 +68,21 @@ button:hover {
 }
 
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 28px; /* Reduce font size */
+    margin-bottom: 10px; /* Reduce margin */
     color: #ffeb3b;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
-    font-size: 24px;
-    margin: 1px 0;
+    font-size: 20px; /* Reduce font size */
+    margin: 5px 0; /* Reduce margin */
     color: #ffeb3b;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .container {
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Reduce margin to fit more content */
 }
 
 #gameOverPrompt {
@@ -97,8 +99,8 @@ h2 {
 }
 
 #gameOverPrompt button {
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 16px; /* Reduce font size */
+    padding: 8px 16px; /* Reduce padding */
     margin: 10px;
     border: none;
     border-radius: 5px;

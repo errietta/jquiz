@@ -11,32 +11,42 @@
     <div class="container">
         <h1>Kanji Quiz Game</h1>
     </div>
-    <div id="jlpt_mode">
-        <div class="container">
-            <h2>N5</h2>
-            <button onclick="startGame('n5_all')">Start with N5 - All vocab (harder)</button>
-            <button onclick="startGame('n5_vocab')">Start with N5 Required Kanji only</button>
+    <div id="mode_choice">
+        <div id="make_mode_choice">
+            <div class="container">
+                <h2>Select mode</h2>
+                <button onclick="setMode('jlpt_mode')">JLPT mode</button>
+            </div>
         </div>
-        <div class="container">
-            <h2>N4</h2>
-            <button onclick="startGame('n4_all')">Start with N4 - All vocab (harder)</button>
-            <button onclick="startGame('n4_vocab')">Start with N4 Required Kanji only</button>
+
+        <div id="jlpt_mode" style="display:none">
+            <div class="container">
+                <h2>N5</h2>
+                <button onclick="startGame('n5_all')">Start with N5 - All vocab (harder)</button>
+                <button onclick="startGame('n5_vocab')">Start with N5 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N4</h2>
+                <button onclick="startGame('n4_all')">Start with N4 - All vocab (harder)</button>
+                <button onclick="startGame('n4_vocab')">Start with N4 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N3</h2>
+                <button onclick="startGame('n3_all')">Start with N3 - All vocab (harder)</button>
+                <button onclick="startGame('n3_vocab')">Start with N3 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N2</h2>
+                <button onclick="startGame('n2_all')">Start with N2 - All vocab (harder)</button>
+                <button onclick="startGame('n2_vocab')">Start with N2 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N1</h2>
+                <button onclick="startGame('n1_all')">Start with N1 - All vocab (harder)</button>
+                <button onclick="startGame('n1_vocab')">Start with N1 Required Kanji only</button>
+            </div>
         </div>
-        <div class="container">
-            <h2>N3</h2>
-            <button onclick="startGame('n3_all')">Start with N3 - All vocab (harder)</button>
-            <button onclick="startGame('n3_vocab')">Start with N3 Required Kanji only</button>
-        </div>
-        <div class="container">
-            <h2>N2</h2>
-            <button onclick="startGame('n2_all')">Start with N2 - All vocab (harder)</button>
-            <button onclick="startGame('n2_vocab')">Start with N2 Required Kanji only</button>
-        </div>
-        <div class="container">
-            <h2>N1</h2>
-            <button onclick="startGame('n1_all')">Start with N1 - All vocab (harder)</button>
-            <button onclick="startGame('n1_vocab')">Start with N1 Required Kanji only</button>
-        </div>
+
     </div>
 
     <div id="game" style="display:none;">
