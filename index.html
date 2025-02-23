@@ -11,7 +11,7 @@
     <div class="container">
         <h1>Kanji Quiz Game</h1>
     </div>
-    <div id="mode_choice">
+    <div id="mode_choice" style="display:none">
         <div id="make_mode_choice">
             <div class="container">
                 <h2>Select mode</h2>
@@ -66,6 +66,26 @@
         <p id="timer"></p>
         <p id="score"></p>
         <p id="lives"></p> <!-- Add lives display -->
+    </div>
+    <div id="explanation" >
+        <p id="explanationText">
+            This game has two modes.
+            <p>
+                <b>JLPT mode</b> - You can type the 'reading' of the word in Hiragana.
+                To win the game you need to get the questions right before you run out of lives.
+                If you use the 'JLPT required kanji only' mode, it will be (mostly) words whose
+                Kanji you need to know for that level. The other mode includes every word that's part
+                of that JLPT level (according to an unofficial JLPT vocabulary list), even if the kanji
+                isn't known to be required knowledge.
+            </p>
+            <p>
+                <b>Quiz mode</b> - You will be given words or phrases that all contain
+                the same kanji. The kanji will be replaced with ○. You need to
+                guess the kanji.  This is a difficult mode because the words are
+                randomly chosen and very obscure terms can come up.
+            </p>
+        </p>
+        <button id="closeExplanation" onclick="closeExplanation()">Begin</button>
     </div>
     <div id="gameOverPrompt" style="display:none;">
         <p>Game over! Final Score: <span id="finalScore"></span>. Continue?</p>

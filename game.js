@@ -11,6 +11,11 @@ function setMode(mode) {
     document.getElementById(mode).style.display='';
 }
 
+function closeExplanation() {
+    document.getElementById('explanation').style.display = 'none';
+    document.getElementById('mode_choice').style.display = '';
+}
+
 async function startGame(type) {
     selectedType = type; // Store the selected type
     const response = await fetch(`./vocab/${type}.json`);
