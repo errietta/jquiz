@@ -1,0 +1,14 @@
+{
+    "theme_color": "#8936FF",
+    "background_color": "#2EC6FE",
+    "orientation": "any",
+    "display": "standalone",
+    "dir": "auto",
+    "lang": "en-GB",
+    "name": "JLPT Kanji Quiz game",
+    "short_name": "JLPT Kanji Quiz Game",
+    "start_url": "https://jquiz.erry.jp/",
+    "scope": "https://jquiz.erry.jp/",
+    "id": "https://jquiz.erry.jp/",
+    "description": "JLPT Kanji quiz"
+}
