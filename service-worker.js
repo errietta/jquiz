@@ -1,7 +1,20 @@
 // Choose a cache name
 const cacheName = 'cache-v1';
 // List the files to precache
-const precacheResources = ['/', '/index.html', '/style.css', '/game.js'];
+const precacheResources = [
+  '/', '/index.html', '/style.css', '/game.js',
+  'vocab/n1_all.json',
+  'vocab/n1_vocab.json',
+  'vocab/n2_all.json',
+  'vocab/n2_vocab.json',
+  'vocab/n3_all.json',
+  'vocab/n3_vocab.json',
+  'vocab/n4_all.json',
+  'vocab/n4_vocab.json',
+  'vocab/n5_all.json',
+  'vocab/n5_vocab.json',
+  'vocab/puzzle.json',
+];
 
 // When the service worker is installing, open the cache and add the precache resources to it
 self.addEventListener('install', (event) => {

@@ -16,10 +16,23 @@ function closeExplanation() {
     document.getElementById('mode_choice').style.display = '';
 }
 
+function fetchVocab(url) {
+    document.getElementById('loading').style.display = 'block'; // Show loading indicator
+    return fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+            return data;
+        })
+        .catch(error => {
+            document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+            console.error('Error fetching vocab:', error);
+        });
+}
+
 async function startGame(type) {
     selectedType = type; // Store the selected type
-    const response = await fetch(`./vocab/${type}.json`);
-    words = await response.json();
+    words = await fetchVocab(`./vocab/${type}.json`);
     words = shuffle(words).slice(0, 20);
     score = 0;
     lives = 5; // Reset lives
