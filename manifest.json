@@ -1,14 +1,48 @@
 {
-    "theme_color": "#8936FF",
-    "background_color": "#2EC6FE",
-    "orientation": "any",
-    "display": "standalone",
-    "dir": "auto",
-    "lang": "en-GB",
-    "name": "JLPT Kanji Quiz game",
-    "short_name": "JLPT Kanji Quiz Game",
-    "start_url": "https://jquiz.erry.jp/",
-    "scope": "https://jquiz.erry.jp/",
-    "id": "https://jquiz.erry.jp/",
-    "description": "JLPT Kanji quiz"
+  "theme_color": "#8936FF",
+  "background_color": "#2EC6FE",
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-GB",
+  "name": "JQuiz - JLPT & Kanji Quiz game",
+  "short_name": "JLPT Kanji Quiz Game",
+  "start_url": "https://jquiz.erry.jp/",
+  "scope": "https://jquiz.erry.jp/",
+  "id": "https://jquiz.erry.jp/",
+  "description": "JLPT & Kanji quiz test game for Japanese learners - JQuiz",
+  "icons": [
+    {
+      "sizes": "512x512",
+      "src": "icons/icon512x512.png",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "sizes": "384x384",
+      "src": "icons/icon384x384.png",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "sizes": "256x256",
+      "src": "icons/256x256.png",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "icons/desk.png",
+      "sizes": "1990x1080",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "icons/mobile.png",
+      "sizes": "648x1326",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
 }
