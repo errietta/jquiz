@@ -34,3 +34,13 @@ jspm_packages/
 
 # Windows
 Thumbs.db
+
+
+.gradle/
+android.keystore
+app/
+gradle
+
+*.apk
+*.aab
+*.idsig
