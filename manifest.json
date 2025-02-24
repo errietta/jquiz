@@ -14,19 +14,19 @@
   "icons": [
     {
       "sizes": "512x512",
-      "src": "icons/icon512x512.png",
+      "src": "icons/icon-512x512.png",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "sizes": "384x384",
-      "src": "icons/icon384x384.png",
+      "src": "icons/icon-384x384.png",
       "type": "image/png",
       "purpose": "any"
     },
     {
       "sizes": "256x256",
-      "src": "icons/256x256.png",
+      "src": "icons/icon-256x256.png",
       "type": "image/png",
       "purpose": "any"
     }
