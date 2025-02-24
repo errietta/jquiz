@@ -106,6 +106,10 @@ function checkAnswer() {
 
     if (userAnswer.toLowerCase() === 'q' || userAnswer.toLowerCase() === 'ｑ') {
         lives--;
+        if (lives <= 0) {
+            showGameOverPrompt();
+        }
+
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
         document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
         nextQuestion();
@@ -119,6 +123,10 @@ function checkAnswer() {
         nextQuestion();
     } else {
         lives--; // Decrease lives if answer is incorrect
+        if (lives <= 0) {
+            showGameOverPrompt();
+        }
+
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
     }
     document.getElementById('input').value = '';
