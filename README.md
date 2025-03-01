@@ -4,10 +4,10 @@ This is a simple Kanji Quiz Game built with HTML, CSS, and JavaScript. The game 
 
 ## Features
 
-- Multiple quiz types (For now just N5)
+- Multiple quiz types 
 - Timer for each question
 - Score tracking
-- Lives system (5 lives)
+- Lives system
 - Game over prompt with continue option
 
 ## Getting Started
