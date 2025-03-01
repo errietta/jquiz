@@ -35,9 +35,8 @@ body {
 #question {
     font-size: 24px; /* Reduce font size */
     margin: 10px; /* Reduce margin */
-    color: #ffeb3b;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    color: #000;
+ }
 
 #timer {
     font-size: 18px; /* Reduce font size */
