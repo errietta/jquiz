@@ -25,6 +25,18 @@ self.addEventListener('install', (event) => {
 
 self.addEventListener('activate', (event) => {
   console.log('Service worker activate event!');
+
+  event.waitUntil(
+    (async () => {
+      const keys = await caches.keys();
+      return keys.map(async (cache) => {
+        if(cache !== cacheName) {
+          console.log('Service Worker: Removing old cache: '+cache);
+          return await caches.delete(cache);
+        }
+      })
+    })()
+  );
 });
 
 // When there's an incoming fetch request, try and respond with a precached resource, otherwise fall back to the network
