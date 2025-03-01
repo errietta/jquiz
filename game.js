@@ -56,6 +56,32 @@ function nextQuestion() {
         return;
     }
     currentWord = words.pop();
+    if (['puzzle'].includes(selectedType)) {
+        options = currentWord.question.split("　");
+        let buildQuestion = "";
+        options.map(option => {
+            if (option.match(';')) {
+                console.log("multiple hints detected, original ", option);
+                let multipleOptions = option.split(';');
+                let possibleHints = [];
+                multipleOptions.map(hint => {
+                    if (hint.match("◯")) {
+                        possibleHints.push(hint);
+                    }     
+                });
+
+                possibleHints = shuffle(possibleHints);
+                buildQuestion += possibleHints[0] + "　";
+            } else {
+                buildQuestion += option + "　";
+            }
+        });
+        console.log("going with ", buildQuestion);
+        currentWord.question = buildQuestion;
+    } else {
+        defaultTimer = timeLeft = 10;
+    }
+
 
     document.getElementById('question').innerText = currentWord.question;
     document.getElementById('input').value = '';
