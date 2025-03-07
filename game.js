@@ -43,8 +43,10 @@ async function startGame(type) {
 
     if (['puzzle'].includes(type)) {
         defaultTimer = timeLeft = 180;
+        document.getElementById('input').setAttribute('placeholder', 'Answer in kanji...');
     } else {
         defaultTimer = timeLeft = 10;
+        document.getElementById('input').setAttribute('placeholder', 'Answer in hiragana...');
     }
 
     nextQuestion(timeLeft);
