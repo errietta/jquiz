@@ -11,8 +11,7 @@ body {
     line-height: 1.6;
     text-align: center;
     flex-direction: column;
-    padding-bottom: 50px; /* Add padding to prevent footer overlap */
-
+ 
     @media (min-width: 800px) {
         height: 100vh;
     }
@@ -130,9 +129,7 @@ h2 {
 }
 
 footer {
-    position: fixed; /* Change to fixed position */
-    bottom: 0; /* Align to the bottom */
-    width: 100%;
+   width: 100%;
     text-align: center;
     font-size: 14px;
     color: #fff;
