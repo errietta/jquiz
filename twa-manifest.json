@@ -19,8 +19,8 @@
     "path": "/Users/erry/androidNEW.keystore",
     "alias": "android"
   },
-  "appVersionName": "2",
-  "appVersionCode": 3,
+  "appVersionName": "4",
+  "appVersionCode": 4,
   "shortcuts": [],
   "generatorApp": "bubblewrap-cli",
   "webManifestUrl": "https://jquiz.erry.jp/manifest.json",
@@ -46,5 +46,5 @@
   ],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
-  "appVersion": "2"
+  "appVersion": "4"
 }
