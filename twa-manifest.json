@@ -39,7 +39,11 @@
   "fullScopeUrl": "https://jquiz.erry.jp/",
   "minSdkVersion": 21,
   "orientation": "portrait",
-  "fingerprints": [],
+  "fingerprints": [
+    {
+      "value": "71:46:D4:03:4C:3E:CC:D9:FB:E0:F6:95:49:37:0D:BC:EA:B8:94:B2:71:EC:96:68:4A:F7:FC:AB:41:D4:78:B7"
+    }
+  ],
   "additionalTrustedOrigins": [],
   "retainedBundles": [],
   "appVersion": "2"
