@@ -1,5 +1,5 @@
 // Choose a cache name
-const cacheName = 'cache-v2';
+const cacheName = 'cache-v3';
 
 // List the files to precache
 const precacheResources = [
@@ -39,15 +39,39 @@ self.addEventListener('activate', (event) => {
   );
 });
 
-// When there's an incoming fetch request, try and respond with a precached resource, otherwise fall back to the network
-self.addEventListener('fetch', (event) => {
-  console.log('Fetch intercepted for:', event.request.url);
-  event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request);
-    }),
-  );
-});
+async function fetchAndCacheIfOk(event) {
+  try {
+    const response = await fetch(event.request);
+
+    if (response.ok) {
+      console.log("fetched", event.request.url);
+      const responseClone = response.clone();
+      const cache = await caches.open(cacheName);
+      await cache.put(event.request, responseClone);
+    }
+
+    return response;
+  } catch (e) {
+    return e;
+  }
+}
+
+async function fetchWithCache(event) {
+  const cache = await caches.open(cacheName);
+  const response = await cache.match(event.request);
+  if (!!response) {
+    // it is cached but we want to update it so request but not await
+    fetchAndCacheIfOk(event);
+    return response
+  } else {
+    return fetchAndCacheIfOk(event);
+  }
+}
+
+function handleFetch(event) {
+  if (event.request.headers.get('cache-control') !== 'no-cache') {
+    event.respondWith(fetchWithCache(event));
+  }
+}
+
+self.addEventListener('fetch', handleFetch);
