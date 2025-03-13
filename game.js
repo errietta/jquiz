@@ -152,9 +152,10 @@ function checkAnswer() {
     } else {
         lives--; // Decrease lives if answer is incorrect
         if (lives <= 0) {
+            document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
             showGameOverPrompt();
         }
-
+        
         document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
     }
     document.getElementById('input').value = '';
