@@ -1,165 +1,170 @@
-let words = [];
-let currentWord = {};
-let score = 0;
-let timeLeft = 10;
-let timer;
-let lives = 5;
-let selectedType = 'n5_all';
-let defaultTimer = 10;
-
-function setMode(mode) {
-    document.getElementById(mode).style.display='';
-}
-
-function closeExplanation() {
-    document.getElementById('explanation').style.display = 'none';
-    document.getElementById('mode_choice').style.display = '';
-}
-
-function fetchVocab(url) {
-    document.getElementById('loading').style.display = 'block'; // Show loading indicator
-    return fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            document.getElementById('loading').style.display = 'none'; // Hide loading indicator
-            return data;
-        })
-        .catch(error => {
-            document.getElementById('loading').style.display = 'none'; // Hide loading indicator
-            console.error('Error fetching vocab:', error);
-        });
-}
-
-async function startGame(type) {
-    selectedType = type; // Store the selected type
-    words = await fetchVocab(`./vocab/${type}.json`);
-    words = shuffle(words).slice(0, 20);
+class GameState {
+    words = [];
+    currentWord = {};
     score = 0;
-    lives = 5; // Reset lives
-    document.getElementById('score').innerText = `Score: ${score}`;
-    document.getElementById('lives').innerText = `Lives: ${lives}`; // Display lives
-    document.getElementById('game').style.display = 'block';
-    document.getElementById('mode_choice').style.display = 'none';
+    timeLeft = 10;
+    timer;
+    lives = 5;
+    selectedType = 'n5_all';
+    defaultTimer = 10;
 
-    if (['puzzle'].includes(type)) {
-        defaultTimer = timeLeft = 180;
-        document.getElementById('input').setAttribute('placeholder', 'Answer in kanji...');
-    } else {
-        defaultTimer = timeLeft = 10;
-        document.getElementById('input').setAttribute('placeholder', 'Answer in hiragana...');
+    setMode(mode) {
+        document.getElementById(mode).style.display='';
     }
 
-    nextQuestion(timeLeft);
-}
-
-function nextQuestion() {
-    if (words.length === 0 || lives <= 0) { // Check if lives are exhausted
-        showGameOverPrompt();
-        return;
+    closeExplanation() {
+        document.getElementById('explanation').style.display = 'none';
+        document.getElementById('mode_choice').style.display = '';
     }
-    currentWord = words.pop();
-    if (['puzzle'].includes(selectedType)) {
-        options = currentWord.question.split("　");
-        let buildQuestion = "";
-        options.map(option => {
-            if (option.match(';')) {
-                console.log("multiple hints detected, original ", option);
-                let multipleOptions = option.split(';');
-                let possibleHints = [];
-                multipleOptions.map(hint => {
-                    if (hint.match("◯")) {
-                        possibleHints.push(hint);
-                    }     
-                });
 
-                possibleHints = shuffle(possibleHints);
-                buildQuestion += possibleHints[0] + "　";
-            } else {
-                buildQuestion += option + "　";
+    fetchVocab(url) {
+        document.getElementById('loading').style.display = 'block'; // Show loading indicator
+        return fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+                return data;
+            })
+            .catch(error => {
+                document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+                console.error('Error fetching vocab:', error);
+            });
+    }
+
+    async startGame(type) {
+        this.selectedType = type; // Store the selected type
+        this.words = await this.fetchVocab(`./vocab/${type}.json`);
+        this.words = shuffle(this.words).slice(0, 20);
+        this.score = 0;
+        this.lives = 5; // Reset this.lives
+        document.getElementById('score').innerText = `Score: ${this.score}`;
+        document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Display this.lives
+        document.getElementById('game').style.display = 'block';
+        document.getElementById('mode_choice').style.display = 'none';
+
+        if (['puzzle'].includes(type)) {
+            this.defaultTimer = this.timeLeft = 180;
+            document.getElementById('input').setAttribute('placeholder', 'Answer in kanji...');
+        } else {
+            this.defaultTimer = this.timeLeft = 10;
+            document.getElementById('input').setAttribute('placeholder', 'Answer in hiragana...');
+        }
+
+        this.nextQuestion(this.timeLeft);
+    }
+
+    nextQuestion() {
+        if (this.words.length === 0 || this.lives <= 0) { // Check if this.lives are exhausted
+            this.showGameOverPrompt();
+            return;
+        }
+        this.currentWord = this.words.pop();
+        if (['puzzle'].includes(this.selectedType)) {
+            const options = this.currentWord.question.split("　");
+            let buildQuestion = "";
+            options.map(option => {
+                if (option.match(';')) {
+                    console.log("multiple hints detected, original ", option);
+                    let multipleOptions = option.split(';');
+                    let possibleHints = [];
+                    multipleOptions.map(hint => {
+                        if (hint.match("◯")) {
+                            possibleHints.push(hint);
+                        }     
+                    });
+
+                    possibleHints = shuffle(possibleHints);
+                    buildQuestion += possibleHints[0] + "　";
+                } else {
+                    buildQuestion += option + "　";
+                }
+            });
+            console.log("going with ", buildQuestion);
+            this.currentWord.question = buildQuestion;
+        } else {
+            this.defaultTimer = this.timeLeft = 10;
+        }
+
+
+        document.getElementById('question').innerText = this.currentWord.question;
+        document.getElementById('input').value = '';
+
+        this.timeLeft = this.defaultTimer;
+        document.getElementById('timer').innerText = `Time left: ${this.timeLeft}s`;
+
+        clearInterval(this.timer);
+        this.timer = setInterval(() => this.updateTimer(), 1000);
+    }
+
+    showGameOverPrompt() {
+        document.getElementById('finalScore').innerText = this.score;
+        const gameOverPrompt = document.getElementById('gameOverPrompt');
+        gameOverPrompt.style.display = 'block';
+
+        document.getElementById('yesButton').onclick = () => {
+            gameOverPrompt.style.display = 'none';
+            this.startGame(this.selectedType); // Restart the game with the previously selected type
+        };
+
+        document.getElementById('noButton').onclick = () => {
+            location.reload(); // Refresh the page
+        };
+    }
+
+    updateTimer() {
+        if (this.lives <= 0) {
+            return;
+        }
+
+        this.timeLeft--;
+        document.getElementById('timer').innerText = `Time left: ${this.timeLeft}s`;
+        if (this.timeLeft <= 0) {
+            clearInterval(this.timer);
+            this.lives--; // Decrease this.lives if time runs out
+            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            this.nextQuestion();
+        }
+    }
+
+    checkAnswer() {
+        let userAnswer = document.getElementById('input').value.trim();
+        if (!userAnswer) {
+            return;
+        }
+
+        if (userAnswer.toLowerCase() === 'q' || userAnswer.toLowerCase() === 'ｑ') {
+            this.lives--;
+            if (this.lives <= 0) {
+                this.showGameOverPrompt();
             }
-        });
-        console.log("going with ", buildQuestion);
-        currentWord.question = buildQuestion;
-    } else {
-        defaultTimer = timeLeft = 10;
-    }
 
-
-    document.getElementById('question').innerText = currentWord.question;
-    document.getElementById('input').value = '';
-
-    timeLeft = defaultTimer;
-    document.getElementById('timer').innerText = `Time left: ${timeLeft}s`;
-
-    clearInterval(timer);
-    timer = setInterval(updateTimer, 1000);
-}
-
-function showGameOverPrompt() {
-    document.getElementById('finalScore').innerText = score;
-    const gameOverPrompt = document.getElementById('gameOverPrompt');
-    gameOverPrompt.style.display = 'block';
-
-    document.getElementById('yesButton').onclick = () => {
-        gameOverPrompt.style.display = 'none';
-        startGame(selectedType); // Restart the game with the previously selected type
-    };
-
-    document.getElementById('noButton').onclick = () => {
-        location.reload(); // Refresh the page
-    };
-}
-
-function updateTimer() {
-    if (lives <= 0) {
-        return;
-    }
-
-    timeLeft--;
-    document.getElementById('timer').innerText = `Time left: ${timeLeft}s`;
-    if (timeLeft <= 0) {
-        clearInterval(timer);
-        lives--; // Decrease lives if time runs out
-        document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
-        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
-        nextQuestion();
-    }
-}
-
-function checkAnswer() {
-    let userAnswer = document.getElementById('input').value.trim();
-    if (!userAnswer) {
-        return;
-    }
-
-    if (userAnswer.toLowerCase() === 'q' || userAnswer.toLowerCase() === 'ｑ') {
-        lives--;
-        if (lives <= 0) {
-            showGameOverPrompt();
+            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            this.nextQuestion();
+            return;
         }
 
-        document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
-        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
-        nextQuestion();
-        return;
+        if (Array.isArray(this.currentWord.answer) ? this.currentWord.answer.includes(userAnswer) : userAnswer === this.currentWord.answer) {
+            this.score++;
+            document.getElementById('score').innerText = `Score: ${this.score}`;
+            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            this.nextQuestion();
+        } else {
+            this.lives--; // Decrease this.lives if answer is incorrect
+            if (this.lives <= 0) {
+                document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+                this.showGameOverPrompt();
+            }
+            
+            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+        }
+        document.getElementById('input').value = '';
     }
 
-    if (Array.isArray(currentWord.answer) ? currentWord.answer.includes(userAnswer) : userAnswer === currentWord.answer) {
-        score++;
-        document.getElementById('score').innerText = `Score: ${score}`;
-        document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
-        nextQuestion();
-    } else {
-        lives--; // Decrease lives if answer is incorrect
-        if (lives <= 0) {
-            document.getElementById('feedback').innerHTML = `Previous answer: ${currentWord.answer}`;
-            showGameOverPrompt();
-        }
-        
-        document.getElementById('lives').innerText = `Lives: ${lives}`; // Update lives display
-    }
-    document.getElementById('input').value = '';
 }
+
+let gameState = new GameState();
 
 var isComposing = false; // IME Composing going on
 var hasCompositionJustEnded = false; // Used to swallow keyup event related to compositionend
@@ -176,7 +181,7 @@ txt.addEventListener('keyup', function (event) {
     console.log({event});
 
     if (event.which === 13) {
-        checkAnswer();
+        gameState.checkAnswer();
     }
 });
 txt.addEventListener('compositionstart', function (event) {
@@ -205,3 +210,8 @@ function shuffle(array) {
     }
     return array;
 }
+
+// for the HTML onClick stuff
+globalThis.setMode = gameState.setMode.bind(gameState);
+globalThis.startGame = gameState.startGame.bind(gameState);
+globalThis.closeExplanation = gameState.closeExplanation.bind(gameState);
