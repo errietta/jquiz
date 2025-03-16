@@ -8,8 +8,29 @@ const element = id => {
   }
   return el;
 };
-const display = (id, value) => element(id).display = value;
-const placeholder = (id, value) => element(id).placeholder = value;
+
+const {
+  $score,
+  $lives,
+  $question,
+  $input,
+  $timer,
+  $finalScore,
+  $yesButton,
+  $noButton,
+  $feedback,
+  $explanation,
+  $mode_choice,
+  $loading,
+  $game,
+  $gameOverPrompt,
+  jlpt_mode,
+  quiz_mode,
+} = new Proxy ({}, {
+  get (_, prop) { return element(prop.replace(/^\$/, '')) }
+});
+
+const $modes = { jlpt_mode, quiz_mode };
 
 class GameState {
     words = [];
@@ -22,22 +43,22 @@ class GameState {
     defaultTimer = 10;
 
     setMode(mode) {
-        display(mode, '');
+        $modes[mode].display = '';
     }
 
     closeExplanation() {
-        display('explanation', 'none');
-        display('mode_choice', '');
+        $explanation.display = 'none';
+        $mode_choice.display = '';
     }
 
     async fetchVocab(url) {
-        display('loading', 'block'); // Show loading indicator
+        $loading.display = 'block'; // Show loading indicator
         try {
             return await fetch(url).then(response => response.json());
         } catch (e) {
             console.error('Error fetching vocab:', e);
         } finally {
-            display('loading', 'none'); // Hide loading indicator
+            $loading.display = 'none'; // Hide loading indicator
         }
     }
 
@@ -47,17 +68,17 @@ class GameState {
         this.words = shuffle(this.words).slice(0, 20);
         this.score = 0;
         this.lives = 5; // Reset this.lives
-        element('score').innerText = `Score: ${this.score}`;
-        element('lives').innerText = `Lives: ${this.lives}`; // Display this.lives
-        display('game', 'block');
-        display('mode_choice', 'none');
+        $score.innerText = `Score: ${this.score}`;
+        $lives.innerText = `Lives: ${this.lives}`; // Display this.lives
+        $game.display = 'block';
+        $mode_choice.display = 'none';
 
         if (['puzzle'].includes(type)) {
             this.defaultTimer = this.timeLeft = 180;
-            placeholder('input', 'Answer in kanji...');
+            $input.placeholder = 'Answer in kanji...';
         } else {
             this.defaultTimer = this.timeLeft = 10;
-            placeholder('input', 'Answer in hiragana...');
+            $input.placeholder = 'Answer in hiragana...';
         }
 
         this.nextQuestion(this.timeLeft);
@@ -93,26 +114,26 @@ class GameState {
         }
 
 
-        element('question').innerText = this.currentWord.question;
-        element('input').value = '';
+        $question.innerText = this.currentWord.question;
+        $input.value = '';
 
         this.timeLeft = this.defaultTimer;
-        element('timer').innerText = `Time left: ${this.timeLeft}s`;
+        $timer.innerText = `Time left: ${this.timeLeft}s`;
 
         clearInterval(this.timer);
         this.timer = setInterval(() => this.updateTimer(), 1000);
     }
 
     showGameOverPrompt() {
-        element('finalScore').innerText = this.score;
-        display('gameOverPrompt', 'block');
+        $finalScore.innerText = this.score;
+        $gameOverPrompt.display = 'block';
 
-        element('yesButton').onclick = () => {
-            display('gameOverPrompt', 'none');
+        $yesButton.onclick = () => {
+            $gameOverPrompt.display = 'none';
             this.startGame(this.selectedType); // Restart the game with the previously selected type
         };
 
-        element('noButton').onclick = () => {
+        $noButton.onclick = () => {
             location.reload(); // Refresh the page
         };
     }
@@ -123,18 +144,18 @@ class GameState {
         }
 
         this.timeLeft--;
-        element('timer').innerText = `Time left: ${this.timeLeft}s`;
+        $timer.innerText = `Time left: ${this.timeLeft}s`;
         if (this.timeLeft <= 0) {
             clearInterval(this.timer);
             this.lives--; // Decrease this.lives if time runs out
-            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
-            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
+            $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         }
     }
 
     checkAnswer() {
-        let userAnswer = element('input').value.trim();
+        let userAnswer = $input.value.trim();
         if (!userAnswer) {
             return;
         }
@@ -145,27 +166,27 @@ class GameState {
                 this.showGameOverPrompt();
             }
 
-            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
-            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
+            $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
             return;
         }
 
         if (Array.isArray(this.currentWord.answer) ? this.currentWord.answer.includes(userAnswer) : userAnswer === this.currentWord.answer) {
             this.score++;
-            element('score').innerText = `Score: ${this.score}`;
-            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            $score.innerText = `Score: ${this.score}`;
+            $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         } else {
             this.lives--; // Decrease this.lives if answer is incorrect
             if (this.lives <= 0) {
-                element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+                $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
                 this.showGameOverPrompt();
             }
             
-            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
         }
-        element('input').value = '';
+        $input.value = '';
     }
 
 }
@@ -175,9 +196,7 @@ let gameState = new GameState();
 var isComposing = false; // IME Composing going on
 var hasCompositionJustEnded = false; // Used to swallow keyup event related to compositionend
 
-const txt = element('input');
-
-txt.addEventListener('keyup', function (event) {
+$input.addEventListener('keyup', function (event) {
     if (isComposing || hasCompositionJustEnded) {
         // IME composing fires keydown/keyup events
         hasCompositionJustEnded = false;
@@ -190,11 +209,11 @@ txt.addEventListener('keyup', function (event) {
         gameState.checkAnswer();
     }
 });
-txt.addEventListener('compositionstart', function (event) {
+$input.addEventListener('compositionstart', function (event) {
     isComposing = true;
 });
 
-txt.addEventListener('compositionend', function (event) {
+$input.addEventListener('compositionend', function (event) {
     isComposing = false;
     // some browsers (IE, Firefox, Safari) send a keyup event after
     // compositionend, some (Chrome, Edge) don't. This is to swallow
@@ -202,7 +221,7 @@ txt.addEventListener('compositionend', function (event) {
     hasCompositionJustEnded = true;
 });
 
-txt.addEventListener('keydown', function (event) {
+$input.addEventListener('keydown', function (event) {
     // Safari on OS X may send a keydown of 229 after compositionend
     if (event.which !== 229) {
         hasCompositionJustEnded = false;
