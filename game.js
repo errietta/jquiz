@@ -71,26 +71,23 @@ class GameState {
         this.currentWord = this.words.pop();
         if (['puzzle'].includes(this.selectedType)) {
             const options = this.currentWord.question.split("　");
-            let buildQuestion = "";
-            options.map(option => {
+            let questionParts = options.map(option => {
                 if (option.match(';')) {
                     console.log("multiple hints detected, original ", option);
-                    let multipleOptions = option.split(';');
-                    let possibleHints = [];
-                    multipleOptions.map(hint => {
-                        if (hint.match("◯")) {
-                            possibleHints.push(hint);
-                        }     
-                    });
+                    let possibleHints = option
+                        .split(';')
+                        .filter(hint => hint.match("◯"));
 
-                    possibleHints = shuffle(possibleHints);
-                    buildQuestion += possibleHints[0] + "　";
+                    return shuffle(possibleHints)[0];
                 } else {
-                    buildQuestion += option + "　";
+                    return option;
                 }
             });
-            console.log("going with ", buildQuestion);
-            this.currentWord.question = buildQuestion;
+            let builtQuestion = questionParts
+                .map(part => part + "　")
+                .join('');
+            console.log("going with ", builtQuestion);
+            this.currentWord.question = builtQuestion;
         } else {
             this.defaultTimer = this.timeLeft = 10;
         }
