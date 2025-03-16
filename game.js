@@ -1,6 +1,15 @@
-const element = id => document.getElementById(id);
-const display = (id, value) => element(id).style.display = value;
-const placeholder = (id, value) => element(id).setAttribute('placeholder', value);
+const element = id => {
+  let el = document.getElementById(id);
+  if (!Object.hasOwn(el, 'display')) {
+    Object.defineProperty(el, 'display', {
+      get () { return this.style.display },
+      set (v) { return this.style.display = v },
+    });
+  }
+  return el;
+};
+const display = (id, value) => element(id).display = value;
+const placeholder = (id, value) => element(id).placeholder = value;
 
 class GameState {
     words = [];
