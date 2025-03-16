@@ -46,7 +46,7 @@ jquiz/
 ```
 
 ## Create android release
-- Edit `twa-manifest.json`
+- Edit `twa-manifest.json` if required. You don't need to change the version; bubblewrap will do it itself.
 - `bubblewrap build`
 
 ## Contributing
