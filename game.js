@@ -1,3 +1,7 @@
+const element = id => document.getElementById(id);
+const display = (id, value) => element(id).style.display = value;
+const placeholder = (id, value) => element(id).setAttribute('placeholder', value);
+
 class GameState {
     words = [];
     currentWord = {};
@@ -9,24 +13,24 @@ class GameState {
     defaultTimer = 10;
 
     setMode(mode) {
-        document.getElementById(mode).style.display='';
+        display(mode, '');
     }
 
     closeExplanation() {
-        document.getElementById('explanation').style.display = 'none';
-        document.getElementById('mode_choice').style.display = '';
+        display('explanation', 'none');
+        display('mode_choice', '');
     }
 
     fetchVocab(url) {
-        document.getElementById('loading').style.display = 'block'; // Show loading indicator
+        display('loading', 'block'); // Show loading indicator
         return fetch(url)
             .then(response => response.json())
             .then(data => {
-                document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+                display('loading', 'none'); // Hide loading indicator
                 return data;
             })
             .catch(error => {
-                document.getElementById('loading').style.display = 'none'; // Hide loading indicator
+                display('loading', 'none'); // Hide loading indicator
                 console.error('Error fetching vocab:', error);
             });
     }
@@ -37,17 +41,17 @@ class GameState {
         this.words = shuffle(this.words).slice(0, 20);
         this.score = 0;
         this.lives = 5; // Reset this.lives
-        document.getElementById('score').innerText = `Score: ${this.score}`;
-        document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Display this.lives
-        document.getElementById('game').style.display = 'block';
-        document.getElementById('mode_choice').style.display = 'none';
+        element('score').innerText = `Score: ${this.score}`;
+        element('lives').innerText = `Lives: ${this.lives}`; // Display this.lives
+        display('game', 'block');
+        display('mode_choice', 'none');
 
         if (['puzzle'].includes(type)) {
             this.defaultTimer = this.timeLeft = 180;
-            document.getElementById('input').setAttribute('placeholder', 'Answer in kanji...');
+            placeholder('input', 'Answer in kanji...');
         } else {
             this.defaultTimer = this.timeLeft = 10;
-            document.getElementById('input').setAttribute('placeholder', 'Answer in hiragana...');
+            placeholder('input', 'Answer in hiragana...');
         }
 
         this.nextQuestion(this.timeLeft);
@@ -86,27 +90,26 @@ class GameState {
         }
 
 
-        document.getElementById('question').innerText = this.currentWord.question;
-        document.getElementById('input').value = '';
+        element('question').innerText = this.currentWord.question;
+        element('input').value = '';
 
         this.timeLeft = this.defaultTimer;
-        document.getElementById('timer').innerText = `Time left: ${this.timeLeft}s`;
+        element('timer').innerText = `Time left: ${this.timeLeft}s`;
 
         clearInterval(this.timer);
         this.timer = setInterval(() => this.updateTimer(), 1000);
     }
 
     showGameOverPrompt() {
-        document.getElementById('finalScore').innerText = this.score;
-        const gameOverPrompt = document.getElementById('gameOverPrompt');
-        gameOverPrompt.style.display = 'block';
+        element('finalScore').innerText = this.score;
+        display('gameOverPrompt', 'block');
 
-        document.getElementById('yesButton').onclick = () => {
-            gameOverPrompt.style.display = 'none';
+        element('yesButton').onclick = () => {
+            display('gameOverPrompt', 'none');
             this.startGame(this.selectedType); // Restart the game with the previously selected type
         };
 
-        document.getElementById('noButton').onclick = () => {
+        element('noButton').onclick = () => {
             location.reload(); // Refresh the page
         };
     }
@@ -117,18 +120,18 @@ class GameState {
         }
 
         this.timeLeft--;
-        document.getElementById('timer').innerText = `Time left: ${this.timeLeft}s`;
+        element('timer').innerText = `Time left: ${this.timeLeft}s`;
         if (this.timeLeft <= 0) {
             clearInterval(this.timer);
             this.lives--; // Decrease this.lives if time runs out
-            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
-            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         }
     }
 
     checkAnswer() {
-        let userAnswer = document.getElementById('input').value.trim();
+        let userAnswer = element('input').value.trim();
         if (!userAnswer) {
             return;
         }
@@ -139,27 +142,27 @@ class GameState {
                 this.showGameOverPrompt();
             }
 
-            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
-            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
             return;
         }
 
         if (Array.isArray(this.currentWord.answer) ? this.currentWord.answer.includes(userAnswer) : userAnswer === this.currentWord.answer) {
             this.score++;
-            document.getElementById('score').innerText = `Score: ${this.score}`;
-            document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            element('score').innerText = `Score: ${this.score}`;
+            element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         } else {
             this.lives--; // Decrease this.lives if answer is incorrect
             if (this.lives <= 0) {
-                document.getElementById('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
+                element('feedback').innerHTML = `Previous answer: ${this.currentWord.answer}`;
                 this.showGameOverPrompt();
             }
             
-            document.getElementById('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
+            element('lives').innerText = `Lives: ${this.lives}`; // Update this.lives display
         }
-        document.getElementById('input').value = '';
+        element('input').value = '';
     }
 
 }
@@ -169,7 +172,7 @@ let gameState = new GameState();
 var isComposing = false; // IME Composing going on
 var hasCompositionJustEnded = false; // Used to swallow keyup event related to compositionend
 
-const txt = document.getElementById('input');
+const txt = element('input');
 
 txt.addEventListener('keyup', function (event) {
     if (isComposing || hasCompositionJustEnded) {
