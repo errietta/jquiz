@@ -21,18 +21,15 @@ class GameState {
         display('mode_choice', '');
     }
 
-    fetchVocab(url) {
+    async fetchVocab(url) {
         display('loading', 'block'); // Show loading indicator
-        return fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                display('loading', 'none'); // Hide loading indicator
-                return data;
-            })
-            .catch(error => {
-                display('loading', 'none'); // Hide loading indicator
-                console.error('Error fetching vocab:', error);
-            });
+        try {
+            return await fetch(url).then(response => response.json());
+        } catch (e) {
+            console.error('Error fetching vocab:', e);
+        } finally {
+            display('loading', 'none'); // Hide loading indicator
+        }
     }
 
     async startGame(type) {
