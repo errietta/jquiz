@@ -214,7 +214,7 @@ txt.addEventListener('keydown', function (event) {
 
 function shuffle(array) {
     array = [ ...array ]; // avoid mutating input
-    for (const i of [ ...array.keys() ].toReverse()) {
+    for (const i of [ ...array.keys() ].toReversed()) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
