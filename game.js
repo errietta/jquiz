@@ -32,6 +32,8 @@ const {
 
 const $modes = { jlpt_mode, quiz_mode };
 
+const puzzle_types = ['puzzle', 'rare_kanji'];
+
 class GameState {
     words = [];
     currentWord = {};
@@ -73,7 +75,7 @@ class GameState {
         $game.display = 'block';
         $mode_choice.display = 'none';
 
-        if (['puzzle'].includes(type)) {
+        if (puzzle_types.includes(type)) {
             this.defaultTimer = this.timeLeft = 180;
             $input.placeholder = 'Answer in kanji...';
         } else {
@@ -90,7 +92,7 @@ class GameState {
             return;
         }
         this.currentWord = this.words.pop();
-        if (['puzzle'].includes(this.selectedType)) {
+        if (puzzle_types.includes(this.selectedType)) {
             const options = this.currentWord.question.split("　");
             let questionParts = options.map(option => {
                 if (option.match(';')) {
@@ -183,7 +185,7 @@ class GameState {
                 $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
                 this.showGameOverPrompt();
             }
-            
+
             $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
         }
         $input.value = '';

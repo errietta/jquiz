@@ -28,6 +28,7 @@
             <div class="container">
                 <h2>Quiz mode</h2>
                 <button onclick="startGame('puzzle')">Start with kanji puzzle (very hard)</button>
+                <button onclick="startGame('rare_kanji')">Start with rare Kanji quiz</button>
             </div>
         </div>
 
@@ -85,10 +86,17 @@
                 isn't known to be required knowledge.
             </p>
             <p>
-                <b>Quiz mode</b> - You will be given words or phrases that all contain
+                <b>Quiz mode</b>
+                <p>Kanji puzzle  -You will be given words or phrases that all contain
                 the same kanji. The kanji will be replaced with ○. You need to
                 guess the kanji.  This is a difficult mode because the words are
-                randomly chosen and very obscure terms can come up.
+                randomly chosen and very obscure terms can come up.</p>
+                <p>
+                    Rare Kanji quiz - You have to write common writting of kanji given a rarely-used or outdated form.
+                    For example for 音樂會 you can write 音楽会.
+                    For 鮹 you can enter 蛸, but because the word is usually written in Kana, both the Kanji and the kana
+                    (タコ or たこ) are accepted.
+                </p>
             </p>
         </p>
         <button id="closeExplanation" onclick="closeExplanation()">Begin</button>
