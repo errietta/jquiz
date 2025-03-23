@@ -179,7 +179,11 @@ footer a {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    flex-wrap: nowrap; /* Prevent wrapping of elements */
+}
+
+#puzzle2_right {
+    white-space: nowrap; /* Prevent text from breaking into a new line */
 }
 
 .puzzle-row p {
