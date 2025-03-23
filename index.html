@@ -27,8 +27,15 @@
         <div id="quiz_mode" style="display:none">
             <div class="container">
                 <h2>Quiz mode</h2>
+                <p>
                 <button onclick="startGame('puzzle')">Start with kanji puzzle (very hard)</button>
+                </p>
+                <p>
+                <button onclick="startGame('puzzle2')">Start with kanji puzzle v2 (shorter words, 穴埋め　format)</button>
+                </p>
+                <p>
                 <button onclick="startGame('rare_kanji')">Start with rare Kanji quiz</button>
+                </p>
             </div>
         </div>
 
@@ -71,6 +78,7 @@
         <p id="score"></p>
         <p id="lives"></p> <!-- Add lives display -->
     </div>
+
     <div id="loading" style="display:none;">
         <p>Loading...</p>
     </div>

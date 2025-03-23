@@ -9,7 +9,7 @@ const element = id => {
   return el;
 };
 
-const {
+let {
   $score,
   $lives,
   $question,
@@ -32,7 +32,7 @@ const {
 
 const $modes = { jlpt_mode, quiz_mode };
 
-const puzzle_types = ['puzzle', 'rare_kanji'];
+const puzzle_types = ['puzzle', 'rare_kanji', 'puzzle2'];
 
 class GameState {
     words = [];
@@ -43,6 +43,13 @@ class GameState {
     lives = 5;
     selectedType = 'n5_all';
     defaultTimer = 10;
+
+    isComposing = false;
+    hasCompositionJustEnded = false;
+
+    constructor() {
+        this.attachInputListeners($input);
+    }
 
     setMode(mode) {
         $modes[mode].display = '';
@@ -92,6 +99,14 @@ class GameState {
             return;
         }
         this.currentWord = this.words.pop();
+
+        if (this.selectedType === 'puzzle2') {
+            $game.display = 'none';
+            element('game').display = 'block';
+            this.handlePuzzle2();
+            return;
+        }
+
         if (puzzle_types.includes(this.selectedType)) {
             const options = this.currentWord.question.split("　");
             let questionParts = options.map(option => {
@@ -124,6 +139,148 @@ class GameState {
 
         clearInterval(this.timer);
         this.timer = setInterval(() => this.updateTimer(), 1000);
+    }
+
+    attachInputListeners(inputElement) {
+        inputElement.addEventListener('keyup', (event) => {
+            if (this.isComposing || this.hasCompositionJustEnded) {
+                this.hasCompositionJustEnded = false;
+                return;
+            }
+            if (event.which === 13) {
+                this.checkAnswer();
+            }
+        });
+
+        inputElement.addEventListener('compositionstart', () => {
+            this.isComposing = true;
+        });
+
+        inputElement.addEventListener('compositionend', () => {
+            this.isComposing = false;
+            this.hasCompositionJustEnded = true;
+        });
+
+        inputElement.addEventListener('keydown', (event) => {
+            if (event.which !== 229) {
+                this.hasCompositionJustEnded = false;
+            }
+        });
+    }
+
+    refreshElements() {
+        ({
+            $score,
+            $lives,
+            $input,
+            $timer,
+            $finalScore,
+            $yesButton,
+            $noButton,
+            $feedback,
+            $explanation,
+            $mode_choice,
+            $loading,
+            $game,
+            $gameOverPrompt,
+            jlpt_mode,
+            quiz_mode,
+        } = new Proxy({}, {
+            get(_, prop) { return element(prop.replace(/^\$/, '')) }
+        }));
+    }
+
+    handlePuzzle2() {
+        const question = this.currentWord.question;
+        const directions = { top: '', left: '', right: '', bottom: '' };
+        const arrows = { top: '', left: '', right: '', bottom: '' };
+
+        question.forEach((q) => {
+            if (q.startsWith('◯')) {
+                if (!directions.top) {
+                    directions.top = q.slice(1); // Character after ◯
+                    arrows.top = '↑';
+                } else if (!directions.left) {
+                    directions.left = q.slice(1);
+                    arrows.left = '←';
+                } else if (!directions.right) {
+                    directions.right = q.slice(1);
+                    arrows.right = '→';
+                } else if (!directions.down) {
+                    directions.right = q.slice(1);
+                    arrows.right = '↓';
+                }
+            } else if (q.endsWith('◯')) {
+                if (!directions.top) {
+                    directions.top = q.slice(0, -1); // Character before ◯
+                    arrows.top = '↓';
+                } else if (!directions.left) {
+                    directions.left = q.slice(0, -1);
+                    arrows.left = '→';
+                } else if (!directions.right) {
+                    directions.right = q.slice(0, -1);
+                    arrows.right = '←';
+                } else if (!directions.bottom) {
+                    directions.bottom = q.slice(0, -1);
+                    arrows.bottom = '↑';
+                }
+            }
+        });
+
+        const feedbackHTML = element("feedback").innerHTML;
+
+        this.addPuzzle2Display(directions, arrows);
+        this.refreshElements();
+
+        // Reset input and timer
+        this.timeLeft = this.defaultTimer;
+        $timer.innerText = `Time left: ${this.timeLeft}s`;
+        clearInterval(this.timer);
+        this.timer = setInterval(() => this.updateTimer(), 1000);
+
+        // Attach event listeners to the new input element
+        const newInput = element('input');
+        this.attachInputListeners(newInput);
+        newInput.placeholder = '';
+
+        $score.innerText = `Score: ${this.score}`;
+        $lives.innerText = `Lives: ${this.lives}`; // Display this.lives
+
+        element("feedback").innerHTML = feedbackHTML;
+    }
+
+    addPuzzle2Display(directions, arrows) {
+        $game.innerHTML = `
+            <div class="container">
+                <h2>穴埋め Kanji Quiz</h2>
+                <div id="puzzle2_quiz">
+                    <div class="puzzle-row">
+                        <p id="puzzle2_top">${directions.top}</p>
+                    </div>
+                    <div class="puzzle-row">
+                        <p id="puzzle2_arrow_top">${arrows.top}</p>
+                    </div>
+                    <div class="puzzle-row">
+                        <p id="puzzle2_left">${directions.left}</p>
+                        <p id="puzzle2_arrow_left">${arrows.left}</p>
+                        <input type="text" class="anaume" id="input" placeholder="Answer here..." autocomplete="off">
+                        <p id="puzzle2_arrow_right">${arrows.right}</p>
+                        <p id="puzzle2_right">${directions.right}</p>
+                    </div>
+                    <div class="puzzle-row">
+                        <p id="puzzle2_arrow_bottom">${arrows.bottom}</p>
+                    </div>
+                    <div class="puzzle-row">
+                        <p id="puzzle2_bottom">${directions.bottom}</p>
+                    </div>
+                </div>
+                <p>q to skip</p>
+                <p id="feedback"></p>
+                <p id="timer"></p>
+                <p id="score"></p>
+                <p id="lives"></p>
+            </div>
+        `;
     }
 
     showGameOverPrompt() {
@@ -195,40 +352,6 @@ class GameState {
 
 let gameState = new GameState();
 
-var isComposing = false; // IME Composing going on
-var hasCompositionJustEnded = false; // Used to swallow keyup event related to compositionend
-
-$input.addEventListener('keyup', function (event) {
-    if (isComposing || hasCompositionJustEnded) {
-        // IME composing fires keydown/keyup events
-        hasCompositionJustEnded = false;
-        return;
-    }
-
-    console.log({event});
-
-    if (event.which === 13) {
-        gameState.checkAnswer();
-    }
-});
-$input.addEventListener('compositionstart', function (event) {
-    isComposing = true;
-});
-
-$input.addEventListener('compositionend', function (event) {
-    isComposing = false;
-    // some browsers (IE, Firefox, Safari) send a keyup event after
-    // compositionend, some (Chrome, Edge) don't. This is to swallow
-    // the next keyup event, unless a keydown event happens first
-    hasCompositionJustEnded = true;
-});
-
-$input.addEventListener('keydown', function (event) {
-    // Safari on OS X may send a keydown of 229 after compositionend
-    if (event.which !== 229) {
-        hasCompositionJustEnded = false;
-    }
-});
 
 function shuffle(array) {
     array = [ ...array ]; // avoid mutating input
