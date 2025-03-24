@@ -274,30 +274,30 @@ class GameState {
                 <h2>穴埋め Kanji Quiz</h2>
                 <div id="puzzle2_quiz">
                     <div class="puzzle-row">
-                        <p id="puzzle2_top">${directions.top}</p>
+                        <div id="puzzle2_top">${directions.top}</div>
                     </div>
                     <div class="puzzle-row">
-                        <p id="puzzle2_arrow_top">${arrows.top}</p>
+                        <div id="puzzle2_arrow_top">${arrows.top}</div>
                     </div>
                     <div class="puzzle-row">
-                        <p id="puzzle2_left">${directions.left}</p>
-                        <p id="puzzle2_arrow_left">${arrows.left}</p>
+                        <div id="puzzle2_left">${directions.left}</div>
+                        <div id="puzzle2_arrow_left">${arrows.left}</div>
                         <input type="text" class="anaume" id="input" placeholder="Answer here..." autocomplete="off">
-                        <p id="puzzle2_arrow_right">${arrows.right}</p>
-                        <p id="puzzle2_right">${directions.right}</p>
+                        <div id="puzzle2_arrow_right">${arrows.right}</div>
+                        <div id="puzzle2_right">${directions.right}</div>
                     </div>
                     <div class="puzzle-row">
-                        <p id="puzzle2_arrow_bottom">${arrows.bottom}</p>
+                        <div id="puzzle2_arrow_bottom">${arrows.bottom}</div>
                     </div>
                     <div class="puzzle-row">
-                        <p id="puzzle2_bottom">${directions.bottom}</p>
+                        <div id="puzzle2_bottom">${directions.bottom}</div>
                     </div>
                 </div>
-                <p>q to skip</p>
-                <p id="feedback"></p>
-                <p id="timer"></p>
-                <p id="score"></p>
-                <p id="lives"></p>
+                <div>q to skip</div>
+                <div id="feedback"></div>
+                <div id="timer"></div>
+                <div id="score"></div>
+                <div id="lives"></div>
             </div>
         `;
     }
