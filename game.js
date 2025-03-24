@@ -32,7 +32,8 @@ let {
 
 const $modes = { jlpt_mode, quiz_mode };
 
-const puzzle_types = ['puzzle', 'rare_kanji', 'puzzle2'];
+const puzzle_types = ['puzzle', 'rare_kanji', 'puzzle2', 'puzzle3'];
+const ume_types = [ 'puzzle2', 'puzzle3' ];
 
 class GameState {
     words = [];
@@ -100,7 +101,7 @@ class GameState {
         }
         this.currentWord = this.words.pop();
 
-        if (this.selectedType === 'puzzle2') {
+        if (ume_types.includes(this.selectedType)) {
             $game.display = 'none';
             element('game').display = 'block';
             this.handlePuzzle2();
