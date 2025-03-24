@@ -38,7 +38,7 @@ class GameState {
     words = [];
     currentWord = {};
     score = 0;
-    timeLeft = 10;
+    timeLeft = 20;
     timer;
     lives = 5;
     selectedType = 'n5_all';
