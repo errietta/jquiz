@@ -42,7 +42,7 @@ class GameState {
     timer;
     lives = 5;
     selectedType = 'n5_all';
-    defaultTimer = 10;
+    defaultTimer = 20;
 
     isComposing = false;
     hasCompositionJustEnded = false;
