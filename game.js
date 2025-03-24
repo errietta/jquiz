@@ -86,7 +86,7 @@ class GameState {
             this.defaultTimer = this.timeLeft = 180;
             $input.placeholder = 'Answer in kanji...';
         } else {
-            this.defaultTimer = this.timeLeft = 10;
+            this.defaultTimer = this.timeLeft = 20;
             $input.placeholder = 'Answer in hiragana...';
         }
 
@@ -127,7 +127,7 @@ class GameState {
             console.log("going with ", builtQuestion);
             this.currentWord.question = builtQuestion;
         } else {
-            this.defaultTimer = this.timeLeft = 10;
+            this.defaultTimer = this.timeLeft = 20;
         }
 
 
