@@ -35,6 +35,23 @@ const $modes = { jlpt_mode, quiz_mode };
 const puzzle_types = ['puzzle', 'rare_kanji', 'puzzle2', 'puzzle3'];
 const ume_types = [ 'puzzle2', 'puzzle3' ];
 
+let settings = {
+    disableLives: false,
+    disableTimer: false,
+};
+
+function openSettings() {
+    element('settingsModal').display = 'block';
+}
+
+function closeSettings() {
+    element('settingsModal').display = 'none';
+}
+
+function toggleSetting(setting) {
+    settings[setting] = !settings[setting];
+}
+
 class GameState {
     words = [];
     currentWord = {};
@@ -77,21 +94,22 @@ class GameState {
         this.words = await this.fetchVocab(`./vocab/${type}.json`);
         this.words = shuffle(this.words).slice(0, 20);
         this.score = 0;
-        this.lives = 5; // Reset this.lives
+        this.lives = settings.disableLives ? Infinity : 5; // Disable lives if setting is enabled
         $score.innerText = `Score: ${this.score}`;
-        $lives.innerText = `Lives: ${this.lives}`; // Display this.lives
+        $lives.innerText = settings.disableLives ? 'Lives: ∞' : `Lives: ${this.lives}`;
         $game.display = 'block';
         $mode_choice.display = 'none';
 
         if (puzzle_types.includes(type)) {
-            this.defaultTimer = this.timeLeft = 180;
+            this.defaultTimer = settings.disableTimer ? Infinity : 180; // Disable timer if setting is enabled
             $input.placeholder = 'Answer in kanji...';
         } else {
-            this.defaultTimer = this.timeLeft = 20;
+            this.defaultTimer = settings.disableTimer ? Infinity : 20;
             $input.placeholder = 'Answer in hiragana...';
         }
 
-        this.nextQuestion(this.timeLeft);
+        this.timeLeft = this.defaultTimer;
+        this.nextQuestion();
     }
 
     nextQuestion() {
@@ -299,7 +317,7 @@ class GameState {
     }
 
     updateTimer() {
-        if (this.lives <= 0) {
+        if (settings.disableTimer || this.lives <= 0) {
             return;
         }
 
@@ -307,8 +325,10 @@ class GameState {
         $timer.innerText = `Time left: ${this.timeLeft}s`;
         if (this.timeLeft <= 0) {
             clearInterval(this.timer);
-            this.lives--; // Decrease this.lives if time runs out
-            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
+            if (!settings.disableLives) {
+                this.lives--;
+                $lives.innerText = `Lives: ${this.lives}`;
+            }
             $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         }
@@ -321,12 +341,13 @@ class GameState {
         }
 
         if (userAnswer.toLowerCase() === 'q' || userAnswer.toLowerCase() === 'ｑ') {
-            this.lives--;
-            if (this.lives <= 0) {
-                this.showGameOverPrompt();
+            if (!settings.disableLives) {
+                this.lives--;
+                if (this.lives <= 0) {
+                    this.showGameOverPrompt();
+                }
+                $lives.innerText = `Lives: ${this.lives}`;
             }
-
-            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
             $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
             return;
@@ -338,13 +359,14 @@ class GameState {
             $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
             this.nextQuestion();
         } else {
-            this.lives--; // Decrease this.lives if answer is incorrect
-            if (this.lives <= 0) {
-                $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
-                this.showGameOverPrompt();
+            if (!settings.disableLives) {
+                this.lives--;
+                if (this.lives <= 0) {
+                    $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
+                    this.showGameOverPrompt();
+                }
+                $lives.innerText = `Lives: ${this.lives}`;
             }
-
-            $lives.innerText = `Lives: ${this.lives}`; // Update this.lives display
         }
         $input.value = '';
     }

@@ -220,3 +220,61 @@ footer a {
         width: 40px; /* Adjust input width for smaller screens */
     }
 }
+
+#settingsButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#settingsButton button {
+    font-size: 24px; /* Make the button large */
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#settingsButton button:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+#settingsModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#settingsModal h2 {
+    margin-bottom: 20px;
+}
+
+#settingsModal label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#settingsModal button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#settingsModal button:hover {
+    background: #1976d2;
+}

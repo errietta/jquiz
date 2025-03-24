@@ -11,6 +11,21 @@
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 </head>
 <body>
+    <div id="settingsButton">
+        <button onclick="openSettings()">⚙️</button>
+    </div>
+    <div id="settingsModal">
+        <h2>Settings</h2>
+        <label>
+            <input type="checkbox" id="disableLives" onchange="toggleSetting('disableLives')"> Disable Lives
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="disableTimer" onchange="toggleSetting('disableTimer')"> Disable Timer
+        </label>
+        <br><br>
+        <button onclick="closeSettings()">Close</button>
+    </div>
     <div class="container">
         <h1><a href="index.html">Kanji Quiz Game</a></h1>
     </div>
