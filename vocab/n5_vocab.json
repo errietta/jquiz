@@ -53,7 +53,7 @@
     },
     {
         "question": "十",
-        "answer": "じゅう  とお"
+        "answer": ["じゅう",  "とお"]
     },
     {
         "question": "水曜日",
