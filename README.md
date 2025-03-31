@@ -77,3 +77,16 @@ See LICENSE
 ## Attribution
 
 JLPT vocabulary list by http://www.tanos.co.uk/jlpt/skills/vocab/. JLPT Vocab list is shared under a CC-BY license.
+
+
+# Development history
+
+It all started in 1994, when I was born...
+Just kidding.
+What I wanted to say was, that I started this app as a bubblewrapped PWA.
+I thought it would be good enough, despite the "app running in chrome" warning.
+However, the UK mobile network providers ruined my plans.
+You see, if you are on 4G or 5G, by default your network provider will block 'adult' websites. For some unknown reason (I guess Kanji is too sexy?) at least one of the UK's major providers decided to block the website behind the application.
+Given that I can't foresee such issues, and it's a bit of a big ask to tell every user to call their network and tell them to stop being silly, it accelerated the move towards a more 'native' approach using Capacitor.js. It's still not native code, but it's now technically a native app.
+This is a change that would probably have to happen eventually anyway. Bubblewrapped PWAs are just too janky to go to production with.
+So I'd like to thank the UK telcos for accelerating this process.
