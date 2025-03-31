@@ -59,7 +59,7 @@ export JQUIZ_RELEASE_KEY_PASSWORD=<password>
 - `make build`
 Open Android studio: `npx cap open android`
 
-Click Project > Prepare Release
+Build -> generate signed bundle or apk -> bundle
 Choose Android Release Build (.aab)
 Enter the keystore password
 Enter the key password
