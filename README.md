@@ -57,6 +57,14 @@ export JQUIZ_RELEASE_STORE_PASSWORD=<password>
 export JQUIZ_RELEASE_KEY_PASSWORD=<password>
 ```
 - `make build`
+Open Android studio: `npx cap open android`
+
+Click Project > Prepare Release
+Choose Android Release Build (.aab)
+Enter the keystore password
+Enter the key password
+The AAB file will be saved in the folder android/app/build/outputs/bundle/release
+
 
 ## Contributing
 
