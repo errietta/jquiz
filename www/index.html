@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanji Quiz Game</title>
+    <script defer src="game.js"></script>
+    <script src="serviceWorkerRegistration.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+</head>
+<body>
+    <div id="settingsButton">
+        <button onclick="openSettings()">⚙️</button>
+    </div>
+    <div id="settingsModal">
+        <h2>Settings</h2>
+        <label>
+            <input type="checkbox" id="disableLives" onchange="toggleSetting('disableLives')"> Disable Lives
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" id="disableTimer" onchange="toggleSetting('disableTimer')"> Disable Timer
+        </label>
+        <br><br>
+        <button onclick="closeSettings()">Close</button>
+    </div>
+    <div class="container">
+        <h1><a href="index.html">Kanji Quiz Game</a></h1>
+    </div>
+    <div id="mode_choice" style="display:none">
+        <div id="make_mode_choice">
+            <div class="container">
+                <h2>Select mode</h2>
+                <button onclick="setMode('jlpt_mode')">JLPT mode</button>
+                <button onclick="setMode('quiz_mode')">Quiz mode</button>
+            </div>
+        </div>
+
+
+        <div id="quiz_mode" style="display:none">
+            <div class="container">
+                <h2>Quiz mode</h2>
+                <p>
+                <button onclick="startGame('puzzle')">Start with kanji puzzle (very hard)</button>
+                </p>
+                <p>
+                <button onclick="startGame('puzzle3')">Start with kanji puzzle v2 (shorter words, 穴埋め　format)</button>
+                </p>
+                <p>
+                <button onclick="startGame('puzzle3')">Start with kanji puzzle v3 (Easier version of puzzle v2)</button>
+                </p>
+                <p>
+                <button onclick="startGame('rare_kanji')">Start with rare Kanji quiz</button>
+                </p>
+            </div>
+        </div>
+
+        <div id="jlpt_mode" style="display:none">
+            <div class="container">
+                <h2>N5</h2>
+                <button onclick="startGame('n5_all')">Start with N5 - All vocab (harder)</button>
+                <button onclick="startGame('n5_vocab')">Start with N5 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N4</h2>
+                <button onclick="startGame('n4_all')">Start with N4 - All vocab (harder)</button>
+                <button onclick="startGame('n4_vocab')">Start with N4 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N3</h2>
+                <button onclick="startGame('n3_all')">Start with N3 - All vocab (harder)</button>
+                <button onclick="startGame('n3_vocab')">Start with N3 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N2</h2>
+                <button onclick="startGame('n2_all')">Start with N2 - All vocab (harder)</button>
+                <button onclick="startGame('n2_vocab')">Start with N2 Required Kanji only</button>
+            </div>
+            <div class="container">
+                <h2>N1</h2>
+                <button onclick="startGame('n1_all')">Start with N1 - All vocab (harder)</button>
+                <button onclick="startGame('n1_vocab')">Start with N1 Required Kanji only</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="game" style="display:none;">
+        <div id="question"></div>
+        <input type="text" id="input" placeholder="Answer in hiragana..." autocomplete="off">
+        <div>q to skip</div>
+        <div id="feedback"></div>
+        <div id="timer"></div>
+        <div id="score"></div>
+        <div id="lives"></div> <!-- Add lives display -->
+    </div>
+
+    <div id="loading" style="display:none;">
+        <div>Loading...</div>
+    </div>
+    <div id="explanation">
+        <div id="explanationText">
+            This game has two modes.
+            <div>
+                <b>JLPT mode</b> - You can type the 'reading' of the word in Hiragana.
+                To win the game you need to get the questions right before you run out of lives.
+                If you use the 'JLPT required kanji only' mode, it will be (mostly) words whose
+                Kanji you need to know for that level. The other mode includes every word that's part
+                of that JLPT level (according to an unofficial JLPT vocabulary list), even if the kanji
+                isn't known to be required knowledge.
+            </div>
+            <div>
+                <b>Quiz mode</b>
+                <div>Kanji puzzle - You will be given words or phrases that all contain
+                the same kanji. The kanji will be replaced with ○. You need to
+                guess the kanji. This is a difficult mode because the words are
+                randomly chosen and very obscure terms can come up.</div>
+                <div>
+                    Rare Kanji quiz - You have to write common writing of kanji given a rarely-used or outdated form.
+                    For example for 音樂會 you can write 音楽会.
+                    For 鮹 you can enter 蛸, but because the word is usually written in Kana, both the Kanji and the kana
+                    (タコ or たこ) are accepted.
+                </div>
+            </div>
+        </div>
+        <button id="closeExplanation" onclick="closeExplanation()">Begin</button>
+    </div>
+    <div id="gameOverPrompt" style="display:none;">
+        <div>Game over! Final Score: <span id="finalScore"></span>. Continue?</div>
+        <button id="yesButton">Yes</button>
+        <button id="noButton">No</button>
+    </div>
+    <footer>
+        <div>&copy; 2025 Erry Kostala - <a href="https://github.com/errietta/jquiz">github</a> / JLPT vocabulary list by <a href="http://www.tanos.co.uk/jlpt/skills/vocab/">Jonathan Waller</a>. JLPT Vocab list is shared under a CC-BY license. Edict2 by <a href="https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project">Jim Breen</a> / Edict project
+        </div>
+    </footer>
+</body>
+</html>

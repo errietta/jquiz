@@ -1,0 +1,780 @@
+[
+    {
+        "question": "さ来年",
+        "answer": "さらいねん"
+    },
+    {
+        "question": "大きい",
+        "answer": "おおきい"
+    },
+    {
+        "question": "英語",
+        "answer": "えいご"
+    },
+    {
+        "question": "大好き",
+        "answer": "だいすき"
+    },
+    {
+        "question": "話す",
+        "answer": "はなす"
+    },
+    {
+        "question": "小さな",
+        "answer": "ちいさな"
+    },
+    {
+        "question": "四日",
+        "answer": "よっか"
+    },
+    {
+        "question": "時々",
+        "answer": "ときどき"
+    },
+    {
+        "question": "有名",
+        "answer": "ゆうめい"
+    },
+    {
+        "question": "上",
+        "answer": "うえ"
+    },
+    {
+        "question": "出口",
+        "answer": "でぐち"
+    },
+    {
+        "question": "百",
+        "answer": "ひゃく"
+    },
+    {
+        "question": "本棚",
+        "answer": "ほんだな"
+    },
+    {
+        "question": "十",
+        "answer": ["じゅう",  "とお"]
+    },
+    {
+        "question": "水曜日",
+        "answer": "すいようび"
+    },
+    {
+        "question": "学校",
+        "answer": "がっこう"
+    },
+    {
+        "question": "お金",
+        "answer": "おかね"
+    },
+    {
+        "question": "電話",
+        "answer": "でんわ"
+    },
+    {
+        "question": "毎年",
+        "answer": [
+            "まいねん",
+            "まいとし"
+        ]
+    },
+    {
+        "question": "二つ",
+        "answer": "ふたつ"
+    },
+    {
+        "question": "読む",
+        "answer": "よむ"
+    },
+    {
+        "question": "土曜日",
+        "answer": "どようび"
+    },
+    {
+        "question": "生まれる",
+        "answer": "うまれる"
+    },
+    {
+        "question": "午前",
+        "answer": "ごぜん"
+    },
+    {
+        "question": "八つ",
+        "answer": "やっつ"
+    },
+    {
+        "question": "休む",
+        "answer": "やすむ"
+    },
+    {
+        "question": "二十日",
+        "answer": "はつか"
+    },
+    {
+        "question": "三",
+        "answer": "さん"
+    },
+    {
+        "question": "南",
+        "answer": "みなみ"
+    },
+    {
+        "question": "二日",
+        "answer": "ふつか"
+    },
+    {
+        "question": "二人",
+        "answer": "ふたり"
+    },
+    {
+        "question": "午後",
+        "answer": "ごご"
+    },
+    {
+        "question": "今日",
+        "answer": "きょう"
+    },
+    {
+        "question": "一日",
+        "answer": ["いちにち", "ついたち"]
+    },
+    {
+        "question": "入れる",
+        "answer": "いれる"
+    },
+    {
+        "question": "今週",
+        "answer": "こんしゅう"
+    },
+    {
+        "question": "地下鉄",
+        "answer": "ちかてつ"
+    },
+    {
+        "question": "留学生",
+        "answer": "りゅうがくせい"
+    },
+    {
+        "question": "今月",
+        "answer": "こんげつ"
+    },
+    {
+        "question": "左",
+        "answer": "ひだり"
+    },
+    {
+        "question": "聞く",
+        "answer": "きく"
+    },
+    {
+        "question": "休み",
+        "answer": "やすみ"
+    },
+    {
+        "question": "新聞",
+        "answer": "しんぶん"
+    },
+    {
+        "question": "何",
+        "answer": [
+            "なん",
+            "なに"
+        ]
+    },
+    {
+        "question": "お父さん",
+        "answer": "おとうさん"
+    },
+    {
+        "question": "元気",
+        "answer": "げんき"
+    },
+    {
+        "question": "名前",
+        "answer": "なまえ"
+    },
+    {
+        "question": "一",
+        "answer": "いち"
+    },
+    {
+        "question": "廊下",
+        "answer": "ろうか"
+    },
+    {
+        "question": "一緒",
+        "answer": "いっしょ"
+    },
+    {
+        "question": "電気",
+        "answer": "でんき"
+    },
+    {
+        "question": "夏休み",
+        "answer": "なつやすみ"
+    },
+    {
+        "question": "毎晩",
+        "answer": "まいばん"
+    },
+    {
+        "question": "外",
+        "answer": "そと"
+    },
+    {
+        "question": "伯母さん/叔母さん",
+        "answer": "おばさん"
+    },
+    {
+        "question": "年",
+        "answer": "とし"
+    },
+    {
+        "question": "火曜日",
+        "answer": "かようび"
+    },
+    {
+        "question": "時計",
+        "answer": "とけい"
+    },
+    {
+        "question": "大丈夫",
+        "answer": "だいじょうぶ"
+    },
+    {
+        "question": "来週",
+        "answer": "らいしゅう"
+    },
+    {
+        "question": "下手",
+        "answer": "へた"
+    },
+    {
+        "question": "病気",
+        "answer": "びょうき"
+    },
+    {
+        "question": "来る",
+        "answer": "くる"
+    },
+    {
+        "question": "毎日",
+        "answer": "まいにち"
+    },
+    {
+        "question": "中",
+        "answer": "なか"
+    },
+    {
+        "question": "今",
+        "answer": "いま"
+    },
+    {
+        "question": "食堂",
+        "answer": "しょくどう"
+    },
+    {
+        "question": "万年筆",
+        "answer": "まんねんひつ"
+    },
+    {
+        "question": "本",
+        "answer": "ほん"
+    },
+    {
+        "question": "大人",
+        "answer": "おとな"
+    },
+    {
+        "question": "東",
+        "answer": "ひがし"
+    },
+    {
+        "question": "一昨年",
+        "answer": "おととし"
+    },
+    {
+        "question": "電車",
+        "answer": "でんしゃ"
+    },
+    {
+        "question": "飛行機",
+        "answer": "ひこうき"
+    },
+    {
+        "question": "前",
+        "answer": "まえ"
+    },
+    {
+        "question": "去年",
+        "answer": "きょねん"
+    },
+    {
+        "question": "下",
+        "answer": "した"
+    },
+    {
+        "question": "先週",
+        "answer": "せんしゅう"
+    },
+    {
+        "question": "大切",
+        "answer": "たいせつ"
+    },
+    {
+        "question": "二",
+        "answer": "に"
+    },
+    {
+        "question": "九",
+        "answer": [
+            "きゅう",
+            "く"
+        ]
+    },
+    {
+        "question": "丸い/円い",
+        "answer": "まるい"
+    },
+    {
+        "question": "友達",
+        "answer": "ともだち"
+    },
+    {
+        "question": "誕生日",
+        "answer": "たんじょうび"
+    },
+    {
+        "question": "毎朝",
+        "answer": "まいあさ"
+    },
+    {
+        "question": "日曜日",
+        "answer": "にちようび"
+    },
+    {
+        "question": "半分",
+        "answer": "はんぶん"
+    },
+    {
+        "question": "外国",
+        "answer": "がいこく"
+    },
+    {
+        "question": "葉書",
+        "answer": "はがき"
+    },
+    {
+        "question": "六",
+        "answer": "ろく"
+    },
+    {
+        "question": "木曜日",
+        "answer": "もくようび"
+    },
+    {
+        "question": "図書館",
+        "answer": "としょかん"
+    },
+    {
+        "question": "今朝",
+        "answer": "けさ"
+    },
+    {
+        "question": "毎週",
+        "answer": "まいしゅう"
+    },
+    {
+        "question": "木",
+        "answer": "き"
+    },
+    {
+        "question": "三日",
+        "answer": "みっか"
+    },
+    {
+        "question": "書く",
+        "answer": "かく"
+    },
+    {
+        "question": "上げる",
+        "answer": "あげる"
+    },
+    {
+        "question": "先",
+        "answer": "さき"
+    },
+    {
+        "question": "白",
+        "answer": "しろ"
+    },
+    {
+        "question": "月曜日",
+        "answer": "げつようび"
+    },
+    {
+        "question": "出かける",
+        "answer": "でかける"
+    },
+    {
+        "question": "七つ",
+        "answer": "ななつ"
+    },
+    {
+        "question": "五つ",
+        "answer": "いつつ"
+    },
+    {
+        "question": "九日",
+        "answer": "ここのか"
+    },
+    {
+        "question": "大勢",
+        "answer": "おおぜい"
+    },
+    {
+        "question": "上着",
+        "answer": "うわぎ"
+    },
+    {
+        "question": "自動車",
+        "answer": "じどうしゃ"
+    },
+    {
+        "question": "三つ",
+        "answer": "みっつ"
+    },
+    {
+        "question": "女の子",
+        "answer": "おんなのこ"
+    },
+    {
+        "question": "出る",
+        "answer": "でる"
+    },
+    {
+        "question": "国",
+        "answer": "くに"
+    },
+    {
+        "question": "靴下",
+        "answer": "くつした"
+    },
+    {
+        "question": "雨",
+        "answer": "あめ"
+    },
+    {
+        "question": "明日",
+        "answer": "あした"
+    },
+    {
+        "question": "もう一度",
+        "answer": "もういちど"
+    },
+    {
+        "question": "辞書",
+        "answer": "じしょ"
+    },
+    {
+        "question": "入口",
+        "answer": "いりぐち"
+    },
+    {
+        "question": "七",
+        "answer": [
+            "しち",
+            "なな"
+        ]
+    },
+    {
+        "question": "後ろ",
+        "answer": "うしろ"
+    },
+    {
+        "question": "六つ",
+        "answer": "むっつ"
+    },
+    {
+        "question": "万",
+        "answer": "まん"
+    },
+    {
+        "question": "山",
+        "answer": "やま"
+    },
+    {
+        "question": "水",
+        "answer": "みず"
+    },
+    {
+        "question": "八",
+        "answer": "はち"
+    },
+    {
+        "question": "右",
+        "answer": "みぎ"
+    },
+    {
+        "question": "白い",
+        "answer": "しろい"
+    },
+    {
+        "question": "六日",
+        "answer": "むいか"
+    },
+    {
+        "question": "後",
+        "answer": "あと"
+    },
+    {
+        "question": "八日",
+        "answer": "ようか"
+    },
+    {
+        "question": "お菓子",
+        "answer": "おかし"
+    },
+    {
+        "question": "見せる",
+        "answer": "みせる"
+    },
+    {
+        "question": "今晩",
+        "answer": "こんばん"
+    },
+    {
+        "question": "七日",
+        "answer": "なのか"
+    },
+    {
+        "question": "高い",
+        "answer": "たかい"
+    },
+    {
+        "question": "川/河",
+        "answer": "かわ"
+    },
+    {
+        "question": "生徒",
+        "answer": "せいと"
+    },
+    {
+        "question": "金曜日",
+        "answer": "きんようび"
+    },
+    {
+        "question": "五",
+        "answer": "ご"
+    },
+    {
+        "question": "一昨日",
+        "answer": "おととい"
+    },
+    {
+        "question": "西",
+        "answer": "にし"
+    },
+    {
+        "question": "入る",
+        "answer": "はいる"
+    },
+    {
+        "question": "出す",
+        "answer": "だす"
+    },
+    {
+        "question": "二十歳",
+        "answer": "はたち"
+    },
+    {
+        "question": "小さい",
+        "answer": "ちいさい"
+    },
+    {
+        "question": "一つ",
+        "answer": "ひとつ"
+    },
+    {
+        "question": "食べる",
+        "answer": "たべる"
+    },
+    {
+        "question": "長い",
+        "answer": "ながい"
+    },
+    {
+        "question": "八百屋",
+        "answer": "やおや"
+    },
+    {
+        "question": "お母さん",
+        "answer": "おかあさん"
+    },
+    {
+        "question": "食べ物",
+        "answer": "たべもの"
+    },
+    {
+        "question": "昨日",
+        "answer": "きのう"
+    },
+    {
+        "question": "帽子",
+        "answer": "ぼうし"
+    },
+    {
+        "question": "毎月",
+        "answer": [
+            "まいげつ",
+            "まいつき"
+        ]
+    },
+    {
+        "question": "話",
+        "answer": "はなし"
+    },
+    {
+        "question": "千",
+        "answer": "せん"
+    },
+    {
+        "question": "時間",
+        "answer": "じかん"
+    },
+    {
+        "question": "大使館",
+        "answer": "たいしかん"
+    },
+    {
+        "question": "今年",
+        "answer": "ことし"
+    },
+    {
+        "question": "四つ",
+        "answer": "よっつ"
+    },
+    {
+        "question": "先生",
+        "answer": "せんせい"
+    },
+    {
+        "question": "学生",
+        "answer": "がくせい"
+    },
+    {
+        "question": "外国人",
+        "answer": "がいこくじん"
+    },
+    {
+        "question": "女",
+        "answer": "おんな"
+    },
+    {
+        "question": "五日",
+        "answer": "いつか"
+    },
+    {
+        "question": "旅行",
+        "answer": "りょこう"
+    },
+    {
+        "question": "来月",
+        "answer": "らいげつ"
+    },
+    {
+        "question": "十日",
+        "answer": "とおか"
+    },
+    {
+        "question": "見る  観る",
+        "answer": "みる"
+    },
+    {
+        "question": "一月",
+        "answer": ["ひとつき", "いちがつ"]
+    },
+    {
+        "question": "半",
+        "answer": "はん"
+    },
+    {
+        "question": "男",
+        "answer": "おとこ"
+    },
+    {
+        "question": "行く",
+        "answer": "いく"
+    },
+    {
+        "question": "人",
+        "answer": "ひと"
+    },
+    {
+        "question": "車",
+        "answer": "くるま"
+    },
+    {
+        "question": "銀行",
+        "answer": "ぎんこう"
+    },
+    {
+        "question": "先月",
+        "answer": "せんげつ"
+    },
+    {
+        "question": "来年",
+        "answer": "らいねん"
+    },
+    {
+        "question": "子供",
+        "answer": "こども"
+    },
+    {
+        "question": "自転車",
+        "answer": "じてんしゃ"
+    },
+    {
+        "question": "伯父/叔父",
+        "answer": "おじいさん"
+    },
+    {
+        "question": "北",
+        "answer": "きた"
+    },
+    {
+        "question": "大きな",
+        "answer": "おおきな"
+    },
+    {
+        "question": "一人",
+        "answer": "ひとり"
+    },
+    {
+        "question": "四",
+        "answer": [
+            "し",
+            "よん"
+        ]
+    },
+    {
+        "question": "九つ",
+        "answer": "ここのつ"
+    },
+    {
+        "question": "大学",
+        "answer": "だいがく"
+    },
+    {
+        "question": "上手",
+        "answer": "じょうず"
+    },
+    {
+        "question": "男の子",
+        "answer": "おとこのこ"
+    },
+    {
+        "question": "天気",
+        "answer": "てんき"
+    }
+]

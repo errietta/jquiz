@@ -1,0 +1,283 @@
+body {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    flex-direction: column;
+
+    @media (min-width: 800px) {
+        height: 100vh;
+    }
+}
+
+#loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#question {
+    font-size: 24px; /* Reduce font size */
+    margin: 10px; /* Reduce margin */
+    color: #000;
+ }
+
+#timer {
+    font-size: 18px; /* Reduce font size */
+    color: #ff5722;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; /* Reduce margin */
+}
+
+#input {
+    font-size: 18px; /* Reduce font size */
+    padding: 8px; /* Reduce padding */
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px; /* Reduce margin */
+}
+
+#input.anaume {
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#score {
+    font-size: 18px; /* Reduce font size */
+    margin-top: 10px; /* Reduce margin */
+    color: #4caf50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#lives {
+    font-size: 18px; /* Reduce font size */
+    margin-top: 10px; /* Reduce margin */
+    color: #f44336;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-size: 16px; /* Reduce font size */
+    padding: 8px 16px; /* Reduce padding */
+    margin-top: 10px; /* Reduce margin */
+    border: none;
+    border-radius: 5px;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #1976d2;
+}
+
+h1 {
+    font-size: 28px; /* Reduce font size */
+    margin-bottom: 10px; /* Reduce margin */
+    color: #ffeb3b;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-size: 20px; /* Reduce font size */
+    margin: 5px 0; /* Reduce margin */
+    color: #ffeb3b;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    margin-bottom: 10px; /* Reduce margin to fit more content */
+}
+
+#gameOverPrompt {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#gameOverPrompt button {
+    font-size: 16px; /* Reduce font size */
+    padding: 8px 16px; /* Reduce padding */
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#gameOverPrompt button:hover {
+    background: #1976d2;
+}
+
+footer {
+   width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+    padding: 10px 0; /* Add padding */
+}
+
+footer a {
+    color: white;
+}
+
+#explanation {
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    @media (max-width: 1024px) {
+        width: 100%;
+    }
+}
+
+#puzzle2_mode {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#puzzle2_quiz {
+    display: inline-block;
+    margin: 20px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.puzzle-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: nowrap; /* Prevent wrapping of elements */
+}
+
+#puzzle2_right {
+    white-space: nowrap; /* Prevent text from breaking into a new line */
+}
+
+.puzzle-row p {
+    margin: 5px 10px; /* Adjust margins for better spacing */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#puzzle2_input {
+    width: 50px;
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px 10px; /* Adjust margins for better spacing */
+}
+
+#puzzle2_arrow_left, #puzzle2_arrow_right {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    #puzzle2_quiz {
+        width: 90%; /* Ensure the quiz fits within the screen */
+    }
+
+    .puzzle-row p, #puzzle2_input, #puzzle2_arrow_left, #puzzle2_arrow_right {
+        font-size: 18px; /* Reduce font size for smaller screens */
+    }
+
+    #puzzle2_input {
+        width: 40px; /* Adjust input width for smaller screens */
+    }
+}
+
+#settingsButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    border-radius: 50%; /* Make it circular */
+    padding: 1px; /* Add padding for spacing */
+}
+
+#settingsButton button {
+    font-size: 24px; /* Make the button large */
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+#settingsButton button:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+#settingsModal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#settingsModal h2 {
+    margin-bottom: 20px;
+}
+
+#settingsModal label {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#settingsModal button {
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background: #2196f3;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#settingsModal button:hover {
+    background: #1976d2;
+}

@@ -1,0 +1,4162 @@
+[
+    {
+        "question": "縁談",
+        "answer": "えんだん"
+    },
+    {
+        "question": "盛大",
+        "answer": "せいだい"
+    },
+    {
+        "question": "禅",
+        "answer": "ぜん"
+    },
+    {
+        "question": "如何しても",
+        "answer": "どうしても"
+    },
+    {
+        "question": "叶える",
+        "answer": "かなえる"
+    },
+    {
+        "question": "頻りに",
+        "answer": "しきりに"
+    },
+    {
+        "question": "過密",
+        "answer": "かみつ"
+    },
+    {
+        "question": "融通",
+        "answer": "ゆうずう"
+    },
+    {
+        "question": "貴族",
+        "answer": "きぞく"
+    },
+    {
+        "question": "従って",
+        "answer": "したがって"
+    },
+    {
+        "question": "巧み",
+        "answer": "たくみ"
+    },
+    {
+        "question": "排水",
+        "answer": "はいすい"
+    },
+    {
+        "question": "卯",
+        "answer": "ぼう"
+    },
+    {
+        "question": "脂肪",
+        "answer": "しぼう"
+    },
+    {
+        "question": "貧乏",
+        "answer": "びんぼう"
+    },
+    {
+        "question": "孤立",
+        "answer": "こりつ"
+    },
+    {
+        "question": "軸",
+        "answer": "じく"
+    },
+    {
+        "question": "誘惑",
+        "answer": "ゆうわく"
+    },
+    {
+        "question": "振興",
+        "answer": "しんこう"
+    },
+    {
+        "question": "水源",
+        "answer": "すいげん"
+    },
+    {
+        "question": "尽きる",
+        "answer": "つきる"
+    },
+    {
+        "question": "弾力",
+        "answer": "だんりょく"
+    },
+    {
+        "question": "即する",
+        "answer": "そくする"
+    },
+    {
+        "question": "衝撃",
+        "answer": "しょうげき"
+    },
+    {
+        "question": "適応",
+        "answer": "てきおう"
+    },
+    {
+        "question": "脱退",
+        "answer": "だったい"
+    },
+    {
+        "question": "継ぐ",
+        "answer": "つぐ"
+    },
+    {
+        "question": "甚だ",
+        "answer": "はなはだ"
+    },
+    {
+        "question": "沿岸",
+        "answer": "えんがん"
+    },
+    {
+        "question": "侍",
+        "answer": "さむらい"
+    },
+    {
+        "question": "隔たる",
+        "answer": "へだたる"
+    },
+    {
+        "question": "冒頭",
+        "answer": "ぼうとう"
+    },
+    {
+        "question": "過疎",
+        "answer": "かそ"
+    },
+    {
+        "question": "壇",
+        "answer": "だん"
+    },
+    {
+        "question": "株式",
+        "answer": "かぶしき"
+    },
+    {
+        "question": "興じる",
+        "answer": "きょうじる"
+    },
+    {
+        "question": "没落",
+        "answer": "ぼつらく"
+    },
+    {
+        "question": "結晶",
+        "answer": "けっしょう"
+    },
+    {
+        "question": "滅亡",
+        "answer": "めつぼう"
+    },
+    {
+        "question": "兵士",
+        "answer": "へいし"
+    },
+    {
+        "question": "秘書",
+        "answer": "ひしょ"
+    },
+    {
+        "question": "お邪魔します",
+        "answer": "おじゃまします"
+    },
+    {
+        "question": "鉄鋼",
+        "answer": "てっこう"
+    },
+    {
+        "question": "亜科",
+        "answer": "あか"
+    },
+    {
+        "question": "救援",
+        "answer": "きゅうえん"
+    },
+    {
+        "question": "待遇",
+        "answer": "たいぐう"
+    },
+    {
+        "question": "乙",
+        "answer": "おつ"
+    },
+    {
+        "question": "精密",
+        "answer": "せいみつ"
+    },
+    {
+        "question": "尽くす",
+        "answer": "つくす"
+    },
+    {
+        "question": "独裁",
+        "answer": "どくさい"
+    },
+    {
+        "question": "交渉",
+        "answer": "こうしょう"
+    },
+    {
+        "question": "爆弾",
+        "answer": "ばくだん"
+    },
+    {
+        "question": "案の定",
+        "answer": "あんのじょう"
+    },
+    {
+        "question": "尚",
+        "answer": "なお"
+    },
+    {
+        "question": "元素",
+        "answer": "げんそ"
+    },
+    {
+        "question": "賄う",
+        "answer": "まかなう"
+    },
+    {
+        "question": "貨幣",
+        "answer": "かへい"
+    },
+    {
+        "question": "避難",
+        "answer": "ひなん"
+    },
+    {
+        "question": "視覚",
+        "answer": "しかく"
+    },
+    {
+        "question": "盛る",
+        "answer": "さかる"
+    },
+    {
+        "question": "代弁",
+        "answer": "だいべん"
+    },
+    {
+        "question": "志向",
+        "answer": "しこう"
+    },
+    {
+        "question": "進展",
+        "answer": "しんてん"
+    },
+    {
+        "question": "反撃",
+        "answer": "はんげき"
+    },
+    {
+        "question": "詐欺",
+        "answer": "さぎ"
+    },
+    {
+        "question": "起伏",
+        "answer": "きふく"
+    },
+    {
+        "question": "反響",
+        "answer": "はんきょう"
+    },
+    {
+        "question": "廃棄",
+        "answer": "はいき"
+    },
+    {
+        "question": "推理",
+        "answer": "すいり"
+    },
+    {
+        "question": "行為",
+        "answer": "こうい"
+    },
+    {
+        "question": "慕う",
+        "answer": "したう"
+    },
+    {
+        "question": "統率",
+        "answer": "とうそつ"
+    },
+    {
+        "question": "蓮",
+        "answer": "はす"
+    },
+    {
+        "question": "弁論",
+        "answer": "べんろん"
+    },
+    {
+        "question": "運搬",
+        "answer": "うんぱん"
+    },
+    {
+        "question": "懲りる",
+        "answer": "こりる"
+    },
+    {
+        "question": "臨む",
+        "answer": "のぞむ"
+    },
+    {
+        "question": "澄ます",
+        "answer": "すます"
+    },
+    {
+        "question": "結び付く",
+        "answer": "むすびつく"
+    },
+    {
+        "question": "矢",
+        "answer": "や"
+    },
+    {
+        "question": "保護",
+        "answer": "ほご"
+    },
+    {
+        "question": "海峡",
+        "answer": "かいきょう"
+    },
+    {
+        "question": "負傷",
+        "answer": "ふしょう"
+    },
+    {
+        "question": "矢っ張り",
+        "answer": "やっぱり"
+    },
+    {
+        "question": "御免なさい",
+        "answer": "ごめんなさい"
+    },
+    {
+        "question": "昆虫",
+        "answer": "こんちゅう"
+    },
+    {
+        "question": "収益",
+        "answer": "しゅうえき"
+    },
+    {
+        "question": "脱する",
+        "answer": "だっする"
+    },
+    {
+        "question": "大筋",
+        "answer": "おおすじ"
+    },
+    {
+        "question": "繊維",
+        "answer": "せんい"
+    },
+    {
+        "question": "創造",
+        "answer": "そうぞう"
+    },
+    {
+        "question": "眼球",
+        "answer": "がんきゅう"
+    },
+    {
+        "question": "下吏",
+        "answer": "かり"
+    },
+    {
+        "question": "折衷",
+        "answer": "せっちゅう"
+    },
+    {
+        "question": "飽和",
+        "answer": "ほうわ"
+    },
+    {
+        "question": "証人",
+        "answer": "しょうにん"
+    },
+    {
+        "question": "廃止",
+        "answer": "はいし"
+    },
+    {
+        "question": "計器",
+        "answer": "けいき"
+    },
+    {
+        "question": "標語",
+        "answer": "ひょうご"
+    },
+    {
+        "question": "刑罰",
+        "answer": "けいばつ"
+    },
+    {
+        "question": "潮",
+        "answer": "うしお"
+    },
+    {
+        "question": "屎尿",
+        "answer": "しにょう"
+    },
+    {
+        "question": "掲載",
+        "answer": "けいさい"
+    },
+    {
+        "question": "緊急",
+        "answer": "きんきゅう"
+    },
+    {
+        "question": "合致",
+        "answer": "がっち"
+    },
+    {
+        "question": "侮辱",
+        "answer": "ぶじょく"
+    },
+    {
+        "question": "理屈",
+        "answer": "りくつ"
+    },
+    {
+        "question": "百科辞典",
+        "answer": "ひゃっかじてん"
+    },
+    {
+        "question": "隠居",
+        "answer": "いんきょ"
+    },
+    {
+        "question": "墜落",
+        "answer": "ついらく"
+    },
+    {
+        "question": "遮る",
+        "answer": "さえぎる"
+    },
+    {
+        "question": "紛争",
+        "answer": "ふんそう"
+    },
+    {
+        "question": "真珠",
+        "answer": "しんじゅ"
+    },
+    {
+        "question": "鬱陶しい",
+        "answer": "うっとうしい"
+    },
+    {
+        "question": "褒美",
+        "answer": "ほうび"
+    },
+    {
+        "question": "於",
+        "answer": "お"
+    },
+    {
+        "question": "名簿",
+        "answer": "めいぼ"
+    },
+    {
+        "question": "同級",
+        "answer": "どうきゅう"
+    },
+    {
+        "question": "監視",
+        "answer": "かんし"
+    },
+    {
+        "question": "体裁",
+        "answer": "ていさい"
+    },
+    {
+        "question": "異議",
+        "answer": "いぎ"
+    },
+    {
+        "question": "凶作",
+        "answer": "きょうさく"
+    },
+    {
+        "question": "証言",
+        "answer": "しょうげん"
+    },
+    {
+        "question": "枠",
+        "answer": "わく"
+    },
+    {
+        "question": "怪獣",
+        "answer": "かいじゅう"
+    },
+    {
+        "question": "激励",
+        "answer": "げきれい"
+    },
+    {
+        "question": "華美",
+        "answer": "かび"
+    },
+    {
+        "question": "滅びる",
+        "answer": "ほろびる"
+    },
+    {
+        "question": "振り",
+        "answer": "ふり"
+    },
+    {
+        "question": "その為",
+        "answer": "そのため"
+    },
+    {
+        "question": "火傷",
+        "answer": "かしょう"
+    },
+    {
+        "question": "興業",
+        "answer": "こうぎょう"
+    },
+    {
+        "question": "惜しむ",
+        "answer": "おしむ"
+    },
+    {
+        "question": "模範",
+        "answer": "もはん"
+    },
+    {
+        "question": "趣",
+        "answer": "おもむき"
+    },
+    {
+        "question": "模型",
+        "answer": "もけい"
+    },
+    {
+        "question": "政策",
+        "answer": "せいさく"
+    },
+    {
+        "question": "名称",
+        "answer": "めいしょう"
+    },
+    {
+        "question": "威力",
+        "answer": "いりょく"
+    },
+    {
+        "question": "拒否",
+        "answer": "きょひ"
+    },
+    {
+        "question": "幹線",
+        "answer": "かんせん"
+    },
+    {
+        "question": "特派",
+        "answer": "とくは"
+    },
+    {
+        "question": "免れる",
+        "answer": "まぬかれる"
+    },
+    {
+        "question": "製",
+        "answer": "せい"
+    },
+    {
+        "question": "据え付ける",
+        "answer": "すえつける"
+    },
+    {
+        "question": "展示",
+        "answer": "てんじ"
+    },
+    {
+        "question": "不吉",
+        "answer": "ふきつ"
+    },
+    {
+        "question": "沸騰",
+        "answer": "ふっとう"
+    },
+    {
+        "question": "事項",
+        "answer": "じこう"
+    },
+    {
+        "question": "仰っしゃる",
+        "answer": "おっしゃる"
+    },
+    {
+        "question": "潜水",
+        "answer": "せんすい"
+    },
+    {
+        "question": "添える",
+        "answer": "そえる"
+    },
+    {
+        "question": "大衆",
+        "answer": "たいしゅう"
+    },
+    {
+        "question": "楽譜",
+        "answer": "がくふ"
+    },
+    {
+        "question": "是非とも",
+        "answer": "ぜひとも"
+    },
+    {
+        "question": "所属",
+        "answer": "しょぞく"
+    },
+    {
+        "question": "華々しい",
+        "answer": "はなばなしい"
+    },
+    {
+        "question": "取り締まる",
+        "answer": "とりしまる"
+    },
+    {
+        "question": "緩める",
+        "answer": "ゆるめる"
+    },
+    {
+        "question": "取り扱う",
+        "answer": "とりあつかう"
+    },
+    {
+        "question": "皇居",
+        "answer": "こうきょ"
+    },
+    {
+        "question": "樹立",
+        "answer": "じゅりつ"
+    },
+    {
+        "question": "我がまま",
+        "answer": "わがまま"
+    },
+    {
+        "question": "雛",
+        "answer": "ひな"
+    },
+    {
+        "question": "孤児",
+        "answer": "こじ"
+    },
+    {
+        "question": "遣り通す",
+        "answer": "やりとおす"
+    },
+    {
+        "question": "成熟",
+        "answer": "せいじゅく"
+    },
+    {
+        "question": "浜",
+        "answer": "はま"
+    },
+    {
+        "question": "幹部",
+        "answer": "かんぶ"
+    },
+    {
+        "question": "志望",
+        "answer": "しぼう"
+    },
+    {
+        "question": "銃",
+        "answer": "つつ"
+    },
+    {
+        "question": "故人",
+        "answer": "こじん"
+    },
+    {
+        "question": "微塵",
+        "answer": "みじん"
+    },
+    {
+        "question": "倍率",
+        "answer": "ばいりつ"
+    },
+    {
+        "question": "実態",
+        "answer": "じったい"
+    },
+    {
+        "question": "奴",
+        "answer": "やっこ"
+    },
+    {
+        "question": "酸",
+        "answer": "さん"
+    },
+    {
+        "question": "粋",
+        "answer": "いき"
+    },
+    {
+        "question": "遊牧",
+        "answer": "ゆうぼく"
+    },
+    {
+        "question": "摘む",
+        "answer": "つまむ"
+    },
+    {
+        "question": "保守",
+        "answer": "ほしゅ"
+    },
+    {
+        "question": "網",
+        "answer": "あみ"
+    },
+    {
+        "question": "街",
+        "answer": "がい"
+    },
+    {
+        "question": "年鑑",
+        "answer": "ねんかん"
+    },
+    {
+        "question": "老衰",
+        "answer": "ろうすい"
+    },
+    {
+        "question": "妊娠",
+        "answer": "にんしん"
+    },
+    {
+        "question": "抗議",
+        "answer": "こうぎ"
+    },
+    {
+        "question": "奨励",
+        "answer": "しょうれい"
+    },
+    {
+        "question": "象徴",
+        "answer": "しょうちょう"
+    },
+    {
+        "question": "故",
+        "answer": "こ"
+    },
+    {
+        "question": "連邦",
+        "answer": "れんぽう"
+    },
+    {
+        "question": "密か",
+        "answer": "ひそか"
+    },
+    {
+        "question": "企画",
+        "answer": "きかく"
+    },
+    {
+        "question": "短縮",
+        "answer": "たんしゅく"
+    },
+    {
+        "question": "刑",
+        "answer": "けい"
+    },
+    {
+        "question": "葬る",
+        "answer": "ほうむる"
+    },
+    {
+        "question": "共稼ぎ",
+        "answer": "ともかせぎ"
+    },
+    {
+        "question": "賠償",
+        "answer": "ばいしょう"
+    },
+    {
+        "question": "獣",
+        "answer": "けだもの"
+    },
+    {
+        "question": "偏見",
+        "answer": "へんけん"
+    },
+    {
+        "question": "装飾",
+        "answer": "そうしょく"
+    },
+    {
+        "question": "盲点",
+        "answer": "もうてん"
+    },
+    {
+        "question": "陶器",
+        "answer": "とうき"
+    },
+    {
+        "question": "間柄",
+        "answer": "あいだがら"
+    },
+    {
+        "question": "近視",
+        "answer": "きんし"
+    },
+    {
+        "question": "藍褸",
+        "answer": "ぼろ"
+    },
+    {
+        "question": "やり遂げる",
+        "answer": "やりとげる"
+    },
+    {
+        "question": "麻痺",
+        "answer": "まひ"
+    },
+    {
+        "question": "同士",
+        "answer": "どうし"
+    },
+    {
+        "question": "利潤",
+        "answer": "りじゅん"
+    },
+    {
+        "question": "拝啓",
+        "answer": "はいけい"
+    },
+    {
+        "question": "養う",
+        "answer": "やしなう"
+    },
+    {
+        "question": "慎む",
+        "answer": "つつしむ"
+    },
+    {
+        "question": "訴訟",
+        "answer": "そしょう"
+    },
+    {
+        "question": "核",
+        "answer": "かく"
+    },
+    {
+        "question": "励ます",
+        "answer": "はげます"
+    },
+    {
+        "question": "鞠",
+        "answer": "まり"
+    },
+    {
+        "question": "小柄",
+        "answer": "こがら"
+    },
+    {
+        "question": "峰",
+        "answer": "みね"
+    },
+    {
+        "question": "蓄積",
+        "answer": "ちくせき"
+    },
+    {
+        "question": "征服",
+        "answer": "せいふく"
+    },
+    {
+        "question": "観衆",
+        "answer": "かんしゅう"
+    },
+    {
+        "question": "差異",
+        "answer": "さい"
+    },
+    {
+        "question": "氾濫",
+        "answer": "はんらん"
+    },
+    {
+        "question": "素材",
+        "answer": "そざい"
+    },
+    {
+        "question": "詳細",
+        "answer": "しょうさい"
+    },
+    {
+        "question": "胴",
+        "answer": "どう"
+    },
+    {
+        "question": "改訂",
+        "answer": "かいてい"
+    },
+    {
+        "question": "露",
+        "answer": "つゆ"
+    },
+    {
+        "question": "振動",
+        "answer": "しんどう"
+    },
+    {
+        "question": "停滞",
+        "answer": "ていたい"
+    },
+    {
+        "question": "破棄",
+        "answer": "はき"
+    },
+    {
+        "question": "裁く",
+        "answer": "さばく"
+    },
+    {
+        "question": "排除",
+        "answer": "はいじょ"
+    },
+    {
+        "question": "統制",
+        "answer": "とうせい"
+    },
+    {
+        "question": "享受",
+        "answer": "きょうじゅ"
+    },
+    {
+        "question": "訂正",
+        "answer": "ていせい"
+    },
+    {
+        "question": "対応",
+        "answer": "たいおう"
+    },
+    {
+        "question": "目盛",
+        "answer": "めもり"
+    },
+    {
+        "question": "色彩",
+        "answer": "しきさい"
+    },
+    {
+        "question": "適宜",
+        "answer": "てきぎ"
+    },
+    {
+        "question": "乃至",
+        "answer": "ないし"
+    },
+    {
+        "question": "幹",
+        "answer": "かん"
+    },
+    {
+        "question": "書評",
+        "answer": "しょひょう"
+    },
+    {
+        "question": "漏らす",
+        "answer": "もらす"
+    },
+    {
+        "question": "是正",
+        "answer": "ぜせい"
+    },
+    {
+        "question": "上司",
+        "answer": "じょうし"
+    },
+    {
+        "question": "呉れ呉れも",
+        "answer": "くれぐれも"
+    },
+    {
+        "question": "誤魔化す",
+        "answer": "ごまかす"
+    },
+    {
+        "question": "屋敷",
+        "answer": "やしき"
+    },
+    {
+        "question": "大柄",
+        "answer": "おおがら"
+    },
+    {
+        "question": "修学",
+        "answer": "しゅうがく"
+    },
+    {
+        "question": "紡績",
+        "answer": "ぼうせき"
+    },
+    {
+        "question": "愚か",
+        "answer": "おろか"
+    },
+    {
+        "question": "漏る",
+        "answer": "もる"
+    },
+    {
+        "question": "衆議院",
+        "answer": "しゅうぎいん"
+    },
+    {
+        "question": "指摘",
+        "answer": "してき"
+    },
+    {
+        "question": "自己",
+        "answer": "じこ"
+    },
+    {
+        "question": "死刑",
+        "answer": "しけい"
+    },
+    {
+        "question": "地獄",
+        "answer": "じごく"
+    },
+    {
+        "question": "提供",
+        "answer": "ていきょう"
+    },
+    {
+        "question": "惨め",
+        "answer": "みじめ"
+    },
+    {
+        "question": "同盟",
+        "answer": "どうめい"
+    },
+    {
+        "question": "厳か",
+        "answer": "おごそか"
+    },
+    {
+        "question": "茎",
+        "answer": "くき"
+    },
+    {
+        "question": "獲得",
+        "answer": "かくとく"
+    },
+    {
+        "question": "粘る",
+        "answer": "ねばる"
+    },
+    {
+        "question": "器官",
+        "answer": "きかん"
+    },
+    {
+        "question": "陰気",
+        "answer": "いんき"
+    },
+    {
+        "question": "促す",
+        "answer": "うながす"
+    },
+    {
+        "question": "継ぎ目",
+        "answer": "つぎめ"
+    },
+    {
+        "question": "貫禄",
+        "answer": "かんろく"
+    },
+    {
+        "question": "膨脹",
+        "answer": "ぼうちょう"
+    },
+    {
+        "question": "揺さぶる",
+        "answer": "ゆさぶる"
+    },
+    {
+        "question": "略奪",
+        "answer": "りゃくだつ"
+    },
+    {
+        "question": "丁目",
+        "answer": "ちょうめ"
+    },
+    {
+        "question": "一概に",
+        "answer": "いちがいに"
+    },
+    {
+        "question": "脚本",
+        "answer": "きゃくほん"
+    },
+    {
+        "question": "緩む",
+        "answer": "ゆるむ"
+    },
+    {
+        "question": "弁解",
+        "answer": "べんかい"
+    },
+    {
+        "question": "憧れ",
+        "answer": "あこがれ"
+    },
+    {
+        "question": "霞む",
+        "answer": "かすむ"
+    },
+    {
+        "question": "酷い",
+        "answer": "ひどい"
+    },
+    {
+        "question": "驚き",
+        "answer": "おどろき"
+    },
+    {
+        "question": "焦げ茶",
+        "answer": "こげちゃ"
+    },
+    {
+        "question": "沿う",
+        "answer": "そう"
+    },
+    {
+        "question": "風俗",
+        "answer": "ふうぞく"
+    },
+    {
+        "question": "誇る",
+        "answer": "ほこる"
+    },
+    {
+        "question": "貴い",
+        "answer": "たっとい"
+    },
+    {
+        "question": "繁殖",
+        "answer": "はんしょく"
+    },
+    {
+        "question": "製鉄",
+        "answer": "せいてつ"
+    },
+    {
+        "question": "守衛",
+        "answer": "しゅえい"
+    },
+    {
+        "question": "鍛える",
+        "answer": "きたえる"
+    },
+    {
+        "question": "弁護",
+        "answer": "べんご"
+    },
+    {
+        "question": "譲歩",
+        "answer": "じょうほ"
+    },
+    {
+        "question": "勇敢",
+        "answer": "ゆうかん"
+    },
+    {
+        "question": "態と",
+        "answer": "わざと"
+    },
+    {
+        "question": "錯覚",
+        "answer": "さっかく"
+    },
+    {
+        "question": "謙る",
+        "answer": "へりくだる"
+    },
+    {
+        "question": "冴える",
+        "answer": "さえる"
+    },
+    {
+        "question": "懐く",
+        "answer": "なつく"
+    },
+    {
+        "question": "滞る",
+        "answer": "とどこおる"
+    },
+    {
+        "question": "至って",
+        "answer": "いたって"
+    },
+    {
+        "question": "遂げる",
+        "answer": "とげる"
+    },
+    {
+        "question": "長閑",
+        "answer": "のどか"
+    },
+    {
+        "question": "獲物",
+        "answer": "えもの"
+    },
+    {
+        "question": "規模",
+        "answer": "きぼ"
+    },
+    {
+        "question": "明瞭",
+        "answer": "めいりょう"
+    },
+    {
+        "question": "遣い",
+        "answer": "つかい"
+    },
+    {
+        "question": "異論",
+        "answer": "いろん"
+    },
+    {
+        "question": "控除",
+        "answer": "こうじょ"
+    },
+    {
+        "question": "挑戦",
+        "answer": "ちょうせん"
+    },
+    {
+        "question": "箇条書き",
+        "answer": "かじょうがき"
+    },
+    {
+        "question": "充実",
+        "answer": "じゅうじつ"
+    },
+    {
+        "question": "肺",
+        "answer": "はい"
+    },
+    {
+        "question": "納まる",
+        "answer": "おさまる"
+    },
+    {
+        "question": "警戒",
+        "answer": "けいかい"
+    },
+    {
+        "question": "防衛",
+        "answer": "ぼうえい"
+    },
+    {
+        "question": "舗装",
+        "answer": "ほそう"
+    },
+    {
+        "question": "月謝",
+        "answer": "げっしゃ"
+    },
+    {
+        "question": "驚異",
+        "answer": "きょうい"
+    },
+    {
+        "question": "発芽",
+        "answer": "はつが"
+    },
+    {
+        "question": "恵み",
+        "answer": "めぐみ"
+    },
+    {
+        "question": "徐行",
+        "answer": "じょこう"
+    },
+    {
+        "question": "規範",
+        "answer": "きはん"
+    },
+    {
+        "question": "眉",
+        "answer": "まゆ"
+    },
+    {
+        "question": "尉",
+        "answer": "じょう"
+    },
+    {
+        "question": "処罰",
+        "answer": "しょばつ"
+    },
+    {
+        "question": "誠",
+        "answer": "まこと"
+    },
+    {
+        "question": "歓声",
+        "answer": "かんせい"
+    },
+    {
+        "question": "幽霊",
+        "answer": "ゆうれい"
+    },
+    {
+        "question": "比率",
+        "answer": "ひりつ"
+    },
+    {
+        "question": "修行",
+        "answer": "しゅうぎょう"
+    },
+    {
+        "question": "励む",
+        "answer": "はげむ"
+    },
+    {
+        "question": "冷酷",
+        "answer": "れいこく"
+    },
+    {
+        "question": "強請る",
+        "answer": "ねだる"
+    },
+    {
+        "question": "志",
+        "answer": "こころざし"
+    },
+    {
+        "question": "肥料",
+        "answer": "ひりょう"
+    },
+    {
+        "question": "馬鹿馬鹿しい",
+        "answer": "ばかばかしい"
+    },
+    {
+        "question": "境遇",
+        "answer": "きょうぐう"
+    },
+    {
+        "question": "刃",
+        "answer": "は"
+    },
+    {
+        "question": "結び",
+        "answer": "むすび"
+    },
+    {
+        "question": "着飾る",
+        "answer": "きかざる"
+    },
+    {
+        "question": "憂鬱",
+        "answer": "ゆううつ"
+    },
+    {
+        "question": "描写",
+        "answer": "びょうしゃ"
+    },
+    {
+        "question": "傑",
+        "answer": "けつ"
+    },
+    {
+        "question": "視察",
+        "answer": "しさつ"
+    },
+    {
+        "question": "戯曲",
+        "answer": "ぎきょく"
+    },
+    {
+        "question": "契る",
+        "answer": "ちぎる"
+    },
+    {
+        "question": "鮮やか",
+        "answer": "あざやか"
+    },
+    {
+        "question": "冷淡",
+        "answer": "れいたん"
+    },
+    {
+        "question": "遭難",
+        "answer": "そうなん"
+    },
+    {
+        "question": "誠実",
+        "answer": "せいじつ"
+    },
+    {
+        "question": "中継",
+        "answer": "ちゅうけい"
+    },
+    {
+        "question": "拘束",
+        "answer": "こうそく"
+    },
+    {
+        "question": "団結",
+        "answer": "だんけつ"
+    },
+    {
+        "question": "権威",
+        "answer": "けんい"
+    },
+    {
+        "question": "購買",
+        "answer": "こうばい"
+    },
+    {
+        "question": "概説",
+        "answer": "がいせつ"
+    },
+    {
+        "question": "報酬",
+        "answer": "ほうしゅう"
+    },
+    {
+        "question": "噴出",
+        "answer": "ふんしゅつ"
+    },
+    {
+        "question": "窒息",
+        "answer": "ちっそく"
+    },
+    {
+        "question": "衛生",
+        "answer": "えいせい"
+    },
+    {
+        "question": "暴露",
+        "answer": "ばくろ"
+    },
+    {
+        "question": "頻繁",
+        "answer": "ひんぱん"
+    },
+    {
+        "question": "必修",
+        "answer": "ひっしゅう"
+    },
+    {
+        "question": "神秘",
+        "answer": "しんぴ"
+    },
+    {
+        "question": "耐える",
+        "answer": "たえる"
+    },
+    {
+        "question": "丁々",
+        "answer": "とうとう"
+    },
+    {
+        "question": "御免ください",
+        "answer": "ごめんください"
+    },
+    {
+        "question": "志す",
+        "answer": "こころざす"
+    },
+    {
+        "question": "倹約",
+        "answer": "けんやく"
+    },
+    {
+        "question": "軌道",
+        "answer": "きどう"
+    },
+    {
+        "question": "愚痴",
+        "answer": "ぐち"
+    },
+    {
+        "question": "如何にも",
+        "answer": "いかにも"
+    },
+    {
+        "question": "団扇",
+        "answer": "うちわ"
+    },
+    {
+        "question": "結び付き",
+        "answer": "むすびつき"
+    },
+    {
+        "question": "応募",
+        "answer": "おうぼ"
+    },
+    {
+        "question": "久し振り",
+        "answer": "ひさしぶり"
+    },
+    {
+        "question": "誘導",
+        "answer": "ゆうどう"
+    },
+    {
+        "question": "駆ける",
+        "answer": "かける"
+    },
+    {
+        "question": "津波",
+        "answer": "つなみ"
+    },
+    {
+        "question": "統治",
+        "answer": "とうじ"
+    },
+    {
+        "question": "概念",
+        "answer": "がいねん"
+    },
+    {
+        "question": "不振",
+        "answer": "ふしん"
+    },
+    {
+        "question": "迫害",
+        "answer": "はくがい"
+    },
+    {
+        "question": "粘り",
+        "answer": "ねばり"
+    },
+    {
+        "question": "碁盤",
+        "answer": "ごばん"
+    },
+    {
+        "question": "微笑",
+        "answer": "びしょう"
+    },
+    {
+        "question": "相応しい",
+        "answer": "ふさわしい"
+    },
+    {
+        "question": "恵む",
+        "answer": "めぐむ"
+    },
+    {
+        "question": "票",
+        "answer": "ひょう"
+    },
+    {
+        "question": "丘陵",
+        "answer": "きゅうりょう"
+    },
+    {
+        "question": "改修",
+        "answer": "かいしゅう"
+    },
+    {
+        "question": "証拠",
+        "answer": "しょうこ"
+    },
+    {
+        "question": "密度",
+        "answer": "みつど"
+    },
+    {
+        "question": "財源",
+        "answer": "ざいげん"
+    },
+    {
+        "question": "幕",
+        "answer": "とばり"
+    },
+    {
+        "question": "張り紙",
+        "answer": "はりがみ"
+    },
+    {
+        "question": "迅速",
+        "answer": "じんそく"
+    },
+    {
+        "question": "細胞",
+        "answer": "さいぼう"
+    },
+    {
+        "question": "事柄",
+        "answer": "ことがら"
+    },
+    {
+        "question": "宣教",
+        "answer": "せんきょう"
+    },
+    {
+        "question": "一寸",
+        "answer": "ちょっと"
+    },
+    {
+        "question": "無邪気",
+        "answer": "むじゃき"
+    },
+    {
+        "question": "庶民",
+        "answer": "しょみん"
+    },
+    {
+        "question": "蝶",
+        "answer": "ちょう"
+    },
+    {
+        "question": "健やか",
+        "answer": "すこやか"
+    },
+    {
+        "question": "尾",
+        "answer": "お"
+    },
+    {
+        "question": "御覧なさい",
+        "answer": "ごらんなさい"
+    },
+    {
+        "question": "即ち",
+        "answer": "すなわち"
+    },
+    {
+        "question": "還暦",
+        "answer": "かんれき"
+    },
+    {
+        "question": "紛れる",
+        "answer": "まぎれる"
+    },
+    {
+        "question": "炭素",
+        "answer": "たんそ"
+    },
+    {
+        "question": "阻止",
+        "answer": "そし"
+    },
+    {
+        "question": "矢鱈に",
+        "answer": "やたらに"
+    },
+    {
+        "question": "捕吏",
+        "answer": "ほり"
+    },
+    {
+        "question": "派遣",
+        "answer": "はけん"
+    },
+    {
+        "question": "庶務",
+        "answer": "しょむ"
+    },
+    {
+        "question": "窮屈",
+        "answer": "きゅうくつ"
+    },
+    {
+        "question": "極端",
+        "answer": "きょくたん"
+    },
+    {
+        "question": "貯蓄",
+        "answer": "ちょちく"
+    },
+    {
+        "question": "奇数",
+        "answer": "きすう"
+    },
+    {
+        "question": "不評",
+        "answer": "ふひょう"
+    },
+    {
+        "question": "還元",
+        "answer": "かんげん"
+    },
+    {
+        "question": "授ける",
+        "answer": "さずける"
+    },
+    {
+        "question": "提示",
+        "answer": "ていじ"
+    },
+    {
+        "question": "審判",
+        "answer": "しんばん"
+    },
+    {
+        "question": "指揮",
+        "answer": "しき"
+    },
+    {
+        "question": "結成",
+        "answer": "けっせい"
+    },
+    {
+        "question": "模倣",
+        "answer": "もほう"
+    },
+    {
+        "question": "証",
+        "answer": "あかし"
+    },
+    {
+        "question": "じゃん拳",
+        "answer": "じゃんけん"
+    },
+    {
+        "question": "疾っくに",
+        "answer": "とっくに"
+    },
+    {
+        "question": "渦",
+        "answer": "うず"
+    },
+    {
+        "question": "如何して",
+        "answer": "どうして"
+    },
+    {
+        "question": "微量",
+        "answer": "びりょう"
+    },
+    {
+        "question": "如何に",
+        "answer": "いかに"
+    },
+    {
+        "question": "整列",
+        "answer": "せいれつ"
+    },
+    {
+        "question": "悲惨",
+        "answer": "ひさん"
+    },
+    {
+        "question": "円滑",
+        "answer": "えんかつ"
+    },
+    {
+        "question": "座標",
+        "answer": "ざひょう"
+    },
+    {
+        "question": "保障",
+        "answer": "ほしょう"
+    },
+    {
+        "question": "跡継ぎ",
+        "answer": "あとつぎ"
+    },
+    {
+        "question": "班",
+        "answer": "はん"
+    },
+    {
+        "question": "祝賀",
+        "answer": "しゅくが"
+    },
+    {
+        "question": "主催",
+        "answer": "しゅさい"
+    },
+    {
+        "question": "漏れる",
+        "answer": "もれる"
+    },
+    {
+        "question": "脅す",
+        "answer": "おどす"
+    },
+    {
+        "question": "携わる",
+        "answer": "たずさわる"
+    },
+    {
+        "question": "善良",
+        "answer": "ぜんりょう"
+    },
+    {
+        "question": "結び付ける",
+        "answer": "むすびつける"
+    },
+    {
+        "question": "密接",
+        "answer": "みっせつ"
+    },
+    {
+        "question": "侵す",
+        "answer": "おかす"
+    },
+    {
+        "question": "近眼",
+        "answer": "きんがん"
+    },
+    {
+        "question": "障る",
+        "answer": "さわる"
+    },
+    {
+        "question": "素敵",
+        "answer": "すてき"
+    },
+    {
+        "question": "荒廃",
+        "answer": "こうはい"
+    },
+    {
+        "question": "整える",
+        "answer": "ととのえる"
+    },
+    {
+        "question": "称する",
+        "answer": "しょうする"
+    },
+    {
+        "question": "措置",
+        "answer": "そち"
+    },
+    {
+        "question": "卑しい",
+        "answer": "いやしい"
+    },
+    {
+        "question": "拐う",
+        "answer": "さらう"
+    },
+    {
+        "question": "根拠",
+        "answer": "こんきょ"
+    },
+    {
+        "question": "貝殻",
+        "answer": "かいがら"
+    },
+    {
+        "question": "駄作",
+        "answer": "ださく"
+    },
+    {
+        "question": "仰ぐ",
+        "answer": "あおぐ"
+    },
+    {
+        "question": "福祉",
+        "answer": "ふくし"
+    },
+    {
+        "question": "振り出し",
+        "answer": "ふりだし"
+    },
+    {
+        "question": "疎か",
+        "answer": "おろそか"
+    },
+    {
+        "question": "磁器",
+        "answer": "じき"
+    },
+    {
+        "question": "藻掻く",
+        "answer": "もがく"
+    },
+    {
+        "question": "聴講",
+        "answer": "ちょうこう"
+    },
+    {
+        "question": "街道",
+        "answer": "かいどう"
+    },
+    {
+        "question": "好評",
+        "answer": "こうひょう"
+    },
+    {
+        "question": "お巡りさん",
+        "answer": "おまわりさん"
+    },
+    {
+        "question": "展望",
+        "answer": "てんぼう"
+    },
+    {
+        "question": "英雄",
+        "answer": "えいゆう"
+    },
+    {
+        "question": "脈",
+        "answer": "みゃく"
+    },
+    {
+        "question": "暇",
+        "answer": "いとま"
+    },
+    {
+        "question": "連盟",
+        "answer": "れんめい"
+    },
+    {
+        "question": "妥協",
+        "answer": "だきょう"
+    },
+    {
+        "question": "朗読",
+        "answer": "ろうどく"
+    },
+    {
+        "question": "器",
+        "answer": "うつわ"
+    },
+    {
+        "question": "修飾",
+        "answer": "しゅうしょく"
+    },
+    {
+        "question": "花壇",
+        "answer": "かだん"
+    },
+    {
+        "question": "既婚",
+        "answer": "きこん"
+    },
+    {
+        "question": "偏",
+        "answer": "へん"
+    },
+    {
+        "question": "緩やか",
+        "answer": "ゆるやか"
+    },
+    {
+        "question": "漂う",
+        "answer": "ただよう"
+    },
+    {
+        "question": "掌",
+        "answer": "たなごころ"
+    },
+    {
+        "question": "保つ",
+        "answer": "たもつ"
+    },
+    {
+        "question": "感染",
+        "answer": "かんせん"
+    },
+    {
+        "question": "勧め",
+        "answer": "すすめ"
+    },
+    {
+        "question": "腐敗",
+        "answer": "ふはい"
+    },
+    {
+        "question": "微か",
+        "answer": "かすか"
+    },
+    {
+        "question": "玄人",
+        "answer": "くろうと"
+    },
+    {
+        "question": "小銭",
+        "answer": "こぜに"
+    },
+    {
+        "question": "市街",
+        "answer": "しがい"
+    },
+    {
+        "question": "取り扱い",
+        "answer": "とりあつかい"
+    },
+    {
+        "question": "宣言",
+        "answer": "せんげん"
+    },
+    {
+        "question": "妨害",
+        "answer": "ぼうがい"
+    },
+    {
+        "question": "及ぶ",
+        "answer": "およぶ"
+    },
+    {
+        "question": "節",
+        "answer": "せつ"
+    },
+    {
+        "question": "諮る",
+        "answer": "はかる"
+    },
+    {
+        "question": "該当",
+        "answer": "がいとう"
+    },
+    {
+        "question": "結合",
+        "answer": "けつごう"
+    },
+    {
+        "question": "余興",
+        "answer": "よきょう"
+    },
+    {
+        "question": "異動",
+        "answer": "いどう"
+    },
+    {
+        "question": "妥結",
+        "answer": "だけつ"
+    },
+    {
+        "question": "縁",
+        "answer": "えん"
+    },
+    {
+        "question": "言い訳",
+        "answer": "いいわけ"
+    },
+    {
+        "question": "圧迫",
+        "answer": "あっぱく"
+    },
+    {
+        "question": "富豪",
+        "answer": "ふごう"
+    },
+    {
+        "question": "語源",
+        "answer": "ごげん"
+    },
+    {
+        "question": "勘弁",
+        "answer": "かんべん"
+    },
+    {
+        "question": "統合",
+        "answer": "とうごう"
+    },
+    {
+        "question": "華奢",
+        "answer": "かしゃ"
+    },
+    {
+        "question": "第一",
+        "answer": "だいいち"
+    },
+    {
+        "question": "第",
+        "answer": "だい"
+    },
+    {
+        "question": "駆け足",
+        "answer": "かけあし"
+    },
+    {
+        "question": "担架",
+        "answer": "たんか"
+    },
+    {
+        "question": "確保",
+        "answer": "かくほ"
+    },
+    {
+        "question": "原典",
+        "answer": "げんてん"
+    },
+    {
+        "question": "変遷",
+        "answer": "へんせん"
+    },
+    {
+        "question": "何故なら",
+        "answer": "なぜなら"
+    },
+    {
+        "question": "全盛",
+        "answer": "ぜんせい"
+    },
+    {
+        "question": "独自",
+        "answer": "どくじ"
+    },
+    {
+        "question": "内訳",
+        "answer": "うちわけ"
+    },
+    {
+        "question": "相応",
+        "answer": "そうおう"
+    },
+    {
+        "question": "頑丈",
+        "answer": "がんじょう"
+    },
+    {
+        "question": "徹する",
+        "answer": "てっする"
+    },
+    {
+        "question": "敢えて",
+        "answer": "あえて"
+    },
+    {
+        "question": "締め切り",
+        "answer": "しめきり"
+    },
+    {
+        "question": "頑固",
+        "answer": "がんこ"
+    },
+    {
+        "question": "阻む",
+        "answer": "はばむ"
+    },
+    {
+        "question": "前提",
+        "answer": "ぜんてい"
+    },
+    {
+        "question": "駆けっこ",
+        "answer": "かけっこ"
+    },
+    {
+        "question": "馬鹿らしい",
+        "answer": "ばからしい"
+    },
+    {
+        "question": "赴く",
+        "answer": "おもむく"
+    },
+    {
+        "question": "酸っぱい",
+        "answer": "すっぱい"
+    },
+    {
+        "question": "汽船",
+        "answer": "きせん"
+    },
+    {
+        "question": "選挙",
+        "answer": "せんきょ"
+    },
+    {
+        "question": "率いる",
+        "answer": "ひきいる"
+    },
+    {
+        "question": "可哀想",
+        "answer": "かわいそう"
+    },
+    {
+        "question": "気兼ね",
+        "answer": "きがね"
+    },
+    {
+        "question": "添う",
+        "answer": "そう"
+    },
+    {
+        "question": "簡潔",
+        "answer": "かんけつ"
+    },
+    {
+        "question": "繁栄",
+        "answer": "はんえい"
+    },
+    {
+        "question": "気障",
+        "answer": "きざ"
+    },
+    {
+        "question": "健全",
+        "answer": "けんぜん"
+    },
+    {
+        "question": "肝心",
+        "answer": "かんじん"
+    },
+    {
+        "question": "眼鏡",
+        "answer": "がんきょう"
+    },
+    {
+        "question": "首飾り",
+        "answer": "くびかざり"
+    },
+    {
+        "question": "定義",
+        "answer": "ていぎ"
+    },
+    {
+        "question": "手錠",
+        "answer": "てじょう"
+    },
+    {
+        "question": "悪戯",
+        "answer": "いたずら"
+    },
+    {
+        "question": "婿",
+        "answer": "むこ"
+    },
+    {
+        "question": "凡ゆる",
+        "answer": "あらゆる"
+    },
+    {
+        "question": "打撃",
+        "answer": "だげき"
+    },
+    {
+        "question": "救済",
+        "answer": "きゅうさい"
+    },
+    {
+        "question": "弾む",
+        "answer": "はずむ"
+    },
+    {
+        "question": "泌み泌み",
+        "answer": "しみじみ"
+    },
+    {
+        "question": "佐",
+        "answer": "さ"
+    },
+    {
+        "question": "契機",
+        "answer": "けいき"
+    },
+    {
+        "question": "桟橋",
+        "answer": "さんきょう"
+    },
+    {
+        "question": "進呈",
+        "answer": "しんてい"
+    },
+    {
+        "question": "僧",
+        "answer": "そう"
+    },
+    {
+        "question": "質素",
+        "answer": "しっそ"
+    },
+    {
+        "question": "新興",
+        "answer": "しんこう"
+    },
+    {
+        "question": "不山戯る",
+        "answer": "ふざける"
+    },
+    {
+        "question": "戦災",
+        "answer": "せんさい"
+    },
+    {
+        "question": "負債",
+        "answer": "ふさい"
+    },
+    {
+        "question": "膜",
+        "answer": "まく"
+    },
+    {
+        "question": "甲",
+        "answer": "きのえ"
+    },
+    {
+        "question": "扶養",
+        "answer": "ふよう"
+    },
+    {
+        "question": "弁償",
+        "answer": "べんしょう"
+    },
+    {
+        "question": "山岳",
+        "answer": "さんがく"
+    },
+    {
+        "question": "清濁",
+        "answer": "せいだく"
+    },
+    {
+        "question": "崇拝",
+        "answer": "すうはい"
+    },
+    {
+        "question": "膨れる",
+        "answer": "ふくれる"
+    },
+    {
+        "question": "沈没",
+        "answer": "ちんぼつ"
+    },
+    {
+        "question": "攻め",
+        "answer": "せめ"
+    },
+    {
+        "question": "奉仕",
+        "answer": "ほうし"
+    },
+    {
+        "question": "光沢",
+        "answer": "こうたく"
+    },
+    {
+        "question": "徐々",
+        "answer": "そろそろ"
+    },
+    {
+        "question": "芝",
+        "answer": "しば"
+    },
+    {
+        "question": "脅かす",
+        "answer": "おどかす"
+    },
+    {
+        "question": "生臭い",
+        "answer": "なまぐさい"
+    },
+    {
+        "question": "興奮",
+        "answer": "こうふん"
+    },
+    {
+        "question": "雌",
+        "answer": "めす"
+    },
+    {
+        "question": "神聖",
+        "answer": "しんせい"
+    },
+    {
+        "question": "仮令",
+        "answer": "たとえ"
+    },
+    {
+        "question": "法廷",
+        "answer": "ほうてい"
+    },
+    {
+        "question": "探検",
+        "answer": "たんけん"
+    },
+    {
+        "question": "弾く",
+        "answer": "はじく"
+    },
+    {
+        "question": "明朗",
+        "answer": "めいろう"
+    },
+    {
+        "question": "襟",
+        "answer": "えり"
+    },
+    {
+        "question": "脅迫",
+        "answer": "きょうはく"
+    },
+    {
+        "question": "結核",
+        "answer": "けっかく"
+    },
+    {
+        "question": "聴覚",
+        "answer": "ちょうかく"
+    },
+    {
+        "question": "盛装",
+        "answer": "せいそう"
+    },
+    {
+        "question": "覆す",
+        "answer": "くつがえす"
+    },
+    {
+        "question": "聖書",
+        "answer": "せいしょ"
+    },
+    {
+        "question": "懸賞",
+        "answer": "けんしょう"
+    },
+    {
+        "question": "回覧",
+        "answer": "かいらん"
+    },
+    {
+        "question": "視点",
+        "answer": "してん"
+    },
+    {
+        "question": "脱出",
+        "answer": "だっしゅつ"
+    },
+    {
+        "question": "普遍",
+        "answer": "ふへん"
+    },
+    {
+        "question": "従来",
+        "answer": "じゅうらい"
+    },
+    {
+        "question": "兼業",
+        "answer": "けんぎょう"
+    },
+    {
+        "question": "天井",
+        "answer": "てんじょう"
+    },
+    {
+        "question": "方策",
+        "answer": "ほうさく"
+    },
+    {
+        "question": "街頭",
+        "answer": "がいとう"
+    },
+    {
+        "question": "滅ぼす",
+        "answer": "ほろぼす"
+    },
+    {
+        "question": "潤う",
+        "answer": "うるおう"
+    },
+    {
+        "question": "合併",
+        "answer": "がっぺい"
+    },
+    {
+        "question": "不審",
+        "answer": "ふしん"
+    },
+    {
+        "question": "看護",
+        "answer": "かんご"
+    },
+    {
+        "question": "凌ぐ",
+        "answer": "しのぐ"
+    },
+    {
+        "question": "対抗",
+        "answer": "たいこう"
+    },
+    {
+        "question": "破壊",
+        "answer": "はかい"
+    },
+    {
+        "question": "縁側",
+        "answer": "えんがわ"
+    },
+    {
+        "question": "観覧",
+        "answer": "かんらん"
+    },
+    {
+        "question": "護衛",
+        "answer": "ごえい"
+    },
+    {
+        "question": "凝らす",
+        "answer": "こごらす"
+    },
+    {
+        "question": "悟る",
+        "answer": "さとる"
+    },
+    {
+        "question": "傷付く",
+        "answer": "きずつく"
+    },
+    {
+        "question": "紳士",
+        "answer": "しんし"
+    },
+    {
+        "question": "余暇",
+        "answer": "よか"
+    },
+    {
+        "question": "軽率",
+        "answer": "けいそつ"
+    },
+    {
+        "question": "条約",
+        "answer": "じょうやく"
+    },
+    {
+        "question": "提携",
+        "answer": "ていけい"
+    },
+    {
+        "question": "にも拘らず",
+        "answer": "にもかかわらず"
+    },
+    {
+        "question": "滑らか",
+        "answer": "なめらか"
+    },
+    {
+        "question": "憤慨",
+        "answer": "ふんがい"
+    },
+    {
+        "question": "屈折",
+        "answer": "くっせつ"
+    },
+    {
+        "question": "梅干",
+        "answer": "うめぼし"
+    },
+    {
+        "question": "徴収",
+        "answer": "ちょうしゅう"
+    },
+    {
+        "question": "義理",
+        "answer": "ぎり"
+    },
+    {
+        "question": "操る",
+        "answer": "あやつる"
+    },
+    {
+        "question": "検事",
+        "answer": "けんじ"
+    },
+    {
+        "question": "捕獲",
+        "answer": "ほかく"
+    },
+    {
+        "question": "納入",
+        "answer": "のうにゅう"
+    },
+    {
+        "question": "土俵",
+        "answer": "どひょう"
+    },
+    {
+        "question": "惑星",
+        "answer": "わくせい"
+    },
+    {
+        "question": "法案",
+        "answer": "ほうあん"
+    },
+    {
+        "question": "襲撃",
+        "answer": "しゅうげき"
+    },
+    {
+        "question": "推測",
+        "answer": "すいそく"
+    },
+    {
+        "question": "飼育",
+        "answer": "しいく"
+    },
+    {
+        "question": "窮乏",
+        "answer": "きゅうぼう"
+    },
+    {
+        "question": "語句",
+        "answer": "ごく"
+    },
+    {
+        "question": "専修",
+        "answer": "せんしゅう"
+    },
+    {
+        "question": "審査",
+        "answer": "しんさ"
+    },
+    {
+        "question": "聴診器",
+        "answer": "ちょうしんき"
+    },
+    {
+        "question": "購読",
+        "answer": "こうどく"
+    },
+    {
+        "question": "栽培",
+        "answer": "さいばい"
+    },
+    {
+        "question": "要請",
+        "answer": "ようせい"
+    },
+    {
+        "question": "保養",
+        "answer": "ほよう"
+    },
+    {
+        "question": "敏感",
+        "answer": "びんかん"
+    },
+    {
+        "question": "腸",
+        "answer": "ちょう"
+    },
+    {
+        "question": "勧告",
+        "answer": "かんこく"
+    },
+    {
+        "question": "襲う",
+        "answer": "おそう"
+    },
+    {
+        "question": "内閣",
+        "answer": "ないかく"
+    },
+    {
+        "question": "巧妙",
+        "answer": "こうみょう"
+    },
+    {
+        "question": "濫用",
+        "answer": "らんよう"
+    },
+    {
+        "question": "兼ねて",
+        "answer": "かねて"
+    },
+    {
+        "question": "発条",
+        "answer": "ばね"
+    },
+    {
+        "question": "保母",
+        "answer": "ほぼ"
+    },
+    {
+        "question": "携帯",
+        "answer": "けいたい"
+    },
+    {
+        "question": "消耗",
+        "answer": "しょうこう"
+    },
+    {
+        "question": "廃れる",
+        "answer": "すたれる"
+    },
+    {
+        "question": "追及",
+        "answer": "ついきゅう"
+    },
+    {
+        "question": "即座に",
+        "answer": "そくざに"
+    },
+    {
+        "question": "抑圧",
+        "answer": "よくあつ"
+    },
+    {
+        "question": "融資",
+        "answer": "ゆうし"
+    },
+    {
+        "question": "結束",
+        "answer": "けっそく"
+    },
+    {
+        "question": "創立",
+        "answer": "そうりつ"
+    },
+    {
+        "question": "伊井",
+        "answer": "いい"
+    },
+    {
+        "question": "視野",
+        "answer": "しや"
+    },
+    {
+        "question": "崩壊",
+        "answer": "ほうかい"
+    },
+    {
+        "question": "壮大",
+        "answer": "そうだい"
+    },
+    {
+        "question": "履歴",
+        "answer": "りれき"
+    },
+    {
+        "question": "捕鯨",
+        "answer": "ほげい"
+    },
+    {
+        "question": "郷里",
+        "answer": "きょうり"
+    },
+    {
+        "question": "司法",
+        "answer": "しほう"
+    },
+    {
+        "question": "雷",
+        "answer": "いかずち"
+    },
+    {
+        "question": "匹敵",
+        "answer": "ひってき"
+    },
+    {
+        "question": "保管",
+        "answer": "ほかん"
+    },
+    {
+        "question": "嘆く",
+        "answer": "なげく"
+    },
+    {
+        "question": "秩序",
+        "answer": "ちつじょ"
+    },
+    {
+        "question": "梢",
+        "answer": "こずえ"
+    },
+    {
+        "question": "煩わしい",
+        "answer": "わずらわしい"
+    },
+    {
+        "question": "残酷",
+        "answer": "ざんこく"
+    },
+    {
+        "question": "解剖",
+        "answer": "かいぼう"
+    },
+    {
+        "question": "唱える",
+        "answer": "となえる"
+    },
+    {
+        "question": "且つ",
+        "answer": "かつ"
+    },
+    {
+        "question": "帳",
+        "answer": "とばり"
+    },
+    {
+        "question": "天災",
+        "answer": "てんさい"
+    },
+    {
+        "question": "どうぞ宜しく",
+        "answer": "どうぞよろしく"
+    },
+    {
+        "question": "沈黙",
+        "answer": "ちんもく"
+    },
+    {
+        "question": "漠然",
+        "answer": "ばくぜん"
+    },
+    {
+        "question": "就業",
+        "answer": "しゅうぎょう"
+    },
+    {
+        "question": "制裁",
+        "answer": "せいさい"
+    },
+    {
+        "question": "救い",
+        "answer": "すくい"
+    },
+    {
+        "question": "善し悪し",
+        "answer": "よしあし"
+    },
+    {
+        "question": "放射",
+        "answer": "ほうしゃ"
+    },
+    {
+        "question": "衰える",
+        "answer": "おとろえる"
+    },
+    {
+        "question": "偽造",
+        "answer": "ぎぞう"
+    },
+    {
+        "question": "暦",
+        "answer": "こよみ"
+    },
+    {
+        "question": "司る",
+        "answer": "つかさどる"
+    },
+    {
+        "question": "欺く",
+        "answer": "あざむく"
+    },
+    {
+        "question": "修士",
+        "answer": "しゅうし"
+    },
+    {
+        "question": "紛失",
+        "answer": "ふんしつ"
+    },
+    {
+        "question": "議案",
+        "answer": "ぎあん"
+    },
+    {
+        "question": "開拓",
+        "answer": "かいたく"
+    },
+    {
+        "question": "健在",
+        "answer": "けんざい"
+    },
+    {
+        "question": "捕虜",
+        "answer": "ほりょ"
+    },
+    {
+        "question": "逸らす",
+        "answer": "そらす"
+    },
+    {
+        "question": "棄権",
+        "answer": "きけん"
+    },
+    {
+        "question": "感慨",
+        "answer": "かんがい"
+    },
+    {
+        "question": "源",
+        "answer": "みなもと"
+    },
+    {
+        "question": "運賃",
+        "answer": "うんちん"
+    },
+    {
+        "question": "系",
+        "answer": "けい"
+    },
+    {
+        "question": "突っ張る",
+        "answer": "つっぱる"
+    },
+    {
+        "question": "黴菌",
+        "answer": "ばいきん"
+    },
+    {
+        "question": "控える",
+        "answer": "ひかえる"
+    },
+    {
+        "question": "於いて",
+        "answer": "おいて"
+    },
+    {
+        "question": "僕",
+        "answer": "しもべ"
+    },
+    {
+        "question": "隔週",
+        "answer": "かくしゅう"
+    },
+    {
+        "question": "異見",
+        "answer": "いけん"
+    },
+    {
+        "question": "簡素",
+        "answer": "かんそ"
+    },
+    {
+        "question": "据える",
+        "answer": "すえる"
+    },
+    {
+        "question": "眼科",
+        "answer": "がんか"
+    },
+    {
+        "question": "染まる",
+        "answer": "そまる"
+    },
+    {
+        "question": "扱い",
+        "answer": "あつかい"
+    },
+    {
+        "question": "苗",
+        "answer": "なえ"
+    },
+    {
+        "question": "鉛",
+        "answer": "なまり"
+    },
+    {
+        "question": "合唱",
+        "answer": "がっしょう"
+    },
+    {
+        "question": "拒絶",
+        "answer": "きょぜつ"
+    },
+    {
+        "question": "後悔",
+        "answer": "こうかい"
+    },
+    {
+        "question": "麻",
+        "answer": "あさ"
+    },
+    {
+        "question": "名誉",
+        "answer": "めいよ"
+    },
+    {
+        "question": "傷",
+        "answer": "しょう"
+    },
+    {
+        "question": "酪農",
+        "answer": "らくのう"
+    },
+    {
+        "question": "拡散",
+        "answer": "かくさん"
+    },
+    {
+        "question": "嬢",
+        "answer": "じょう"
+    },
+    {
+        "question": "露骨",
+        "answer": "ろこつ"
+    },
+    {
+        "question": "滞納",
+        "answer": "たいのう"
+    },
+    {
+        "question": "抗争",
+        "answer": "こうそう"
+    },
+    {
+        "question": "及び",
+        "answer": "および"
+    },
+    {
+        "question": "尿",
+        "answer": "にょう"
+    },
+    {
+        "question": "操縦",
+        "answer": "そうじゅう"
+    },
+    {
+        "question": "最善",
+        "answer": "さいぜん"
+    },
+    {
+        "question": "訴え",
+        "answer": "うったえ"
+    },
+    {
+        "question": "邸宅",
+        "answer": "ていたく"
+    },
+    {
+        "question": "散蒔く",
+        "answer": "ばらまく"
+    },
+    {
+        "question": "朽ちる",
+        "answer": "くちる"
+    },
+    {
+        "question": "尚更",
+        "answer": "なおさら"
+    },
+    {
+        "question": "養成",
+        "answer": "ようせい"
+    },
+    {
+        "question": "墓地",
+        "answer": "はかち"
+    },
+    {
+        "question": "症",
+        "answer": "しょう"
+    },
+    {
+        "question": "騒動",
+        "answer": "そうどう"
+    },
+    {
+        "question": "赴任",
+        "answer": "ふにん"
+    },
+    {
+        "question": "推進",
+        "answer": "すいしん"
+    },
+    {
+        "question": "氏",
+        "answer": "うじ"
+    },
+    {
+        "question": "欠乏",
+        "answer": "けつぼう"
+    },
+    {
+        "question": "猛烈",
+        "answer": "もうれつ"
+    },
+    {
+        "question": "為さる",
+        "answer": "なさる"
+    },
+    {
+        "question": "創刊",
+        "answer": "そうかん"
+    },
+    {
+        "question": "免除",
+        "answer": "めんじょ"
+    },
+    {
+        "question": "従事",
+        "answer": "じゅうじ"
+    },
+    {
+        "question": "麻酔",
+        "answer": "ますい"
+    },
+    {
+        "question": "宮殿",
+        "answer": "きゅうでん"
+    },
+    {
+        "question": "几帳面",
+        "answer": "きちょうめん"
+    },
+    {
+        "question": "返還",
+        "answer": "へんかん"
+    },
+    {
+        "question": "遣る",
+        "answer": "やる"
+    },
+    {
+        "question": "化繊",
+        "answer": "かせん"
+    },
+    {
+        "question": "均衡",
+        "answer": "きんこう"
+    },
+    {
+        "question": "擦る",
+        "answer": "かする"
+    },
+    {
+        "question": "破裂",
+        "answer": "はれつ"
+    },
+    {
+        "question": "犠牲",
+        "answer": "ぎせい"
+    },
+    {
+        "question": "寛容",
+        "answer": "かんよう"
+    },
+    {
+        "question": "大概",
+        "answer": "たいがい"
+    },
+    {
+        "question": "誇張",
+        "answer": "こちょう"
+    },
+    {
+        "question": "身振り",
+        "answer": "みぶり"
+    },
+    {
+        "question": "封鎖",
+        "answer": "ふうさ"
+    },
+    {
+        "question": "審議",
+        "answer": "しんぎ"
+    },
+    {
+        "question": "捜索",
+        "answer": "そうさく"
+    },
+    {
+        "question": "率直",
+        "answer": "そっちょく"
+    },
+    {
+        "question": "討論",
+        "answer": "とうろん"
+    },
+    {
+        "question": "全滅",
+        "answer": "ぜんめつ"
+    },
+    {
+        "question": "民俗",
+        "answer": "みんぞく"
+    },
+    {
+        "question": "大胆",
+        "answer": "だいたん"
+    },
+    {
+        "question": "箇箇",
+        "answer": "ここ"
+    },
+    {
+        "question": "承諾",
+        "answer": "しょうだく"
+    },
+    {
+        "question": "保険",
+        "answer": "ほけん"
+    },
+    {
+        "question": "一括",
+        "answer": "いっかつ"
+    },
+    {
+        "question": "分離",
+        "answer": "ぶんり"
+    },
+    {
+        "question": "牧師",
+        "answer": "ぼくし"
+    },
+    {
+        "question": "記載",
+        "answer": "きさい"
+    },
+    {
+        "question": "等級",
+        "answer": "とうきゅう"
+    },
+    {
+        "question": "奮闘",
+        "answer": "ふんとう"
+    },
+    {
+        "question": "採択",
+        "answer": "さいたく"
+    },
+    {
+        "question": "華やか",
+        "answer": "はなやか"
+    },
+    {
+        "question": "戦闘",
+        "answer": "せんとう"
+    },
+    {
+        "question": "奇麗",
+        "answer": "きれい"
+    },
+    {
+        "question": "仮",
+        "answer": "か"
+    },
+    {
+        "question": "受け継ぐ",
+        "answer": "うけつぐ"
+    },
+    {
+        "question": "疑惑",
+        "answer": "ぎわく"
+    },
+    {
+        "question": "呉れる",
+        "answer": "くれる"
+    },
+    {
+        "question": "中傷",
+        "answer": "ちゅうしょう"
+    },
+    {
+        "question": "裂ける",
+        "answer": "さける"
+    },
+    {
+        "question": "学士",
+        "answer": "がくし"
+    },
+    {
+        "question": "未熟",
+        "answer": "みじゅく"
+    },
+    {
+        "question": "堤防",
+        "answer": "ていぼう"
+    },
+    {
+        "question": "何故",
+        "answer": "なぜ"
+    },
+    {
+        "question": "忠告",
+        "answer": "ちゅうこく"
+    },
+    {
+        "question": "怠い",
+        "answer": "だるい"
+    },
+    {
+        "question": "染める",
+        "answer": "そめる"
+    },
+    {
+        "question": "釣り",
+        "answer": "つり"
+    },
+    {
+        "question": "分裂",
+        "answer": "ぶんれつ"
+    },
+    {
+        "question": "衆",
+        "answer": "しゅう"
+    },
+    {
+        "question": "独創",
+        "answer": "どくそう"
+    },
+    {
+        "question": "動揺",
+        "answer": "どうよう"
+    },
+    {
+        "question": "経緯",
+        "answer": "いきさつ"
+    },
+    {
+        "question": "案じる",
+        "answer": "あんじる"
+    },
+    {
+        "question": "罰",
+        "answer": "ばち"
+    },
+    {
+        "question": "諄い",
+        "answer": "くどい"
+    },
+    {
+        "question": "閉鎖",
+        "answer": "へいさ"
+    },
+    {
+        "question": "百科事典",
+        "answer": "ひゃっかじてん"
+    },
+    {
+        "question": "繁盛",
+        "answer": "はんじょう"
+    },
+    {
+        "question": "山脈",
+        "answer": "さんみゃく"
+    },
+    {
+        "question": "覆面",
+        "answer": "ふくめん"
+    },
+    {
+        "question": "吟味",
+        "answer": "ぎんみ"
+    },
+    {
+        "question": "船舶",
+        "answer": "せんぱく"
+    },
+    {
+        "question": "独占",
+        "answer": "どくせん"
+    },
+    {
+        "question": "開催",
+        "answer": "かいさい"
+    },
+    {
+        "question": "盛り上がる",
+        "answer": "もりあがる"
+    },
+    {
+        "question": "陳列",
+        "answer": "ちんれつ"
+    },
+    {
+        "question": "没収",
+        "answer": "ぼっしゅう"
+    },
+    {
+        "question": "織物",
+        "answer": "おりもの"
+    },
+    {
+        "question": "踏まえる",
+        "answer": "ふまえる"
+    },
+    {
+        "question": "益々",
+        "answer": "ますます"
+    },
+    {
+        "question": "施設",
+        "answer": "しせつ"
+    },
+    {
+        "question": "放棄",
+        "answer": "ほうき"
+    },
+    {
+        "question": "塾",
+        "answer": "じゅく"
+    },
+    {
+        "question": "賃金",
+        "answer": "ちんぎん"
+    },
+    {
+        "question": "錯誤",
+        "answer": "さくご"
+    },
+    {
+        "question": "垂れる",
+        "answer": "たれる"
+    },
+    {
+        "question": "哉",
+        "answer": "や"
+    },
+    {
+        "question": "浸す",
+        "answer": "ひたす"
+    },
+    {
+        "question": "暫く",
+        "answer": "しばらく"
+    },
+    {
+        "question": "孤独",
+        "answer": "こどく"
+    },
+    {
+        "question": "為来り",
+        "answer": "しきたり"
+    },
+    {
+        "question": "親善",
+        "answer": "しんぜん"
+    },
+    {
+        "question": "扉",
+        "answer": "とびら"
+    },
+    {
+        "question": "潜る",
+        "answer": "くぐる"
+    },
+    {
+        "question": "繕う",
+        "answer": "つくろう"
+    },
+    {
+        "question": "仙",
+        "answer": "せん"
+    },
+    {
+        "question": "爽やか",
+        "answer": "さわやか"
+    },
+    {
+        "question": "単独",
+        "answer": "たんどく"
+    },
+    {
+        "question": "細菌",
+        "answer": "さいきん"
+    },
+    {
+        "question": "擦れ違い",
+        "answer": "すれちがい"
+    },
+    {
+        "question": "突如",
+        "answer": "とつじょ"
+    },
+    {
+        "question": "効率",
+        "answer": "こうりつ"
+    },
+    {
+        "question": "兵器",
+        "answer": "へいき"
+    },
+    {
+        "question": "横綱",
+        "answer": "よこづな"
+    },
+    {
+        "question": "便宜",
+        "answer": "べんぎ"
+    },
+    {
+        "question": "擦れる",
+        "answer": "すれる"
+    },
+    {
+        "question": "階級",
+        "answer": "かいきゅう"
+    },
+    {
+        "question": "其れ故",
+        "answer": "それゆえ"
+    },
+    {
+        "question": "吃驚",
+        "answer": "びっくり"
+    },
+    {
+        "question": "形態",
+        "answer": "けいたい"
+    },
+    {
+        "question": "賜る",
+        "answer": "たまわる"
+    },
+    {
+        "question": "ご無沙汰",
+        "answer": "ごぶさた"
+    },
+    {
+        "question": "基",
+        "answer": "もとい"
+    },
+    {
+        "question": "製法",
+        "answer": "せいほう"
+    },
+    {
+        "question": "顧みる",
+        "answer": "かえりみる"
+    },
+    {
+        "question": "侵略",
+        "answer": "しんりゃく"
+    },
+    {
+        "question": "異性",
+        "answer": "いせい"
+    },
+    {
+        "question": "如何",
+        "answer": "いかが"
+    },
+    {
+        "question": "態勢",
+        "answer": "たいせい"
+    },
+    {
+        "question": "促進",
+        "answer": "そくしん"
+    },
+    {
+        "question": "傍ら",
+        "answer": "かたわら"
+    },
+    {
+        "question": "閲覧",
+        "answer": "えつらん"
+    },
+    {
+        "question": "瞬き",
+        "answer": "またたき"
+    },
+    {
+        "question": "降伏",
+        "answer": "こうふく"
+    },
+    {
+        "question": "縮まる",
+        "answer": "ちぢまる"
+    },
+    {
+        "question": "催す",
+        "answer": "もよおす"
+    },
+    {
+        "question": "素っ気ない",
+        "answer": "そっけない"
+    },
+    {
+        "question": "復興",
+        "answer": "ふっこう"
+    },
+    {
+        "question": "宜しく",
+        "answer": "よろしく"
+    },
+    {
+        "question": "起源",
+        "answer": "きげん"
+    },
+    {
+        "question": "掲げる",
+        "answer": "かかげる"
+    },
+    {
+        "question": "織る",
+        "answer": "おる"
+    },
+    {
+        "question": "強烈",
+        "answer": "きょうれつ"
+    },
+    {
+        "question": "距離",
+        "answer": "きょり"
+    },
+    {
+        "question": "尻尾",
+        "answer": "しっぽ"
+    },
+    {
+        "question": "沿い",
+        "answer": "ぞい"
+    },
+    {
+        "question": "粗筋",
+        "answer": "あらすじ"
+    },
+    {
+        "question": "高尚",
+        "answer": "こうしょう"
+    },
+    {
+        "question": "反応",
+        "answer": "はんのう"
+    },
+    {
+        "question": "電源",
+        "answer": "でんげん"
+    },
+    {
+        "question": "紛らわしい",
+        "answer": "まぎらわしい"
+    },
+    {
+        "question": "嵩張る",
+        "answer": "かさばる"
+    },
+    {
+        "question": "冠",
+        "answer": "かん"
+    },
+    {
+        "question": "堪らない",
+        "answer": "たまらない"
+    },
+    {
+        "question": "雪崩",
+        "answer": "なだれ"
+    },
+    {
+        "question": "中枢",
+        "answer": "ちゅうすう"
+    },
+    {
+        "question": "取り締まり",
+        "answer": "とりしまり"
+    },
+    {
+        "question": "偏る",
+        "answer": "かたよる"
+    },
+    {
+        "question": "軍艦",
+        "answer": "ぐんかん"
+    },
+    {
+        "question": "遺跡",
+        "answer": "いせき"
+    },
+    {
+        "question": "吹奏",
+        "answer": "すいそう"
+    },
+    {
+        "question": "宝器",
+        "answer": "ほうき"
+    },
+    {
+        "question": "釣鐘",
+        "answer": "つりがね"
+    },
+    {
+        "question": "滑稽",
+        "answer": "こっけい"
+    },
+    {
+        "question": "趣旨",
+        "answer": "しゅし"
+    },
+    {
+        "question": "挑む",
+        "answer": "いどむ"
+    },
+    {
+        "question": "盾",
+        "answer": "たて"
+    },
+    {
+        "question": "半端",
+        "answer": "はんぱ"
+    },
+    {
+        "question": "殊に",
+        "answer": "ことに"
+    },
+    {
+        "question": "倣",
+        "answer": "ほう"
+    },
+    {
+        "question": "厳密",
+        "answer": "げんみつ"
+    },
+    {
+        "question": "脚色",
+        "answer": "きゃくしょく"
+    },
+    {
+        "question": "抽選",
+        "answer": "ちゅうせん"
+    },
+    {
+        "question": "保育",
+        "answer": "ほいく"
+    },
+    {
+        "question": "沢山",
+        "answer": "たくさん"
+    },
+    {
+        "question": "委託",
+        "answer": "いたく"
+    },
+    {
+        "question": "策",
+        "answer": "さく"
+    },
+    {
+        "question": "吐く",
+        "answer": "つく"
+    },
+    {
+        "question": "旦那",
+        "answer": "だんな"
+    },
+    {
+        "question": "怠慢",
+        "answer": "たいまん"
+    },
+    {
+        "question": "診療",
+        "answer": "しんりょう"
+    },
+    {
+        "question": "潜入",
+        "answer": "せんにゅう"
+    },
+    {
+        "question": "付属",
+        "answer": "ふぞく"
+    },
+    {
+        "question": "殴る",
+        "answer": "なぐる"
+    },
+    {
+        "question": "謝絶",
+        "answer": "しゃぜつ"
+    },
+    {
+        "question": "素朴",
+        "answer": "そぼく"
+    },
+    {
+        "question": "雄",
+        "answer": "おす"
+    },
+    {
+        "question": "織",
+        "answer": "おり"
+    },
+    {
+        "question": "補償",
+        "answer": "ほしょう"
+    },
+    {
+        "question": "模索",
+        "answer": "もさく"
+    },
+    {
+        "question": "艶",
+        "answer": "えん"
+    },
+    {
+        "question": "伴う",
+        "answer": "ともなう"
+    },
+    {
+        "question": "凡そ",
+        "answer": "およそ"
+    },
+    {
+        "question": "棟",
+        "answer": "とう"
+    },
+    {
+        "question": "反射",
+        "answer": "はんしゃ"
+    },
+    {
+        "question": "整然",
+        "answer": "せいぜん"
+    },
+    {
+        "question": "伐",
+        "answer": "ばつ"
+    },
+    {
+        "question": "勧誘",
+        "answer": "かんゆう"
+    },
+    {
+        "question": "実践",
+        "answer": "じっせん"
+    },
+    {
+        "question": "兼用",
+        "answer": "けんよう"
+    },
+    {
+        "question": "貫く",
+        "answer": "つらぬく"
+    },
+    {
+        "question": "束縛",
+        "answer": "そくばく"
+    },
+    {
+        "question": "嵩む",
+        "answer": "かさむ"
+    },
+    {
+        "question": "配慮",
+        "answer": "はいりょ"
+    },
+    {
+        "question": "郷愁",
+        "answer": "きょうしゅう"
+    },
+    {
+        "question": "宙返り",
+        "answer": "ちゅうがえり"
+    },
+    {
+        "question": "溝",
+        "answer": "こう"
+    },
+    {
+        "question": "戸締り",
+        "answer": "とじまり"
+    },
+    {
+        "question": "執着",
+        "answer": "しゅうじゃく"
+    },
+    {
+        "question": "裸足",
+        "answer": "はだし"
+    },
+    {
+        "question": "忠実",
+        "answer": "ちゅうじつ"
+    },
+    {
+        "question": "点検",
+        "answer": "てんけん"
+    },
+    {
+        "question": "官僚",
+        "answer": "かんりょう"
+    },
+    {
+        "question": "印鑑",
+        "answer": "いんかん"
+    },
+    {
+        "question": "干渉",
+        "answer": "かんしょう"
+    },
+    {
+        "question": "月賦",
+        "answer": "げっぷ"
+    },
+    {
+        "question": "密集",
+        "answer": "みっしゅう"
+    },
+    {
+        "question": "控室",
+        "answer": "ひかえしつ"
+    },
+    {
+        "question": "魂",
+        "answer": "こん"
+    },
+    {
+        "question": "雅致",
+        "answer": "がち"
+    },
+    {
+        "question": "天皇",
+        "answer": "すめらぎ"
+    },
+    {
+        "question": "討議",
+        "answer": "とうぎ"
+    },
+    {
+        "question": "磁気",
+        "answer": "じき"
+    },
+    {
+        "question": "抑制",
+        "answer": "よくせい"
+    },
+    {
+        "question": "傾斜",
+        "answer": "けいしゃ"
+    },
+    {
+        "question": "渋い",
+        "answer": "しぶい"
+    },
+    {
+        "question": "一挙に",
+        "answer": "いっきょに"
+    },
+    {
+        "question": "基金",
+        "answer": "ききん"
+    },
+    {
+        "question": "浜辺",
+        "answer": "はまべ"
+    },
+    {
+        "question": "沿線",
+        "answer": "えんせん"
+    },
+    {
+        "question": "自我",
+        "answer": "じが"
+    },
+    {
+        "question": "洪水",
+        "answer": "こうずい"
+    },
+    {
+        "question": "堪える",
+        "answer": "こたえる"
+    },
+    {
+        "question": "お宮",
+        "answer": "おみや"
+    },
+    {
+        "question": "派",
+        "answer": "は"
+    },
+    {
+        "question": "購入",
+        "answer": "こうにゅう"
+    },
+    {
+        "question": "介護",
+        "answer": "かいご"
+    },
+    {
+        "question": "態々",
+        "answer": "わざわざ"
+    },
+    {
+        "question": "正義",
+        "answer": "せいぎ"
+    },
+    {
+        "question": "樹木",
+        "answer": "じゅもく"
+    },
+    {
+        "question": "有益",
+        "answer": "ゆうえき"
+    },
+    {
+        "question": "穂",
+        "answer": "ほ"
+    },
+    {
+        "question": "酸化",
+        "answer": "さんか"
+    },
+    {
+        "question": "稲光",
+        "answer": "いなびかり"
+    },
+    {
+        "question": "精巧",
+        "answer": "せいこう"
+    },
+    {
+        "question": "奉る",
+        "answer": "たてまつる"
+    },
+    {
+        "question": "保温",
+        "answer": "ほおん"
+    },
+    {
+        "question": "貴女",
+        "answer": "あなた"
+    },
+    {
+        "question": "染みる",
+        "answer": "しみる"
+    },
+    {
+        "question": "放射能",
+        "answer": "ほうしゃのう"
+    },
+    {
+        "question": "災害",
+        "answer": "さいがい"
+    },
+    {
+        "question": "叶う",
+        "answer": "かなう"
+    },
+    {
+        "question": "人柄",
+        "answer": "ひとがら"
+    },
+    {
+        "question": "素早い",
+        "answer": "すばやい"
+    },
+    {
+        "question": "緩和",
+        "answer": "かんわ"
+    },
+    {
+        "question": "把握",
+        "answer": "はあく"
+    },
+    {
+        "question": "佳句",
+        "answer": "かく"
+    },
+    {
+        "question": "従業員",
+        "answer": "じゅうぎょういん"
+    },
+    {
+        "question": "敵",
+        "answer": "かたき"
+    },
+    {
+        "question": "乏しい",
+        "answer": "とぼしい"
+    },
+    {
+        "question": "箇所",
+        "answer": "かしょ"
+    },
+    {
+        "question": "浪費",
+        "answer": "ろうひ"
+    },
+    {
+        "question": "類推",
+        "answer": "るいすい"
+    },
+    {
+        "question": "揺らぐ",
+        "answer": "ゆらぐ"
+    },
+    {
+        "question": "焦る",
+        "answer": "あせる"
+    },
+    {
+        "question": "削減",
+        "answer": "さくげん"
+    },
+    {
+        "question": "弓",
+        "answer": "ゆみ"
+    },
+    {
+        "question": "斜面",
+        "answer": "しゃめん"
+    },
+    {
+        "question": "一筋",
+        "answer": "ひとすき"
+    },
+    {
+        "question": "補充",
+        "answer": "ほじゅう"
+    },
+    {
+        "question": "碑",
+        "answer": "いしぶみ"
+    },
+    {
+        "question": "施す",
+        "answer": "ほどこす"
+    },
+    {
+        "question": "修了",
+        "answer": "しゅうりょう"
+    },
+    {
+        "question": "概略",
+        "answer": "がいりゃく"
+    },
+    {
+        "question": "圏",
+        "answer": "けん"
+    },
+    {
+        "question": "下痢",
+        "answer": "げり"
+    },
+    {
+        "question": "無駄遣い",
+        "answer": "むだづかい"
+    },
+    {
+        "question": "応急",
+        "answer": "おうきゅう"
+    },
+    {
+        "question": "養護",
+        "answer": "ようご"
+    },
+    {
+        "question": "桐",
+        "answer": "きり"
+    },
+    {
+        "question": "凝る",
+        "answer": "こごる"
+    },
+    {
+        "question": "遥か",
+        "answer": "はるか"
+    },
+    {
+        "question": "滅茶苦茶",
+        "answer": "めちゃくちゃ"
+    },
+    {
+        "question": "施行",
+        "answer": "しぎょう"
+    },
+    {
+        "question": "沼",
+        "answer": "ぬま"
+    },
+    {
+        "question": "同志",
+        "answer": "どうし"
+    }
+]
