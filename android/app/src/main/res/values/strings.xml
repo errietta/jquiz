@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">jquiz</string>
+    <string name="title_activity_main">jquiz</string>
+    <string name="package_name">jp.erry.jquiz</string>
+    <string name="custom_url_scheme">jp.erry.jquiz</string>
+</resources>

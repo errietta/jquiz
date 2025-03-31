@@ -38,8 +38,8 @@ Thumbs.db
 
 .gradle/
 android.keystore
-app/
 gradle
+./app
 
 *.apk
 *.aab

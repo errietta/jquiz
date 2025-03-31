@@ -56,7 +56,7 @@ export JQUIZ_RELEASE_KEY_ALIAS=<the alias>
 export JQUIZ_RELEASE_STORE_PASSWORD=<password>
 export JQUIZ_RELEASE_KEY_PASSWORD=<password>
 ```
-- `make build android`
+- `make build`
 
 ## Contributing
 
