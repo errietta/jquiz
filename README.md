@@ -45,9 +45,18 @@ jquiz/
 └── README.md          # This file
 ```
 
-## Create android release
-- Edit `twa-manifest.json`.
-- `bubblewrap build`
+## Create android release (NEW)
+- Change stuff
+- `make sync`
+
+Set the following:
+```
+JQUIZ_RELEASE_STORE_FILE=<keystore path>
+export JQUIZ_RELEASE_KEY_ALIAS=<the alias>
+export JQUIZ_RELEASE_STORE_PASSWORD=<password>
+export JQUIZ_RELEASE_KEY_PASSWORD=<password>
+```
+- `make build android`
 
 ## Contributing
 
