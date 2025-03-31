@@ -2,6 +2,12 @@
 if ('serviceWorker' in navigator) {
   // Wait for the 'load' event to not block other work
   window.addEventListener('load', async () => {
+
+    if (window.Capacitor) {
+      console.log('Capacitor detected, not registering service worker');`)
+      return;
+    }
+
     // Try to register the service worker.
     try {
       // Capture the registration for later use, if needed
