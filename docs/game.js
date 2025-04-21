@@ -69,6 +69,31 @@ class GameState {
         this.attachInputListeners($input);
         this.setupHistoryManagement();
         this.createBackPrompt();
+
+        if (window.Capacitor) {
+            this.setupCapacitorBackButton();
+        }
+    }
+
+    setupCapacitorBackButton() {
+        console.log('Setting up Capacitor back button listener');
+        const { App } = window.Capacitor.Plugins;
+
+        App.addListener('backButton', ({ canGoBack }) => {
+            console.warn('BACK', this.currentState);
+            if (this.currentState.page === 'quiz') {
+                element('backPrompt').style.display = 'block';
+            } else if (this.currentState.page === 'picked_mode') {
+                this.showModeChoice();
+            }
+            else if (this.currentState.page === 'mode_choice') {
+                this.goHome();
+            } else if (this.currentState.page === 'home') {
+                App.exitApp();
+            } else if (canGoBack) {
+                history.back();
+            }
+        });
     }
 
     createBackPrompt() {
@@ -130,11 +155,15 @@ class GameState {
             }
             else if (event.state && event.state.page === 'home') {
                 this.endGame();
-                $mode_choice.display = 'none';
-                $explanation.display = '';
-                this.pushState({ page: 'home' }, 'Home');
+                this.goHome();
             }
         };
+    }
+
+    goHome() {
+        $mode_choice.display = 'none';
+        $explanation.display = '';
+        this.pushState({ page: 'home' }, 'Home');
     }
 
     showModeChoice() {
