@@ -4,7 +4,7 @@ if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
 
     if (window.Capacitor) {
-      console.log('Capacitor detected, not registering service worker');`)
+      console.log('Capacitor detected, not registering service worker');
       return;
     }
 
