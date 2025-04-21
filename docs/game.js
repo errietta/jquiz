@@ -67,19 +67,90 @@ class GameState {
 
     constructor() {
         this.attachInputListeners($input);
+        this.setupHistoryManagement();
+        this.createBackPrompt();
+    }
+
+    createBackPrompt() {
+        const backPrompt = document.createElement('div');
+        backPrompt.id = 'backPrompt';
+        backPrompt.style.display = 'none';
+        backPrompt.style.position = 'fixed';
+        backPrompt.style.top = '50%';
+        backPrompt.style.left = '50%';
+        backPrompt.style.transform = 'translate(-50%, -50%)';
+        backPrompt.style.background = 'rgba(0, 0, 0, 0.8)';
+        backPrompt.style.padding = '20px';
+        backPrompt.style.borderRadius = '10px';
+        backPrompt.style.color = '#fff';
+        backPrompt.style.textAlign = 'center';
+        backPrompt.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
+        backPrompt.innerHTML = `
+            <p>Are you sure you want to quit the quiz and go back?</p>
+            <button id="backPromptYes" style="margin: 5px; padding: 8px 16px; background: #f44336; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Yes</button>
+            <button id="backPromptNo" style="margin: 5px; padding: 8px 16px; background: #4caf50; color: #fff; border: none; border-radius: 5px; cursor: pointer;">No</button>
+        `;
+        document.body.appendChild(backPrompt);
+
+        document.getElementById('backPromptYes').onclick = () => {
+            this.endGame();
+            this.showModeChoice();
+            backPrompt.style.display = 'none';
+        };
+
+        document.getElementById('backPromptNo').onclick = () => {
+            history.pushState({ page: 'quiz' }, 'Quiz'); // Revert to quiz state
+            backPrompt.style.display = 'none';
+        };
+    }
+
+    pushState(state, name) {
+        console.log('Pushing state:', state, name);
+        history.pushState(state, name);
+        this.currentState = state;
     }
 
     setMode(mode) {
+        this.pushState({ page: 'picked_mode' }, 'Mode Choice');
+
         Object.keys($modes).forEach(key => {
             $modes[key].display = 'none';
         });
 
-        $modes[mode].display = '';
+        $modes[mode].display = 'block';
+    }
+
+    setupHistoryManagement() {
+        window.onpopstate = (event) => {
+            console.log('onpop', event, event.state);
+            if (event.state && this.currentState.page === 'quiz') {
+                element('backPrompt').style.display = 'block'; // Show the custom back prompt
+            } else if (event.state && (event.state.page === 'mode_choice')) {
+                this.showModeChoice();
+            }
+            else if (event.state && event.state.page === 'home') {
+                this.endGame();
+                $mode_choice.display = 'none';
+                $explanation.display = '';
+                this.pushState({ page: 'home' }, 'Home');
+            }
+        };
+    }
+
+    showModeChoice() {
+        this.pushState({ page: 'mode_choice' }, 'Mode Choice');
+
+        $game.display = 'none';
+        $mode_choice.display = '';
+        Object.keys($modes).forEach(key => {
+            $modes[key].display = 'none';
+        });
     }
 
     closeExplanation() {
         $explanation.display = 'none';
         $mode_choice.display = '';
+        this.pushState({ page: 'mode_choice' }, 'Mode Choice');
     }
 
     async fetchVocab(url) {
@@ -114,6 +185,14 @@ class GameState {
 
         this.timeLeft = this.defaultTimer;
         this.nextQuestion();
+
+        this.pushState({ page: 'quiz' }, 'Quiz');
+    }
+
+    endGame() {
+        clearInterval(this.timer);
+        $game.display = 'none';
+        $mode_choice.display = 'none';
     }
 
     nextQuestion() {
