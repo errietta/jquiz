@@ -70,6 +70,10 @@ class GameState {
     }
 
     setMode(mode) {
+        Object.keys($modes).forEach(key => {
+            $modes[key].display = 'none';
+        });
+
         $modes[mode].display = '';
     }
 
