@@ -47,6 +47,7 @@ jquiz/
 
 ## Create android release (NEW)
 - Change stuff
+- Replace 'versionCode' and 'versionName'
 - `make sync`
 
 Set the following:
