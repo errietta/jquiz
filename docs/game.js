@@ -112,8 +112,8 @@ class GameState {
         backPrompt.style.boxShadow = '0 0 10px rgba(0, 0, 0, 0.5)';
         backPrompt.innerHTML = `
             <p>Are you sure you want to quit the quiz and go back?</p>
-            <button id="backPromptYes" style="margin: 5px; padding: 8px 16px; background: #f44336; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Yes</button>
-            <button id="backPromptNo" style="margin: 5px; padding: 8px 16px; background: #4caf50; color: #fff; border: none; border-radius: 5px; cursor: pointer;">No</button>
+            <button class="button" id="backPromptYes" style="margin: 5px; padding: 8px 16px; background: #f44336; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Yes</button>
+            <button class="button" id="backPromptNo" style="margin: 5px; padding: 8px 16px; background: #4caf50; color: #fff; border: none; border-radius: 5px; cursor: pointer;">No</button>
         `;
         document.body.appendChild(backPrompt);
 

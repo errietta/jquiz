@@ -11,8 +11,8 @@ html {
 }
 
 body {
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: #fff;
+    background: #e2e2e7; /* Light gray background for subtle contrast */
+    color: #333; /* Dark gray text for better readability */
     font-family: 'Noto Sans JP', sans-serif;
     display: flex;
     justify-content: center;
@@ -27,17 +27,22 @@ body {
 }
 
 footer {
-   width: 100%;
+    width: 100%;
     text-align: center;
     font-size: 14px;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    background: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
-    padding: 10px 0; /* Add padding */
+    color: #555; /* Medium gray text */
+    background: #e0e0e0; /* Light gray background */
+    padding: 10px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for footer */
 }
 
 footer a {
-    color: white;
+    color: #007acc; /* Blue links for better visibility */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 .page {
@@ -49,33 +54,35 @@ footer a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
 }
 
 #question {
-    font-size: 24px; /* Reduce font size */
-    margin: 10px; /* Reduce margin */
-    color: #000;
- }
+    font-size: 24px;
+    margin: 10px;
+    color: #333;
+}
 
 #timer {
-    font-size: 18px; /* Reduce font size */
-    color: #ff5722;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin-top: 10px; /* Reduce margin */
+    font-size: 18px;
+    color: #d32f2f; /* Red for timer */
+    margin-top: 10px;
 }
 
 #input {
-    font-size: 18px; /* Reduce font size */
-    padding: 8px; /* Reduce padding */
-    border: none;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    margin-top: 10px; /* Reduce margin */
+    margin-top: 10px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for input */
 }
 
 #input.anaume {
@@ -84,56 +91,41 @@ footer a {
     font-size: 18px;
     padding: 5px;
     margin: 5px 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #score {
-    font-size: 18px; /* Reduce font size */
-    margin-top: 10px; /* Reduce margin */
-    color: #4caf50;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-top: 10px;
+    color: #388e3c; /* Green for score */
 }
 
 #lives {
-    font-size: 18px; /* Reduce font size */
-    margin-top: 10px; /* Reduce margin */
-    color: #f44336;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    margin-top: 10px;
+    color: #d32f2f; /* Red for lives */
 }
 
-button {
-    font-size: 16px; /* Reduce font size */
-    padding: 8px 16px; /* Reduce padding */
-    margin-top: 10px; /* Reduce margin */
-    border: none;
-    border-radius: 5px;
-    background: #2196f3;
-    color: #fff;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
 
-button:hover {
-    background: #1976d2;
-}
 
 h1 {
-    font-size: 28px; /* Reduce font size */
-    margin-bottom: 10px; /* Reduce margin */
-    color: #ffeb3b;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 h2 {
-    font-size: 20px; /* Reduce font size */
-    margin: 5px 0; /* Reduce margin */
-    color: #ffeb3b;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    margin: 5px 0;
+    color: #333;
 }
 
 .container {
-    margin-bottom: 10px; /* Reduce margin to fit more content */
+    margin-bottom: 10px;
 }
 
 #gameOverPrompt {
@@ -141,30 +133,31 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow for modal */
 }
 
 #gameOverPrompt button {
-    font-size: 16px; /* Reduce font size */
-    padding: 8px 16px; /* Reduce padding */
+    font-size: 16px;
+    padding: 8px 16px;
     margin: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background: #2196f3;
+    background: #007acc;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #gameOverPrompt button:hover {
-    background: #1976d2;
+    background: #005f99;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 #explanation {
     margin-right: auto;
@@ -193,17 +186,18 @@ h2 {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    flex-wrap: nowrap; /* Prevent wrapping of elements */
+    flex-wrap: nowrap;
 }
 
 #puzzle2_right {
-    white-space: nowrap; /* Prevent text from breaking into a new line */
+    white-space: nowrap;
 }
 
 .puzzle-row p {
-    margin: 5px 10px; /* Adjust margins for better spacing */
+    margin: 5px 10px;
     font-size: 24px;
     font-weight: bold;
+    color: #000;
 }
 
 #puzzle2_input {
@@ -211,13 +205,18 @@ h2 {
     text-align: center;
     font-size: 18px;
     padding: 5px;
-    margin: 5px 10px; /* Adjust margins for better spacing */
+    margin: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
 }
 
 #puzzle2_arrow_left, #puzzle2_arrow_right {
     font-size: 24px;
     font-weight: bold;
     margin: 0 5px;
+    color: #000;
 }
 
 /* Responsive styles for smaller screens */
@@ -235,17 +234,45 @@ h2 {
     }
 }
 
+#explanationText div {
+    margin: 5px 0;
+}
+
+.button {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #007acc; /* Blue background for buttons */
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for buttons */
+}
+
+.button:hover {
+    background: #005f99; /* Darker blue on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
 #settingsButton {
     position: absolute;
     top: 10px;
     left: 10px;
-    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
-    border-radius: 50%; /* Make it circular */
-    padding: 1px; /* Add padding for spacing */
+    background: #4d5053;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #settingsButton button {
-    font-size: 24px; /* Make the button large */
+    font-size: 24px;
     background: none;
     border: none;
     color: #fff;
@@ -254,7 +281,7 @@ h2 {
 }
 
 #settingsButton button:hover {
-    transform: scale(1.2); /* Slightly enlarge on hover */
+    transform: scale(1.2);
 }
 
 #settingsModal {
@@ -263,12 +290,12 @@ h2 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.8);
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
-    color: #fff;
+    color: #333;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 #settingsModal h2 {
@@ -279,19 +306,22 @@ h2 {
     display: block;
     margin: 10px 0;
     font-size: 18px;
+    color: #333;
 }
 
 #settingsModal button {
     font-size: 16px;
     padding: 8px 16px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    background: #2196f3;
+    background: #007acc;
     color: #fff;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #settingsModal button:hover {
-    background: #1976d2;
+    background: #005f99;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

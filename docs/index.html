@@ -28,7 +28,7 @@
                     <input type="checkbox" id="disableTimer" onchange="toggleSetting('disableTimer')"> Disable Timer
                 </label>
                 <br><br>
-                <button onclick="closeSettings()">Close</button>
+                <button class="button" onclick="closeSettings()">Close</button>
             </div>
             <div class="container">
                 <h1><a href="index.html">Kanji Quiz Game</a></h1>
@@ -37,8 +37,8 @@
                 <div id="make_mode_choice">
                     <div class="container">
                         <h2>Select mode</h2>
-                        <button onclick="setMode('jlpt_mode')">JLPT mode</button>
-                        <button onclick="setMode('quiz_mode')">Quiz mode</button>
+                        <button class="button" onclick="setMode('jlpt_mode')">JLPT mode</button>
+                        <button class="button" onclick="setMode('quiz_mode')">Quiz mode</button>
                     </div>
                 </div>
 
@@ -47,42 +47,45 @@
                     <div class="container">
                         <h2>Quiz mode</h2>
                         <p>
-                            <button onclick="startGame('puzzle3')">穴埋め Puzzle (hard)</button>
+                            <button class="button" onclick="startGame('puzzle3')">穴埋め Puzzle (hard)</button>
                         </p>
                         <p>
-                            <button onclick="startGame('puzzle3')">穴埋め　Puzzle (easier)</button>
+                            <button class="button" onclick="startGame('puzzle3')">穴埋め　Puzzle (easier)</button>
                         </p>
                         <p>
-                            <button onclick="startGame('rare_kanji')">Rare Kanji quiz</button>
+                            <button class="button" onclick="startGame('rare_kanji')">Rare Kanji quiz</button>
                         </p>
                     </div>
                 </div>
 
                 <div id="jlpt_mode" style="display:none">
                     <div class="container">
+                        N5 is the easiest level, N1 is the hardest.
+                    </div>
+                    <div class="container">
                         <h2>N5</h2>
-                        <button onclick="startGame('n5_all')">Start with N5 - All vocab (harder)</button>
-                        <button onclick="startGame('n5_vocab')">Start with N5 Required Kanji only</button>
+                        <button class="button" onclick="startGame('n5_all')">Start with N5 - All vocab (harder)</button>
+                        <button class="button" onclick="startGame('n5_vocab')">Start with N5 Required Kanji only</button>
                     </div>
                     <div class="container">
                         <h2>N4</h2>
-                        <button onclick="startGame('n4_all')">Start with N4 - All vocab (harder)</button>
-                        <button onclick="startGame('n4_vocab')">Start with N4 Required Kanji only</button>
+                        <button class="button" onclick="startGame('n4_all')">Start with N4 - All vocab (harder)</button>
+                        <button class="button" onclick="startGame('n4_vocab')">Start with N4 Required Kanji only</button>
                     </div>
                     <div class="container">
                         <h2>N3</h2>
-                        <button onclick="startGame('n3_all')">Start with N3 - All vocab (harder)</button>
-                        <button onclick="startGame('n3_vocab')">Start with N3 Required Kanji only</button>
+                        <button class="button" onclick="startGame('n3_all')">Start with N3 - All vocab (harder)</button>
+                        <button class="button" onclick="startGame('n3_vocab')">Start with N3 Required Kanji only</button>
                     </div>
                     <div class="container">
                         <h2>N2</h2>
-                        <button onclick="startGame('n2_all')">Start with N2 - All vocab (harder)</button>
-                        <button onclick="startGame('n2_vocab')">Start with N2 Required Kanji only</button>
+                        <button class="button" onclick="startGame('n2_all')">Start with N2 - All vocab (harder)</button>
+                        <button class="button" onclick="startGame('n2_vocab')">Start with N2 Required Kanji only</button>
                     </div>
                     <div class="container">
                         <h2>N1</h2>
-                        <button onclick="startGame('n1_all')">Start with N1 - All vocab (harder)</button>
-                        <button onclick="startGame('n1_vocab')">Start with N1 Required Kanji only</button>
+                        <button class="button" onclick="startGame('n1_all')">Start with N1 - All vocab (harder)</button>
+                        <button class="button" onclick="startGame('n1_vocab')">Start with N1 Required Kanji only</button>
                     </div>
                 </div>
 
@@ -103,9 +106,10 @@
             </div>
             <div id="explanation">
                 <div id="explanationText">
-                    This game has two modes.
+                    This game has the following modes:
                     <div>
-                        <b>JLPT mode</b> - You can type the 'reading' of the word in Hiragana.
+                        <h3>JLPT mode</h3>
+                        You can type the 'reading' of the word in Hiragana.
                         To win the game you need to get the questions right before you run out of lives.
                         If you use the 'JLPT required kanji only' mode, it will be (mostly) words whose
                         Kanji you need to know for that level. The other mode includes every word that's part
@@ -113,28 +117,33 @@
                         isn't known to be required knowledge.
                     </div>
                     <div>
-                        <b>Quiz mode</b>
+                        <h3>Quiz mode</h3>
                         <div>Kanji puzzle - You will be given words or phrases that all contain
-                            the same kanji. The kanji will be replaced with ○. You need to
-                            guess the kanji. This is a difficult mode because the words are
-                            randomly chosen and very obscure terms can come up.</div>
+                            the same kanji. You have to guess the kanji.
+                            For example 本当, 日本, 本屋, 本棚, etc. will give you the kanji 本.
+                            You chave to type the correct kanji.
+                            Arrows show the direction of the word, if the kanji comes before or after the hint.
+                        </div>
+                    </div>
+                    <div>
+                        <h3>Rare kanji quiz</h3>
                         <div>
                             Rare Kanji quiz - You have to write common writing of kanji given a rarely-used or outdated
                             form.
                             For example for 音樂會 you can write 音楽会.
                             For 鮹 you can enter 蛸, but because the word is usually written in Kana, both the Kanji and
-                   the
+                            the
                             kana
                             (タコ or たこ) are accepted.
                         </div>
                     </div>
                 </div>
-                <button id="closeExplanation" onclick="closeExplanation()">Begin</button>
+                <button class="button" id="closeExplanation" onclick="closeExplanation()">Begin</button>
             </div>
             <div id="gameOverPrompt" style="display:none;">
                 <div>Game over! Final Score: <span id="finalScore"></span>. Continue?</div>
-                <button id="yesButton">Yes</button>
-                <button id="noButton">No</button>
+                <button class="button" id="yesButton">Yes</button>
+                <button class="button" id="noButton">No</button>
             </div>
 
         </div>
