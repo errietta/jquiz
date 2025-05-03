@@ -67,7 +67,7 @@ See LICENSE
 ## Attribution
 
 JLPT vocabulary list by http://www.tanos.co.uk/jlpt/skills/vocab/. JLPT Vocab list is shared under a CC-BY license.
-
+Edict2 dictionary by https://www.edrdg.org/jmdict/edict.html
 
 # Development history
 
