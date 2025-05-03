@@ -34,17 +34,6 @@ This is a simple Kanji Quiz Game built with HTML, CSS, and JavaScript. The game 
 3. Answer the questions by typing your answer and pressing Enter.
 4. The game will track your score and lives. If you run out of lives, you will be prompted to continue or end the game.
 
-## Project Structure
-
-```
-jquiz/
-├── vocab/             # Vocabulary JSON files
-├── game.html          # Main HTML file
-├── game.js            # JavaScript file
-├── style.css          # CSS file
-└── README.md          # This file
-```
-
 ## Create android release (NEW)
 - Change stuff
 - Replace 'versionCode' and 'versionName'
