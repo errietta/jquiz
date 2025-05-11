@@ -381,6 +381,7 @@ class GameState {
     }
 
     addPuzzle2Display(directions, arrows) {
+        // Update the layout to include the thinking image next to timer, score, and lives
         $game.innerHTML = `
             <div class="container">
                 <h2>穴埋め Kanji Quiz</h2>
@@ -407,9 +408,12 @@ class GameState {
                 </div>
                 <div>q to skip</div>
                 <div id="feedback"></div>
-                <div id="timer"></div>
-                <div id="score"></div>
-                <div id="lives"></div>
+                <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+                    <img src="images/think.png" id="thinking" alt="Thinking image" style="height: 50px;"/>
+                    <div id="timer" style="margin-right: 15px;"></div>
+                    <div id="score" style="margin-right: 15px;"></div>
+                    <div id="lives" style="margin-right: 15px;"></div>
+                </div>
             </div>
         `;
     }
@@ -452,6 +456,8 @@ class GameState {
             return;
         }
 
+        const thinkingImage = document.getElementById('thinking');
+
         if (userAnswer.toLowerCase() === 'q' || userAnswer.toLowerCase() === 'ｑ') {
             if (!settings.disableLives) {
                 this.lives--;
@@ -461,6 +467,7 @@ class GameState {
                 $lives.innerText = `Lives: ${this.lives}`;
             }
             $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            thinkingImage.src = "images/think.png"; // Reset to thinking image
             this.nextQuestion();
             return;
         }
@@ -469,6 +476,7 @@ class GameState {
             this.score++;
             $score.innerText = `Score: ${this.score}`;
             $feedback.innerHTML = `Previous answer: ${this.currentWord.answer}`;
+            thinkingImage.src = "images/ok.png"; // Change to correct image
             this.nextQuestion();
         } else {
             if (!settings.disableLives) {
@@ -479,6 +487,7 @@ class GameState {
                 }
                 $lives.innerText = `Lives: ${this.lives}`;
             }
+            thinkingImage.src = "images/think.png"; // Reset to thinking image
         }
         $input.value = '';
     }

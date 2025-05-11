@@ -10,6 +10,10 @@
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="preload" href="images/go.png" as="image">
+    <link rel="preload" href="images/think.png" as="image">
+    <link rel="preload" href="images/o.png" as="image">
+    <link rel="preload" href="images/ok.png" as="image">
 </head>
 
 <body>
@@ -37,6 +41,7 @@
                 <div id="make_mode_choice">
                     <div class="container">
                         <h2>Select mode</h2>
+                        <img src="images/go.png" alt="Cheering image" style="display:block; margin:  auto; height: 100px;">
                         <button class="button" onclick="setMode('jlpt_mode')">JLPT mode</button>
                         <button class="button" onclick="setMode('quiz_mode')">Quiz mode</button>
                     </div>
@@ -96,9 +101,13 @@
                 <input type="text" id="input" placeholder="Answer in hiragana..." autocomplete="off">
                 <div>q to skip</div>
                 <div id="feedback"></div>
-                <div id="timer"></div>
-                <div id="score"></div>
-                <div id="lives"></div> <!-- Add lives display -->
+                <div style="display: flex; align-items: center; justify-content: center; margin-top: 10px;">
+                    <img id="thinking" src="images/think.png" alt="Thinking image" style="height: 50px;"/>
+                    <div id="timer" style="margin-right: 15px;"></div>
+                    <div id="score" style="margin-right: 15px;"></div>
+                    <div id="lives" style="margin-right: 15px;"></div>
+                </div>
+
             </div>
 
             <div id="loading" style="display:none;">
@@ -138,7 +147,9 @@
                         </div>
                     </div>
                 </div>
-                <button class="button" id="closeExplanation" onclick="closeExplanation()">Begin</button>
+                <button class="button" id="closeExplanation" onclick="closeExplanation()">
+                    <img src="images/go.png" alt="Go" style="height: 20px; vertical-align: middle; margin-right: 5px;"> Begin
+                </button>
             </div>
             <div id="gameOverPrompt" style="display:none;">
                 <div>Game over! Final Score: <span id="finalScore"></span>. Continue?</div>
