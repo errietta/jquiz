@@ -44,3 +44,5 @@ gradle
 *.apk
 *.aab
 *.idsig
+
+android/app/release/

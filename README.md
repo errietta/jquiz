@@ -36,7 +36,7 @@ This is a simple Kanji Quiz Game built with HTML, CSS, and JavaScript. The game 
 
 ## Create android release (NEW)
 - Change stuff
-- Replace 'versionCode' and 'versionName'
+- Replace 'versionCode' and 'versionName' in `build.gradle`
 - `make sync`
 
 Set the following:
